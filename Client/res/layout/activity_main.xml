@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        tools:context=".MainActivity" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/bienvenue" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        tools:context=".MainActivity" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/description" />
+           
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        tools:context=".MainActivity" >
+        
+	<Button
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+     	android:onClick="switchToFrench"
+    	android:text="" />
+    <Button
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+     	android:onClick="switchToEnglish"
+    	android:text="" />
+	<Button
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+     	android:onClick="switchToGerman"
+    	android:text="" />
+	<Button
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+     	android:onClick="switchToSpanish"
+    	android:text="" />
+	<Button
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+     	android:onClick="switchToItalian"
+    	android:text="" />
+	
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        tools:context=".MainActivity" >
+        
+	<Button
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+     	android:onClick="goToCarte"
+    	android:text="" />
+
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">restauClient</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="bienvenue">Bienvenue au &lt;Insert Name Here&gt;</string>
+    <string name="description">Ce restaurant a été fondé en 1579 par l arrière petit-fils du grand oncle de mon neveu. Jusqu à aujourd hui, son but a toujours été de faire déguster des mets de la meilleure qualité possible à ses clients.. bla bla bla bla bla bla</string>
+    <string name="accueil">Accueil</string>
+    <string name="menus">Menus</string>
+    <string name="carte">Carte</string>
+    <string name="validation">Validez la commande</string>
+
+</resources>
