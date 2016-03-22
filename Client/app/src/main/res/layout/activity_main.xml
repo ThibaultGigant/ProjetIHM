@@ -51,27 +51,27 @@
     	android:layout_width="wrap_content"
     	android:layout_height="wrap_content"
      	android:onClick="switchToFrench"
-    	android:text="" />
+        android:background="@mipmap/french_flag" />
     <Button
     	android:layout_width="wrap_content"
     	android:layout_height="wrap_content"
      	android:onClick="switchToEnglish"
-    	android:text="" />
+        android:background="@mipmap/british_flag" />
 	<Button
     	android:layout_width="wrap_content"
     	android:layout_height="wrap_content"
      	android:onClick="switchToGerman"
-    	android:text="" />
+        android:background="@mipmap/german_flag" />
 	<Button
     	android:layout_width="wrap_content"
     	android:layout_height="wrap_content"
      	android:onClick="switchToSpanish"
-    	android:text="" />
+        android:background="@mipmap/spanish_flag" />
 	<Button
     	android:layout_width="wrap_content"
     	android:layout_height="wrap_content"
      	android:onClick="switchToItalian"
-    	android:text="" />
+        android:background="@mipmap/italian_flag" />
 	
     </LinearLayout>
     
