@@ -14,13 +14,68 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:orientation="vertical"
+            android:background="@android:color/background_dark"
             android:layout_weight="1">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:layout_margin="1dp"
                 android:text="@string/table_1"
-                android:id="@+id/textView" />
+                android:id="@+id/textView1"
+                android:textSize="24sp"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/black" />
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:layout_margin="1dp"
+                android:id="@+id/ChronoLayout1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chronoIcon1"
+                    android:layout_marginLeft="5dp"
+                    android:contentDescription="@string/desc" />
+
+                <Chronometer
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chronometer"
+                    android:gravity="center_horizontal"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="6dp"
+                    android:enabled="true"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/minutes"
+                    android:id="@+id/chronoText1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="85dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="8dp"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black" />
+
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/background_light"
+                android:layout_margin="1dp"
+                android:id="@+id/scrollView" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -28,41 +83,200 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:orientation="vertical"
+            android:background="@android:color/background_dark"
             android:layout_weight="1">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:layout_margin="1dp"
                 android:text="@string/table_2"
-                android:id="@+id/textView2" />
+                android:id="@+id/textView2"
+                android:gravity="center_horizontal"
+                android:textSize="24sp"
+                android:textColor="@android:color/black" />
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:layout_margin="1dp"
+                android:id="@+id/chronoLayout2" >
+
+                <Chronometer
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chronometer2"
+                    android:gravity="center_horizontal"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="6dp"
+                    android:enabled="true"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chronoIcon2"
+                    android:layout_marginLeft="5dp"
+                    android:contentDescription="@string/desc" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/minutes"
+                    android:id="@+id/chronoText2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="85dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="8dp"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/background_light"
+                android:layout_margin="1dp"
+                android:id="@+id/scrollView2" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/Table3"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
+            android:background="@android:color/background_dark"
             android:orientation="vertical"
             android:layout_weight="1">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:layout_margin="1dp"
                 android:text="@string/table_3"
-                android:id="@+id/textView3" />
+                android:id="@+id/textView3"
+                android:textSize="24sp"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/black" />
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:layout_margin="1dp"
+                android:id="@+id/chronoLayout3" >
+
+                <Chronometer
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chronometer3"
+                    android:gravity="center_horizontal"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="6dp"
+                    android:enabled="true"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chronoIcon3"
+                    android:layout_marginLeft="5dp"
+                    android:contentDescription="@string/desc" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/minutes"
+                    android:id="@+id/chronoText3"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="85dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="8dp"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/background_light"
+                android:layout_margin="1dp"
+                android:id="@+id/scrollView3" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/Table4"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
+            android:background="@android:color/background_dark"
             android:orientation="vertical"
             android:layout_weight="1">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:layout_margin="1dp"
                 android:text="@string/table_4"
-                android:id="@+id/textView4" />
+                android:id="@+id/textView4"
+                android:gravity="center_horizontal"
+                android:textSize="24sp"
+                android:textColor="@android:color/black" />
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:layout_margin="1dp"
+                android:id="@+id/chronoLayout4" >
+
+                <Chronometer
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chronometer4"
+                    android:gravity="center_horizontal"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="6dp"
+                    android:enabled="true"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chronoIcon4"
+                    android:layout_marginLeft="5dp"
+                    android:contentDescription="@string/desc" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/minutes"
+                    android:id="@+id/chronoText4"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="85dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="8dp"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/background_light"
+                android:layout_margin="1dp"
+                android:id="@+id/scrollView4" />
         </LinearLayout>
     </TableRow>
 
@@ -76,56 +290,268 @@
             android:id="@+id/Table5"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
+            android:background="@android:color/background_dark"
             android:orientation="vertical"
             android:layout_weight="1">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:layout_margin="1dp"
                 android:text="@string/table_5"
-                android:id="@+id/textView5" />
+                android:id="@+id/textView5"
+                android:textSize="24sp"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/black" />
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:layout_margin="1dp"
+                android:id="@+id/chronoLayout5" >
+
+                <Chronometer
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chronometer5"
+                    android:gravity="center_horizontal"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="6dp"
+                    android:enabled="true"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chronoIcon5"
+                    android:layout_marginLeft="5dp"
+                    android:contentDescription="@string/desc" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/minutes"
+                    android:id="@+id/chronoText5"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="85dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="8dp"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/background_light"
+                android:layout_margin="1dp"
+                android:id="@+id/scrollView5" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/Table6"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
+            android:background="@android:color/background_dark"
             android:orientation="vertical"
             android:layout_weight="1">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:layout_margin="1dp"
                 android:text="@string/table_6"
-                android:id="@+id/textView6" />
+                android:id="@+id/textView6"
+                android:gravity="center_horizontal"
+                android:textSize="24sp"
+                android:textColor="@android:color/black" />
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:layout_margin="1dp"
+                android:id="@+id/chronoLayout6" >
+
+                <Chronometer
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chronometer6"
+                    android:gravity="center_horizontal"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="6dp"
+                    android:enabled="true"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chronoIcon6"
+                    android:layout_marginLeft="5dp"
+                    android:contentDescription="@string/desc" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/minutes"
+                    android:id="@+id/chronoText6"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="85dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="8dp"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/background_light"
+                android:layout_margin="1dp"
+                android:id="@+id/scrollView6" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/Table7"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
+            android:background="@android:color/background_dark"
             android:orientation="vertical"
             android:layout_weight="1">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:layout_margin="1dp"
                 android:text="@string/table_7"
-                android:id="@+id/textView7" />
+                android:id="@+id/textView7"
+                android:textSize="24sp"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/black" />
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:layout_margin="1dp"
+                android:id="@+id/chronoLayout7" >
+
+                <Chronometer
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chronometer7"
+                    android:gravity="center_horizontal"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="6dp"
+                    android:enabled="true"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chronoIcon7"
+                    android:layout_marginLeft="5dp"
+                    android:contentDescription="@string/desc" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/minutes"
+                    android:id="@+id/chronoText7"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="85dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="8dp"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/background_light"
+                android:layout_margin="1dp"
+                android:id="@+id/scrollView7" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/Table8"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
+            android:background="@android:color/background_dark"
             android:orientation="vertical"
             android:layout_weight="1">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:layout_margin="1dp"
                 android:text="@string/table_8"
-                android:id="@+id/textView8" />
+                android:id="@+id/textView8"
+                android:gravity="center_horizontal"
+                android:textSize="24sp"
+                android:textColor="@android:color/black" />
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:layout_margin="1dp"
+                android:id="@+id/chronoLayout8" >
+
+                <Chronometer
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chronometer8"
+                    android:gravity="center_horizontal"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="6dp"
+                    android:enabled="true"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chronoIcon8"
+                    android:layout_marginLeft="5dp"
+                    android:contentDescription="@string/desc" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/minutes"
+                    android:id="@+id/chronoText8"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="85dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="8dp"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/background_light"
+                android:layout_margin="1dp"
+                android:id="@+id/scrollView8" />
         </LinearLayout>
     </TableRow>
 
