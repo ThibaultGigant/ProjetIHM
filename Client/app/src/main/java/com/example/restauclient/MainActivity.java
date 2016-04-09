@@ -1,10 +1,13 @@
 package com.example.restauclient;
 
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.View;
+
+import java.util.Locale;
 
 public class MainActivity extends Activity {
 
@@ -22,11 +25,21 @@ public class MainActivity extends Activity {
     }
 
     public void switchToFrench(View v) {
-
+        Locale locale = new Locale("fr_FR");
+        Locale.setDefault(locale);
+        Configuration config = new Configuration();
+        config.locale = locale;
+        getApplicationContext().getResources().updateConfiguration(config, null);
+        this.setContentView(R.layout.activity_main);
     }
 
     public void switchToEnglish(View v) {
-
+        Locale locale = new Locale("us_US");
+        Locale.setDefault(locale);
+        Configuration config = new Configuration();
+        config.locale = locale;
+        getApplicationContext().getResources().updateConfiguration(config, null);
+        this.setContentView(R.layout.activity_main);
     }
 
     public void switchToItalian(View v) {

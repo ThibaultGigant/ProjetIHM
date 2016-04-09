@@ -2,11 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginBottom="10dp"
-    android:layout_marginLeft="10dp"
-    android:layout_marginRight="10dp"
-    android:layout_marginTop="10dp"
     android:orientation="vertical"
+    android:background="#290E0B"
     tools:context=".MainActivity" >
 
     <LinearLayout
@@ -14,6 +11,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal"
         tools:context=".MainActivity" >
 
@@ -21,10 +21,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:textSize="30sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="italic"
             android:text="@string/bienvenue" />
 
     </LinearLayout>
-    
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -36,60 +39,68 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
             android:text="@string/description" />
-           
-    </LinearLayout>
-    
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:orientation="horizontal"
-        tools:context=".MainActivity" >
-        
-	<Button
-    	android:layout_width="wrap_content"
-    	android:layout_height="wrap_content"
-     	android:onClick="switchToFrench"
-        android:background="@mipmap/french_flag" />
-    <Button
-    	android:layout_width="wrap_content"
-    	android:layout_height="wrap_content"
-     	android:onClick="switchToEnglish"
-        android:background="@mipmap/british_flag" />
-	<Button
-    	android:layout_width="wrap_content"
-    	android:layout_height="wrap_content"
-     	android:onClick="switchToGerman"
-        android:background="@mipmap/german_flag" />
-	<Button
-    	android:layout_width="wrap_content"
-    	android:layout_height="wrap_content"
-     	android:onClick="switchToSpanish"
-        android:background="@mipmap/spanish_flag" />
-	<Button
-    	android:layout_width="wrap_content"
-    	android:layout_height="wrap_content"
-     	android:onClick="switchToItalian"
-        android:background="@mipmap/italian_flag" />
-	
-    </LinearLayout>
-    
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:orientation="horizontal"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="10dp"
-        tools:context=".MainActivity" >
-        
-	<Button
-    	android:layout_width="wrap_content"
-    	android:layout_height="wrap_content"
-     	android:onClick="goToCarte"
-    	android:text=""
-        android:background="@mipmap/icon" />
 
-	</LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        tools:context=".MainActivity" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="switchToFrench"
+            android:background="@mipmap/french_flag" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="switchToEnglish"
+            android:background="@mipmap/british_flag" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="switchToGerman"
+            android:background="@mipmap/german_flag" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="switchToSpanish"
+            android:background="@mipmap/spanish_flag" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="switchToItalian"
+            android:background="@mipmap/italian_flag" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="100dp"
+        tools:context=".MainActivity" >
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="goToCarte"
+            android:background="@mipmap/icon" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:text="@string/enter"/>
+
+    </LinearLayout>
 </LinearLayout>
