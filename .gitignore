@@ -33,3 +33,6 @@ captures/
 
 # Eclipse adt
 .metadata/
+
+# Android studio
+.idea/
