@@ -12,5 +12,7 @@
     <string name="table_6">Table 6</string>
     <string name="table_7">Table 7</string>
     <string name="table_8">Table 8</string>
+    <string name="minutes">Minutes</string>
+    <string name="desc">Chronometre</string>
 
 </resources>
