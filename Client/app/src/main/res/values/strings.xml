@@ -17,6 +17,11 @@
     <string name="enter">Enter</string>
     <string name="popServeur">Call waiter</string>
 
+    <string name="carteEntrees">Entrées</string>
+    <string name="cartePlats">Plats</string>
+    <string name="carteDesserts">Desserts</string>
+    <string name="carteBoissons">Boissons</string>
+
 
 
     <!--Boissons-->
