@@ -39,8 +39,8 @@ public class CarteActivity extends Activity {
     }
 
     public void goToCarteEntrees(View view) {
-        //Intent intent = new Intent(this, CarteEntreesActivity.class);
-        //startActivity(intent);
+        Intent intent = new Intent(this, CarteEntreesActivity.class);
+        startActivity(intent);
     }
     public void goToCartePlats(View view) {
         Intent intent = new Intent(this, CartePlatsActivity.class);

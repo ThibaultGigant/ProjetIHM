@@ -1,16 +1,16 @@
 package com.example.restauclient;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.app.Activity;
 import android.view.View;
 
-public class CartePlatsActivity extends Activity {
+public class CarteEntreesActivity extends Activity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_carte_plats);
+        setContentView(R.layout.activity_carte_entrees);
     }
 
     public void goToMain(View view) {

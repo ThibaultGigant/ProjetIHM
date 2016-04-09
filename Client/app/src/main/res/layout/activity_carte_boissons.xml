@@ -20,27 +20,20 @@
         <include layout="@layout/top_menu_bar"/>
 
         <ScrollView
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="match_parent">
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="fill_parent"
                 android:layout_height="match_parent">
 
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:textSize="30sp"
-                        android:textStyle="italic"
-                        android:text="@string/boisson_cat_alcool" />
-
-                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="30sp"
+                    android:textStyle="italic"
+                    android:text="@string/boisson_cat_alcool" />
 
                 <RelativeLayout
                     android:orientation="horizontal"
@@ -135,20 +128,15 @@
 
 
                 </RelativeLayout>
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:textSize="30sp"
-                        android:textStyle="italic"
-                        android:text="@string/boisson_cat_vins" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="30sp"
+                    android:textStyle="italic"
+                    android:text="@string/boisson_cat_vins" />
 
-                </LinearLayout>
 
                 <RelativeLayout
                     android:orientation="horizontal"

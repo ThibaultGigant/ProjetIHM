@@ -39,6 +39,10 @@
             android:label="@string/app_name" >
         </activity>
         <activity
+            android:name="com.example.restauclient.CarteEntreesActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
             android:name="com.example.restauclient.CartePlatsActivity"
             android:label="@string/app_name" >
         </activity>
