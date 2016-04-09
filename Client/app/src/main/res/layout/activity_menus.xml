@@ -1,21 +1,22 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:tools="http://schemas.android.com/tools"
-	android:layout_width="match_parent"
-	android:layout_height="match_parent"
-	android:layout_marginBottom="10dp"
-	android:layout_marginLeft="10dp"
-	android:layout_marginRight="10dp"
-	android:layout_marginTop="10dp"
-	android:orientation="horizontal"
-	android:baselineAligned="false"
-	tools:context=".CarteActivity" >
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal"
+    android:baselineAligned="false"
+    tools:context=".MenusActivity" >
 
-	<LinearLayout
-		android:layout_width="fill_parent"
-		android:layout_height="wrap_content"
-		android:layout_marginBottom="10dp"
-		android:layout_weight="1"
-		android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@android:color/holo_orange_light">
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -61,16 +62,16 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
-                android:onClick="goToCarteEntrees"
+                android:onClick="goToMenuA"
                 android:background="@mipmap/parchemin"
-                android:text="@string/carteEntrees" />
+                android:text="@string/menuA" />
             <Button
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
-                android:onClick="goToCartePlats"
+                android:onClick="goToMenuB"
                 android:background="@mipmap/parchemin"
-                android:text="@string/cartePlats" />
+                android:text="@string/menuB" />
 
         </LinearLayout>
         <LinearLayout
@@ -83,74 +84,44 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
-                android:onClick="goToCarteDesserts"
+                android:onClick="goToMenuC"
                 android:background="@mipmap/parchemin"
-                android:text="@string/carteDesserts" />
+                android:text="@string/menuC" />
             <Button
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
-                android:onClick="goToCarteBoissons"
+                android:onClick="goToMenuD"
                 android:background="@mipmap/parchemin"
-                android:text="@string/carteBoissons" />
+                android:text="@string/menuD" />
 
         </LinearLayout>
 
-		<LinearLayout
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_marginBottom="10dp"
-			android:orientation="horizontal" >
+    </LinearLayout>
 
-			<TextView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_gravity="center"
-				android:text="" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="3"
+        android:orientation="vertical" >
 
-		</LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:onClick="popServeur" />
 
-	</LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:onClick="goToBilan"
+            android:text="@string/validation" />
 
-	<LinearLayout
-		android:layout_width="fill_parent"
-		android:layout_height="fill_parent"
-		android:layout_marginBottom="10dp"
-		android:layout_marginTop="10dp"
-		android:layout_marginLeft="15dp"
-		android:layout_marginRight="15dp"
-		android:layout_weight="3"
-		android:orientation="vertical"
-		android:measureWithLargestChild="true">
+    </LinearLayout>
 
-		<ImageButton
-			android:id="@+id/popServeur"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:layout_gravity="top|end"
-			android:background="@mipmap/bow_tie"
-			android:onClick="popServeur"
-			android:adjustViewBounds="true"
-			android:baselineAlignBottom="false"
-			android:contentDescription="@string/popServeur" />
 
-		<ScrollView
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content">
-			<TableLayout
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content">
-
-			</TableLayout>
-		</ScrollView>
-
-		<Button
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_gravity="bottom|end"
-			android:onClick="goToBilan"
-			android:text="@string/validation" />
-
-	</LinearLayout>
 
 </LinearLayout>

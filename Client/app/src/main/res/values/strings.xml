@@ -4,11 +4,57 @@
     <string name="app_name">restauClient</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
-    <string name="bienvenue">Bienvenue au &lt;Insert Name Here&gt;</string>
-    <string name="description">Ce restaurant a été fondé en 1579 par l arrière petit-fils du grand oncle de mon neveu. Jusqu à aujourd hui, son but a toujours été de faire déguster des mets de la meilleure qualité possible à ses clients.. bla bla bla bla bla bla</string>
-    <string name="accueil">Accueil</string>
+    <string name="bienvenue">Welcome to Chez Gusteau</string>
+    <string name="description">This restaurant has been created in 1579 by my nephew\'s great-uncle\'s grand-grand-son. Up until today, our main goal has been to offer best quality products to our customer... bla bla bla bla bla bla</string>
+    <string name="accueil">Home</string>
     <string name="menus">Menus</string>
+    <string name="menuA">Menu Printanier \n Laissez-vous tenter\n par ses saveurs\n 15$</string>
+    <string name="menuB">Menu Campagnard \n Sa simplicité saura\n vous combler\n 22$</string>
+    <string name="menuC">Menu Gourmand \n Si la faim \n vous tiraille\n 25$</string>
+    <string name="menuD">Menu Printanier \n Flattez votre palais\n avec des mets de qualité\n 35$</string>
     <string name="carte">Carte</string>
-    <string name="validation">Validez la commande</string>
+    <string name="validation">Send the order</string>
+    <string name="enter">Enter</string>
+    <string name="popServeur">Call waiter</string>
+
+    <string name="carteEntrees">Entrées</string>
+    <string name="cartePlats">Plats</string>
+    <string name="carteDesserts">Desserts</string>
+    <string name="carteBoissons">Boissons</string>
+
+
+
+    <!--Boissons-->
+    <string name="boisson_cat_alcool">Alcools Forts</string>
+    <string name="boisson_alcool1">Martini</string>
+    <string name="boisson_alcool1_prix">6$</string>
+    <string name="boisson_alcool2">Pastis</string>
+    <string name="boisson_alcool2_prix">6$</string>
+    <string name="boisson_alcool3">Whisky</string>
+    <string name="boisson_alcool3_prix">6$</string>
+
+    <string name="boisson_cat_vins">Vins</string>
+    <string name="boisson_vin1">St-Chignan</string>
+    <string name="boisson_vin1_prix">10.50$</string>
+    <string name="boisson_vin2">Gris de gris</string>
+    <string name="boisson_vin2_prix">6.50$</string>
+    <string name="boisson_vin3">St-Emilion</string>
+    <string name="boisson_vin3_prix">18$</string>
+
+    <string name="boisson_cat_soft">Softs</string>
+    <string name="boisson_soft1">Coca-cola</string>
+    <string name="boisson_soft1_prix">4$</string>
+    <string name="boisson_soft2">Grenadine</string>
+    <string name="boisson_soft2_prix">3.50$</string>
+    <string name="boisson_soft3">Fanta</string>
+    <string name="boisson_soft3_prix">4$</string>
+    <string name="boisson_soft4">Eau Minérale</string>
+    <string name="boisson_soft4_prix">2.50$</string>
+
+
+
+
+
+
 
 </resources>

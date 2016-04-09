@@ -34,5 +34,6 @@ captures/
 # Eclipse adt
 .metadata/
 
-# Android studio
+# Android Studio
 .idea/
+
