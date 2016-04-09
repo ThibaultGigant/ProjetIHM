@@ -1,25 +1,31 @@
 package com.example.restauclient;
 
-import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
-import android.widget.ImageButton;
+import android.app.Activity;
+import android.view.Menu;
+import android.view.View;
 
-/**
- * Created by cc on 09/04/16.
- */
-public class CarteDessertsActivity extends Activity{
+public class CarteDessertsActivity extends Activity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_carte_desserts);
+    }
 
-        final ImageButton mFrame = (ImageButton) findViewById(R.id.popServeur);
+    public void goToMain(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
 
-        mFrame.post(new Runnable() {
+    public void goToMenus(View view) {
+        Intent intent = new Intent(this, MenusActivity.class);
+        startActivity(intent);
+    }
 
-            @Override
-            public void run() {
-                mFrame.setMinimumHeight(mFrame.getWidth());
-            }
-        });
+    public void goToCarte(View view) {
+        Intent intent = new Intent(this, CarteActivity.class);
+        startActivity(intent);
     }
 }

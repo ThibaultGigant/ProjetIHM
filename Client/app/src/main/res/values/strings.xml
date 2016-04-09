@@ -22,8 +22,6 @@
     <string name="carteDesserts">Desserts</string>
     <string name="carteBoissons">Boissons</string>
 
-
-
     <!--Boissons-->
     <string name="boisson_cat_alcool">Alcools Forts</string>
     <string name="boisson_alcool1">Martini</string>
@@ -51,10 +49,56 @@
     <string name="boisson_soft4">Eau Minérale</string>
     <string name="boisson_soft4_prix">2.50$</string>
 
+    <!--Entrees-->
+    <string name="entree_cat_salade">Salades</string>
+    <string name="entree_salade1">Salade de chèvre chaud</string>
+    <string name="entree_salade1_prix">7$</string>
+    <string name="entree_salade2">Salade César</string>
+    <string name="entree_salade2_prix">6.80$</string>
+    <string name="entree_salade3">Salade niçoise</string>
+    <string name="entree_salade3_prix">6.40$</string>
 
 
+    <string name="entree_cat_charcuterie">Salades</string>
+    <string name="entree_charcuterie1">Jambon de Bayonne</string>
+    <string name="entree_charcuterie1_prix">8.20$</string>
+    <string name="entree_charcuterie2">Riette de thon</string>
+    <string name="entree_charcuterie2_prix">6$</string>
+    <string name="entree_charcuterie3">Fois gras et coulis de framboise</string>
+    <string name="entree_charcuterie3_prix">9.40$</string>
 
+    <!--Plats-->
+    <string name="plat_cat_viande">Viandes</string>
+    <string name="plat_viande1">Rôti de veau</string>
+    <string name="plat_viande1_prix">14$</string>
+    <string name="plat_viande2">Steak</string>
+    <string name="plat_viande2_prix">11.35$</string>
+    <string name="plat_viande3">Entrcôte sauce Roquefort</string>
+    <string name="plat_viande3_prix">15$</string>
 
+    <string name="plat_cat_poisson">Poissons</string>
+    <string name="plat_poisson1">Steak de thon</string>
+    <string name="plat_poisson1_prix">10.50$</string>
+    <string name="plat_poisson2">Aileron de requin</string>
+    <string name="plat_poisson2_prix">16$</string>
+    <string name="plat_poisson3">Sole meunière</string>
+    <string name="plat_poisson3_prix">9.40$</string>
 
+    <string name="plat_cat_pates">Pâtes</string>
+    <string name="plat_pates1">Pâtes au Pesto</string>
+    <string name="plat_pates1_prix">11.20$</string>
+    <string name="plat_pates2">Pâtes Carbonara</string>
+    <string name="plat_pates2_prix">12$</string>
+    <string name="plat_pates3">Pâtes au saumon</string>
+    <string name="plat_pates3_prix">10.50$</string>
+
+    <!--Dessert-->
+    <string name="dessert_cat_glace">Glaces</string>
+    <string name="dessert_glace1">Sorbet aux fruits</string>
+    <string name="dessert_glace1_prix">3$</string>
+    <string name="dessert_glace2">Pêche melba</string>
+    <string name="dessert_glace2_prix">6.80$</string>
+    <string name="dessert_glace3">Chocolat liègeois</string>
+    <string name="dessert_glace3_prix">6.40$</string>
 
 </resources>
