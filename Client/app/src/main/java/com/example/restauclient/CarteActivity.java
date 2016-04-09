@@ -33,9 +33,25 @@ public class CarteActivity extends Activity {
         Intent intent = new Intent(this, MenusActivity.class);
         startActivity(intent);
     }
-
     public void goToCarte(View view) {
         Intent intent = new Intent(this, CarteActivity.class);
+        startActivity(intent);
+    }
+
+    public void goToCarteEntrees(View view) {
+        //Intent intent = new Intent(this, CarteEntreesActivity.class);
+        //startActivity(intent);
+    }
+    public void goToCartePlats(View view) {
+        //Intent intent = new Intent(this, CartePlatsActivity.class);
+        //startActivity(intent);
+    }
+    public void goToCarteDesserts(View view) {
+        //Intent intent = new Intent(this, CarteDessertsActivity.class);
+        //startActivity(intent);
+    }
+    public void goToCarteBoissons(View view) {
+        Intent intent = new Intent(this, CarteBoissonsActivity.class);
         startActivity(intent);
     }
 

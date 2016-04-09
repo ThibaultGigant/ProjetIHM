@@ -11,7 +11,7 @@ public class CarteBoissonsActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_carte);
+        setContentView(R.layout.activity_carte_boissons);
     }
 
     public void goToMain(View view) {
