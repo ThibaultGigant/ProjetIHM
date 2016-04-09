@@ -25,15 +25,65 @@
 			android:layout_marginBottom="10dp"
 			android:orientation="horizontal" >
 
-			<TextView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_gravity="center"
-				android:text="" />
-
 		</LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@android:color/holo_orange_light">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="goToCarteEntrees"
+                    android:background="@mipmap/parchemin"
+                    android:text="@string/carteEntrees" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="goToCartePlats"
+                    android:background="@mipmap/parchemin"
+                    android:text="@string/cartePlats" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal" >
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="goToCarteDesserts"
+                    android:background="@mipmap/parchemin"
+                    android:text="@string/carteDesserts" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="goToCarteBoissons"
+                    android:background="@mipmap/parchemin"
+                    android:text="@string/carteBoissons" />
+
+            </LinearLayout>
+
+        </LinearLayout>
 
 	</LinearLayout>
+
 
 	<include layout="@layout/right_side_bar" />
 

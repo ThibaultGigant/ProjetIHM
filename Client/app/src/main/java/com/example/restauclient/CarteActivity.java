@@ -47,8 +47,8 @@ public class CarteActivity extends Activity {
         //startActivity(intent);
     }
     public void goToCarteDesserts(View view) {
-        //Intent intent = new Intent(this, CarteDessertsActivity.class);
-        //startActivity(intent);
+        Intent intent = new Intent(this, CarteDessertsActivity.class);
+        startActivity(intent);
     }
     public void goToCarteBoissons(View view) {
         Intent intent = new Intent(this, CarteBoissonsActivity.class);
