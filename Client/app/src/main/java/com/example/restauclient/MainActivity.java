@@ -1,9 +1,11 @@
 package com.example.restauclient;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.app.Activity;
+import android.preference.PreferenceManager;
 import android.view.Menu;
 import android.view.View;
 
@@ -29,8 +31,9 @@ public class MainActivity extends Activity {
         Locale.setDefault(locale);
         Configuration config = new Configuration();
         config.locale = locale;
-        getApplicationContext().getResources().updateConfiguration(config, null);
+        getApplicationContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
         this.setContentView(R.layout.activity_main);
+        Locale.setDefault(locale);
     }
 
     public void switchToEnglish(View v) {
@@ -38,8 +41,9 @@ public class MainActivity extends Activity {
         Locale.setDefault(locale);
         Configuration config = new Configuration();
         config.locale = locale;
-        getApplicationContext().getResources().updateConfiguration(config, null);
+        getApplicationContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
         this.setContentView(R.layout.activity_main);
+        Locale.setDefault(locale);
     }
 
     public void switchToItalian(View v) {
