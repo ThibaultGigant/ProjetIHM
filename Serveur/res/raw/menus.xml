@@ -4,26 +4,31 @@
     <menu name="@string/Table1">
         <entrees>
 
-            <entree name="@carte/salade"
-                price="@price/salade"/>
-            <entree name="@carte/assietteDeGourmet"
-                price="@price/assietteDeGourmet" />
+            <entree name="Salade"
+                number="1"
+                price="1.22€"/>
+            <entree name="Assiette de Gourmet"
+                number="1"
+                price="3.00€" />
 
         </entrees>
 
         <plats>
 
-            <plat name="@carte/tatareDeBoeuf"
-                price="@price/tatareDeBoeuf"/>
-            <plat name="@carte/steakHache"
-                price="@price/steakHache"/>
+            <plat name="Tatare de Boeuf"
+                number="1"
+                price="4.50€"/>
+            <plat name="Steak Haché"
+                number="1"
+                price="4.30€"/>
 
         </plats>
 
         <desserts>
 
-            <dessert name="@carte/glace"
-                price="@price/glace"/>
+            <dessert name="Glace"
+                number="1"
+                price="3.20€"/>
 
         </desserts>
 
@@ -32,25 +37,29 @@
     <menu name="@string/Table2">
         <entrees>
 
-            <entree name="@carte/salade"
-                price="@price/salade"/>
+            <entree name="Salade"
+                number="1"
+                price="1.22€"/>
 
         </entrees>
 
         <plats>
 
-            <plat name="@carte/tatareDeBoeuf"
-                price="@price/tatareDeBoeuf"
-                condiment="@condiment/mayonnaise" />
-            <plat name="@carte/spaghetti"
-                price="@price/spaghetti"/>
+            <plat name="Tatare de Boeuf"
+                number="1"
+                price="4.50€"
+                condiment="Mayoannaise" />
+            <plat name="Spaghetti"
+                number="1"
+                price="3.90€"/>
 
         </plats>
 
         <desserts>
 
-            <dessert name="@carte/fruits"
-                price="@price/fruits"/>
+            <dessert name="Fruits"
+                number="1"
+                price="1.90€"/>
 
         </desserts>
 

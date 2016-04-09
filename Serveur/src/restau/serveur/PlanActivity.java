@@ -55,8 +55,9 @@ public class PlanActivity extends Activity {
     public void viewTable(int i) throws XmlPullParserException, IOException {
 
         // TODO start MenuActivity with number of table
+        //setContentView(R.layout.activity_menu);
         Intent intent = new Intent(this, MenuActivity.class);
-        //intent.putExtra("numberOfTable", i);
+        intent.putExtra("numberOfTable", i);
         startActivity(intent);
 
     }
