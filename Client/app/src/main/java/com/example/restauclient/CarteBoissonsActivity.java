@@ -13,15 +13,6 @@ public class CarteBoissonsActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_carte_boissons);
-        final ImageButton mFrame = (ImageButton) findViewById(R.id.popServeur);
-
-        mFrame.post(new Runnable() {
-
-            @Override
-            public void run() {
-                mFrame.setMinimumHeight(mFrame.getWidth());
-            }
-        });
     }
 
     public void goToMain(View view) {
