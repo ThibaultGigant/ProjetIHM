@@ -12,45 +12,13 @@
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:layout_weight="1"
         android:orientation="vertical"
         android:background="@android:color/holo_orange_light">
 
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="10dp"
-            android:orientation="horizontal"
-            android:background="@android:color/holo_orange_dark">
-
-            <Button
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_weight="1"
-                android:background="@mipmap/parchemin"
-                android:onClick="goToMain"
-                android:text="@string/accueil" />
-
-            <Button
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_weight="1"
-                android:onClick="goToMenus"
-                android:background="@mipmap/parchemin"
-                android:text="@string/menus" />
-
-            <Button
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_weight="1"
-                android:onClick="goToCarte"
-                android:background="@mipmap/parchemin"
-                android:text="@string/carte" />
-
-        </LinearLayout>
+        <include layout="@layout/top_menu_bar"/>
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -59,15 +27,15 @@
             android:orientation="horizontal" >
 
             <Button
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="goToMenuA"
                 android:background="@mipmap/parchemin"
                 android:text="@string/menuA" />
             <Button
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="goToMenuB"
                 android:background="@mipmap/parchemin"
@@ -81,15 +49,15 @@
             android:orientation="horizontal" >
 
             <Button
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="goToMenuC"
                 android:background="@mipmap/parchemin"
                 android:text="@string/menuC" />
             <Button
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="goToMenuD"
                 android:background="@mipmap/parchemin"
@@ -99,29 +67,7 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_weight="3"
-        android:orientation="vertical" >
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="top|right"
-            android:onClick="popServeur" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|right"
-            android:onClick="goToBilan"
-            android:text="@string/validation" />
-
-    </LinearLayout>
-
+    <include layout="@layout/right_side_bar"/>
 
 
 </LinearLayout>

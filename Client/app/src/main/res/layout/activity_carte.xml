@@ -17,84 +17,7 @@
 		android:layout_weight="1"
 		android:orientation="vertical" >
 
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="10dp"
-            android:orientation="horizontal"
-            android:background="@android:color/holo_orange_dark">
-
-            <Button
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_weight="1"
-                android:background="@mipmap/parchemin"
-                android:onClick="goToMain"
-                android:text="@string/accueil" />
-
-            <Button
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_weight="1"
-                android:onClick="goToMenus"
-                android:background="@mipmap/parchemin"
-                android:text="@string/menus" />
-
-            <Button
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_weight="1"
-                android:onClick="goToCarte"
-                android:background="@mipmap/parchemin"
-                android:text="@string/carte" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:orientation="horizontal" >
-
-            <Button
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_weight="1"
-                android:onClick="goToCarteEntrees"
-                android:background="@mipmap/parchemin"
-                android:text="@string/carteEntrees" />
-            <Button
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_weight="1"
-                android:onClick="goToCartePlats"
-                android:background="@mipmap/parchemin"
-                android:text="@string/cartePlats" />
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:orientation="horizontal" >
-
-            <Button
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_weight="1"
-                android:onClick="goToCarteDesserts"
-                android:background="@mipmap/parchemin"
-                android:text="@string/carteDesserts" />
-            <Button
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_weight="1"
-                android:onClick="goToCarteBoissons"
-                android:background="@mipmap/parchemin"
-                android:text="@string/carteBoissons" />
-
-        </LinearLayout>
+		<include layout="@layout/top_menu_bar"/>
 
 		<LinearLayout
 			android:layout_width="wrap_content"
@@ -112,45 +35,6 @@
 
 	</LinearLayout>
 
-	<LinearLayout
-		android:layout_width="fill_parent"
-		android:layout_height="fill_parent"
-		android:layout_marginBottom="10dp"
-		android:layout_marginTop="10dp"
-		android:layout_marginLeft="15dp"
-		android:layout_marginRight="15dp"
-		android:layout_weight="3"
-		android:orientation="vertical"
-		android:measureWithLargestChild="true">
-
-		<ImageButton
-			android:id="@+id/popServeur"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:layout_gravity="top|end"
-			android:background="@mipmap/bow_tie"
-			android:onClick="popServeur"
-			android:adjustViewBounds="true"
-			android:baselineAlignBottom="false"
-			android:contentDescription="@string/popServeur" />
-
-		<ScrollView
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content">
-			<TableLayout
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content">
-ejrtjr
-			</TableLayout>
-		</ScrollView>
-
-		<Button
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_gravity="bottom|end"
-			android:onClick="goToBilan"
-			android:text="@string/validation" />
-
-	</LinearLayout>
+	<include layout="@layout/right_side_bar" />
 
 </LinearLayout>

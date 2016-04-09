@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.View;
+import android.widget.ImageButton;
 
 public class CarteBoissonsActivity extends Activity {
 
@@ -12,6 +13,15 @@ public class CarteBoissonsActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_carte_boissons);
+        final ImageButton mFrame = (ImageButton) findViewById(R.id.popServeur);
+
+        mFrame.post(new Runnable() {
+
+            @Override
+            public void run() {
+                mFrame.setMinimumHeight(mFrame.getWidth());
+            }
+        });
     }
 
     public void goToMain(View view) {
