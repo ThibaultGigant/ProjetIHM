@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name" translatable="false">restauClient</string>
+    <string name="app_name">restauClient</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
     <string name="bienvenue">Welcome to Chez Gusteau</string>
@@ -15,5 +15,6 @@
     <string name="carte">Carte</string>
     <string name="validation">Send the order</string>
     <string name="enter">Enter</string>
+    <string name="popServeur">Call waiter</string>
 
 </resources>

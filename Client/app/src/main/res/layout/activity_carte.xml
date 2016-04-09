@@ -71,20 +71,37 @@
 		android:layout_height="fill_parent"
 		android:layout_marginBottom="10dp"
 		android:layout_marginTop="10dp"
+		android:layout_marginLeft="15dp"
+		android:layout_marginRight="15dp"
 		android:layout_weight="3"
-		android:orientation="vertical" >
+		android:orientation="vertical"
+		android:measureWithLargestChild="true">
 
-		<Button
-			android:layout_width="wrap_content"
+		<ImageButton
+			android:id="@+id/popServeur"
+			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:layout_gravity="top|right"
+			android:layout_gravity="top|end"
+			android:background="@mipmap/bow_tie"
 			android:onClick="popServeur"
-			android:text="" />
+			android:adjustViewBounds="true"
+			android:baselineAlignBottom="false"
+			android:contentDescription="@string/popServeur" />
+
+		<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<TableLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+			</TableLayout>
+		</ScrollView>
 
 		<Button
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:layout_gravity="bottom|right"
+			android:layout_gravity="bottom|end"
 			android:onClick="goToBilan"
 			android:text="@string/validation" />
 
