@@ -5,14 +5,13 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.View;
-import android.widget.ImageButton;
 
-public class CarteBoissonsActivity extends Activity {
+public class CartePlatsActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_carte_boissons);
+        setContentView(R.layout.activity_carte_plats);
     }
 
     public void goToMain(View view) {
