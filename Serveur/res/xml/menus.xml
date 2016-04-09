@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menus xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <menu name="@string/Table1">
+        <entrees>
+
+            <entree name="@string/carte_salade"
+                price="@string/price_salade"/>
+            <entree name="@string/carte_assietteDeGourmet"
+                price="@string/price_assietteDeGourmet" />
+
+        </entrees>
+
+        <plats>
+
+            <plat name="@string/carte_tatareDeBoeuf"
+                price="@string/price_tatareDeBoeuf"/>
+            <plat name="@string/carte_steakHache"
+                price="@string/price_steakHache"/>
+
+        </plats>
+
+        <desserts>
+
+            <dessert name="@string/carte_glace"
+                price="@string/price_glace"/>
+
+        </desserts>
+
+    </menu>
+
+    <menu name="@string/Table2">
+        <entrees>
+
+            <entree name="@string/carte_salade"
+                price="@string/price_salade"/>
+
+        </entrees>
+
+        <plats>
+
+            <plat name="@string/carte_tatareDeBoeuf"
+                price="@string/price_tatareDeBoeuf"
+                condiment="@string/condiment_mayonnaise" />
+            <plat name="@string/carte_spaghetti"
+                price="@string/price_spaghetti"/>
+
+        </plats>
+
+        <desserts>
+
+            <dessert name="@string/carte_fruits"
+                price="@string/price_fruits"/>
+
+        </desserts>
+
+    </menu>
+
+</menus>

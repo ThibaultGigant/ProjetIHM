@@ -5,4 +5,35 @@
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="dummy_button">Dummy Button</string>
 
+    <string name="Table1">Table One</string>
+    <string name="Table2">Table Two</string>
+    <string name="Table3">Table Three</string>
+    <string name="Table4">Table fOUR</string>
+    <string name="Table5">Table Five</string>
+
+    <string name="carte_salade">Salade</string>
+    <string name="carte_assietteDeGourmet">Assiette de Gourmet</string>
+
+
+    <string name="carte_tatareDeBoeuf">Tatare de Boeuf</string>
+    <string name="carte_steakHache">Steak Haché</string>
+    <string name="carte_spaghetti">Spaghetti</string>
+
+    <string name="carte_glace">Glace</string>
+    <string name="carte_fruits">Fruits</string>
+
+    <string name="condiment_mayonnaise">Mayonnaise</string>
+    <string name="condiment_ketchup">Ketchup</string>
+
+    <string name="price_salade">1.22€</string>
+    <string name="price_assietteDeGourmet">3.00€</string>
+
+
+    <string name="price_tatareDeBoeuf">4.50€</string>
+    <string name="price_steakHache">4.30€</string>
+    <string name="price_spaghetti">3.90€</string>
+
+    <string name="price_glace">3.20€</string>
+    <string name="price_fruits">1.90€</string>
+
 </resources>

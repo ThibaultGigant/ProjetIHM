@@ -11,62 +11,123 @@
         android:orientation="vertical" >
 
         <FrameLayout
-            android:layout_width="match_parent"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.77" >
+            android:layout_weight="1">
+
+             <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/image_plan_hd" />
+
             
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/ButtonTableOne"
+                android:layout_width="147dp"
+                android:layout_height="63dp"
                 android:onClick="viewTable1"
-                android:background="@null" />
+                android:background="@null"
+                android:layout_marginLeft="29dp"
+                android:layout_marginTop="45dp" />
             
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/ButtonTableTwo"
+                android:layout_width="68dp"
+                android:layout_height="58dp"
                 android:onClick="viewTable2"
-                android:background="@null" />
-            
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="viewTable3"
-                android:background="@null" />
-            
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="viewTable4"
-                android:background="@null" />
+                android:background="@null"
+                android:layout_marginLeft="29dp"
+                android:layout_marginTop="118dp" />
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/ButtonTableThree"
+                android:layout_width="68dp"
+                android:layout_height="61dp"
+                android:onClick="viewTable3"
+                android:background="@null"
+                android:layout_marginLeft="29dp"
+                android:layout_marginTop="185dp" />
+
+            <Button
+                android:id="@+id/ButtonTableFive"
+                android:layout_width="68dp"
+                android:layout_height="61dp"
+                android:onClick="viewTable4"
+                android:background="@null"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="185dp" />
+
+            <Button
+                android:id="@+id/ButtonTableFour"
+                android:layout_width="68dp"
+                android:layout_height="62dp"
                 android:onClick="viewTable5"
-                android:background="@null" />
+                android:background="@null"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="118dp" />
 
         </FrameLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="0.31" >
-            
-            <FrameLayout >
-                
-                <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="viewTask1"
-                android:background="@null" />
-                
-                <LinearLayout android:orientation="vertical">
-                    
-                </LinearLayout>
-                
-            </FrameLayout>
-            
-        </LinearLayout>
+            android:id="@+id/horizontalScrollView"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="59dp">
+
+                <TextView
+                    android:id="@+id/Alarme1"
+                    android:layout_width="125dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="Table 3 : Servir le plat"/>
+
+                <TextView
+                    android:id="@+id/Alarme2"
+                    android:layout_width="125dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="Table 8 : Amener de l'eau"/>
+
+                <TextView
+                    android:id="@+id/Alarme3"
+                    android:layout_width="125dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="Table p : Appel du serveur"/>
+
+                <TextView
+                    android:id="@+id/Alarme4"
+                    android:layout_width="125dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="Table 6 : Amener du pain"/>
+
+                <TextView
+                    android:id="@+id/Alarme5"
+                    android:layout_width="125dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="Table 6 : Amener du pain"/>
+
+                <TextView
+                    android:id="@+id/Alarme6"
+                    android:layout_width="125dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="Table 6 : Amener du pain"/>
+
+            </LinearLayout>
+        </HorizontalScrollView>
 
     </LinearLayout>
     
