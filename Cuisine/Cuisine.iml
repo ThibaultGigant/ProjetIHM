@@ -6,6 +6,7 @@
         <proGuardCfgFiles>
           <file>file://C:/Program Files (x86)/Java/jdk1.8.0_77/tools/proguard/proguard-android.txt</file>
         </proGuardCfgFiles>
+        <option name="UPDATE_PROPERTY_FILES" value="false" />
       </configuration>
     </facet>
   </component>
@@ -15,7 +16,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/gen" isTestSource="false" generated="true" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Android API 23 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
