@@ -10,4 +10,9 @@
     <string name="menus">Menus</string>
     <string name="validation">Validez la commande</string>
     <string name="enter">Entrez</string>
+    <string name="menuA">Menu Printanier \n Laissez-vous tenter\n par ses saveurs\n 15$</string>
+    <string name="menuB">Menu Campagnard \n Sa simplicité saura\n vous combler\n 22$</string>
+    <string name="menuC">Menu Gourmand \n Si la faim \n vous tiraille\n 25$</string>
+    <string name="menuD">Menu Printanier \n Flattez votre palais\n avec des mets de qualité\n 35$</string>
+    <string name="popServeur">Appeler le Serveur</string>
 </resources>
