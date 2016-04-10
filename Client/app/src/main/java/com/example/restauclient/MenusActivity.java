@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.ImageButton;
 
 public class MenusActivity extends Activity {
+    Commande commande;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,12 @@ public class MenusActivity extends Activity {
                 mFrame.setMinimumHeight(mFrame.getWidth());
             }
         });
+
+        Intent intent = getIntent();
+        if (intent == null)
+            this.commande = new Commande();
+        else
+            this.commande = (Commande) intent.getSerializableExtra("commande");
     }
 
     public void goToMain(View view) {

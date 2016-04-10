@@ -12,11 +12,18 @@ import android.view.View;
 import java.util.Locale;
 
 public class MainActivity extends Activity {
+    Commande commande;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Intent intent = getIntent();
+        if (intent == null)
+            this.commande = new Commande();
+        else
+            this.commande = (Commande) intent.getSerializableExtra("commande");
     }
 
     @Override
@@ -60,6 +67,7 @@ public class MainActivity extends Activity {
 
     public void goToCarte(View v) {
         Intent intent = new Intent(this, CarteActivity.class);
+        intent.putExtra("commande", this.commande);
         startActivity(intent);
     }
 
