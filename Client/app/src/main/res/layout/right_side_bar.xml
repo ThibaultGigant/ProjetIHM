@@ -7,7 +7,7 @@
     android:layout_marginTop="10dp"
     android:layout_marginLeft="15dp"
     android:layout_marginRight="15dp"
-    android:layout_weight="3"
+    android:layout_weight="7"
     android:measureWithLargestChild="true">
 
     <LinearLayout
@@ -24,16 +24,20 @@
             android:onClick="popServeur"
             android:adjustViewBounds="true"
             android:baselineAlignBottom="false"
-            android:layout_weight="1"
             android:contentDescription="@string/popServeur" />
 
-        <ListView
-            android:id="@+id/recapitulatif"
+        <ScrollView
+            android:id="@+id/scroll_recap"
             android:layout_width="match_parent"
-            android:layout_height="fill_parent"
+            android:layout_height="match_parent"
             android:layout_weight="4">
+            <TableLayout
+                android:id="@+id/recapitulatif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TableLayout>
+        </ScrollView>
 
-        </ListView>
     </LinearLayout>
 
 

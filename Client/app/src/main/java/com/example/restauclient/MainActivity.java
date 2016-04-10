@@ -20,7 +20,8 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         Intent intent = getIntent();
-        if (intent == null)
+        System.out.println(intent);
+        if (!intent.hasExtra("commande"))
             this.commande = new Commande();
         else
             this.commande = (Commande) intent.getSerializableExtra("commande");

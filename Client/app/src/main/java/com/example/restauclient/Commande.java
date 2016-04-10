@@ -80,4 +80,40 @@ public class Commande implements Serializable {
         }
     }
 
+    public void removeEntree(String entree) {
+        if (this.listEntrees.containsKey(entree)) {
+            if (this.listEntrees.get(entree) > 1)
+                this.listEntrees.put(entree, this.listEntrees.get(entree) - 1);
+            else
+                this.listEntrees.remove(entree);
+        }
+    }
+
+    public void removePlat(String plat) {
+        if (this.listPlats.containsKey(plat)) {
+            if (this.listPlats.get(plat) > 1)
+                this.listPlats.put(plat, this.listPlats.get(plat) - 1);
+            else
+                this.listPlats.remove(plat);
+        }
+    }
+
+    public void removeDessert(String dessert) {
+        if (this.listDesserts.containsKey(dessert)) {
+            if (this.listDesserts.get(dessert) > 1)
+                this.listDesserts.put(dessert, this.listDesserts.get(dessert) - 1);
+            else
+                this.listDesserts.remove(dessert);
+        }
+    }
+
+    public void removeBoisson(String boisson) {
+        if (this.listBoissons.containsKey(boisson)) {
+            if (this.listBoissons.get(boisson) > 1)
+                this.listBoissons.put(boisson, this.listBoissons.get(boisson) - 1);
+            else
+                this.listBoissons.remove(boisson);
+        }
+    }
+
 }
