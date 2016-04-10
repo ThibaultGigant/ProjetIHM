@@ -1,11 +1,9 @@
 package com.example.restauclient;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.app.Activity;
-import android.preference.PreferenceManager;
 import android.view.Menu;
 import android.view.View;
 
@@ -20,7 +18,6 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         Intent intent = getIntent();
-        System.out.println(intent);
         if (!intent.hasExtra("commande"))
             this.commande = new Commande();
         else

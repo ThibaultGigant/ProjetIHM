@@ -15,6 +15,7 @@
         android:theme="@style/CustomTheme" >
         <activity
             android:name="com.example.restauclient.MainActivity"
+            android:screenOrientation="landscape"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,31 +26,37 @@
         </activity>
         <activity
             android:name="com.example.restauclient.CarteActivity"
+            android:screenOrientation="landscape"
             android:label="@string/app_name" >
             android:theme="@style/CustomTheme" >
         </activity>
         <activity
             android:name="com.example.restauclient.MenusActivity"
+            android:screenOrientation="landscape"
             android:label="@string/app_name" >
             android:theme="@style/CustomTheme" >
         </activity>
         <activity
             android:name="com.example.restauclient.CarteBoissonsActivity"
+            android:screenOrientation="landscape"
             android:label="@string/app_name" >
             android:theme="@style/CustomTheme" >
         </activity>
         <activity
             android:name="com.example.restauclient.CarteDessertsActivity"
+            android:screenOrientation="landscape"
             android:label="@string/app_name" >
             android:theme="@style/CustomTheme" >
         </activity>
         <activity
             android:name="com.example.restauclient.CarteEntreesActivity"
+            android:screenOrientation="landscape"
             android:label="@string/app_name" >
             android:theme="@style/CustomTheme" >
         </activity>
         <activity
             android:name="com.example.restauclient.CartePlatsActivity"
+            android:screenOrientation="landscape"
             android:label="@string/app_name" >
             android:theme="@style/CustomTheme" >
         </activity>

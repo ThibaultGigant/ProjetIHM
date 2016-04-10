@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="top|end"
-            android:background="@mipmap/bow_tie"
+            android:background="@drawable/bow_tie"
             android:onClick="popServeur"
             android:adjustViewBounds="true"
             android:baselineAlignBottom="false"
