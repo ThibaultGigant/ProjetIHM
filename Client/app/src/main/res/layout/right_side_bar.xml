@@ -24,6 +24,8 @@
             android:onClick="popServeur"
             android:adjustViewBounds="true"
             android:baselineAlignBottom="false"
+            android:layout_marginBottom="-20dp"
+            android:layout_marginTop="-20dp"
             android:contentDescription="@string/popServeur" />
 
         <ScrollView

@@ -8,6 +8,7 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TableLayout;
 import android.widget.TableRow;
@@ -26,7 +27,12 @@ public class AbstractCustomActivity extends Activity {
 
             @Override
             public void run() {
-                mFrame.setMinimumHeight(mFrame.getWidth());
+                LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+                int width = mFrame.getWidth();
+                mFrame.setMinimumHeight(width);
+                params.topMargin = -width/4;
+                params.bottomMargin = -width/4;
+                mFrame.setLayoutParams(params);
             }
         });
 
@@ -91,9 +97,13 @@ public class AbstractCustomActivity extends Activity {
         TableLayout tl = (TableLayout) findViewById(R.id.recapitulatif);
         TableRow tr;
         TextView label;
+
         TableRow.LayoutParams rowlayoutParams = new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT);
-        rowlayoutParams.setMargins(5, 0, 5, 0);
+        rowlayoutParams.setMargins(5, 5, 5, 5);
         TableLayout.LayoutParams tableLayoutParams = new TableLayout.LayoutParams(TableLayout.LayoutParams.MATCH_PARENT, TableLayout.LayoutParams.MATCH_PARENT);
+
+        TableRow.LayoutParams imageLayoutParams = new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT);
+        imageLayoutParams.setMargins(5,-10,5,-10);
 
         /*
         Ajout des entrées
@@ -105,6 +115,7 @@ public class AbstractCustomActivity extends Activity {
             label = new TextView(this);
             label.setText(R.string.entree);
             label.setLayoutParams(rowlayoutParams);
+            label.setTextSize(20);
             tr.addView(label);
             tl.addView(tr, tableLayoutParams);
 
@@ -131,7 +142,95 @@ public class AbstractCustomActivity extends Activity {
                         refreshRecap();
                     }
                 });
-                btn.setLayoutParams(rowlayoutParams);
+                btn.setLayoutParams(imageLayoutParams);
+                tr.addView(btn);
+
+                tl.addView(tr, tableLayoutParams);
+            }
+        }
+
+        /*
+        Ajout des Plats
+         */
+        if (!this.commande.getListPlats().isEmpty()) {
+            /* Création de la nouvelle ligne à rajouter */
+            tr = new TableRow(this);
+            tr.setLayoutParams(rowlayoutParams);
+            label = new TextView(this);
+            label.setText(R.string.plats);
+            label.setLayoutParams(rowlayoutParams);
+            label.setTextSize(20);
+            tr.addView(label);
+            tl.addView(tr, tableLayoutParams);
+
+            for (final String key : this.getCommande().getListPlats().keySet()) {
+                tr = new TableRow(this);
+                tr.setLayoutParams(rowlayoutParams);
+
+                label = new TextView(this);
+                label.setText(key);
+                label.setLayoutParams(rowlayoutParams);
+                tr.addView(label);
+
+                label = new TextView(this);
+                label.setText("x" + Integer.toString(this.getCommande().getListPlats().get(key)));
+                label.setLayoutParams(rowlayoutParams);
+                tr.addView(label);
+
+                ImageButton btn = new ImageButton(this);
+                btn.setBackground(getResources().getDrawable(R.mipmap.minus));
+                btn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        getCommande().removePlat(key);
+                        refreshRecap();
+                    }
+                });
+                btn.setLayoutParams(imageLayoutParams);
+                tr.addView(btn);
+
+                tl.addView(tr, tableLayoutParams);
+            }
+        }
+
+        /*
+        Ajout des Desserts
+         */
+        if (!this.commande.getListDesserts().isEmpty()) {
+            /* Création de la nouvelle ligne à rajouter */
+            tr = new TableRow(this);
+            tr.setLayoutParams(rowlayoutParams);
+            label = new TextView(this);
+            label.setText(R.string.desserts);
+            label.setLayoutParams(rowlayoutParams);
+            label.setTextSize(20);
+            tr.addView(label);
+            tl.addView(tr, tableLayoutParams);
+
+            for (final String key : this.getCommande().getListDesserts().keySet()) {
+                tr = new TableRow(this);
+                tr.setLayoutParams(rowlayoutParams);
+
+                label = new TextView(this);
+                label.setText(key);
+                label.setLayoutParams(rowlayoutParams);
+                tr.addView(label);
+
+                label = new TextView(this);
+                label.setText("x" + Integer.toString(this.getCommande().getListDesserts().get(key)));
+                label.setLayoutParams(rowlayoutParams);
+                tr.addView(label);
+
+                ImageButton btn = new ImageButton(this);
+                btn.setBackground(getResources().getDrawable(R.mipmap.minus));
+                btn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        getCommande().removeDessert(key);
+                        refreshRecap();
+                    }
+                });
+                btn.setLayoutParams(imageLayoutParams);
                 tr.addView(btn);
 
                 tl.addView(tr, tableLayoutParams);
@@ -147,6 +246,7 @@ public class AbstractCustomActivity extends Activity {
             tr.setLayoutParams(rowlayoutParams);
             label = new TextView(this);
             label.setText(R.string.boissons);
+            label.setTextSize(20);
             label.setLayoutParams(rowlayoutParams);
             tr.addView(label);
             tl.addView(tr, tableLayoutParams);
@@ -174,98 +274,11 @@ public class AbstractCustomActivity extends Activity {
                         refreshRecap();
                     }
                 });
-                btn.setLayoutParams(rowlayoutParams);
+                btn.setLayoutParams(imageLayoutParams);
                 tr.addView(btn);
 
                 tl.addView(tr, tableLayoutParams);
             }
         }
-
-        /*
-        Ajout des Plats
-         */
-        if (!this.commande.getListPlats().isEmpty()) {
-            /* Création de la nouvelle ligne à rajouter */
-            tr = new TableRow(this);
-            tr.setLayoutParams(rowlayoutParams);
-            label = new TextView(this);
-            label.setText(R.string.plats);
-            label.setLayoutParams(rowlayoutParams);
-            tr.addView(label);
-            tl.addView(tr, tableLayoutParams);
-
-            for (final String key : this.getCommande().getListPlats().keySet()) {
-                tr = new TableRow(this);
-                tr.setLayoutParams(rowlayoutParams);
-
-                label = new TextView(this);
-                label.setText(key);
-                label.setLayoutParams(rowlayoutParams);
-                tr.addView(label);
-
-                label = new TextView(this);
-                label.setText("x" + Integer.toString(this.getCommande().getListPlats().get(key)));
-                label.setLayoutParams(rowlayoutParams);
-                tr.addView(label);
-
-                ImageButton btn = new ImageButton(this);
-                btn.setBackground(getResources().getDrawable(R.mipmap.minus));
-                btn.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        getCommande().removePlat(key);
-                        refreshRecap();
-                    }
-                });
-                btn.setLayoutParams(rowlayoutParams);
-                tr.addView(btn);
-
-                tl.addView(tr, tableLayoutParams);
-            }
-        }
-
-        /*
-        Ajout des Desserts
-         */
-        if (!this.commande.getListDesserts().isEmpty()) {
-            /* Création de la nouvelle ligne à rajouter */
-            tr = new TableRow(this);
-            tr.setLayoutParams(rowlayoutParams);
-            label = new TextView(this);
-            label.setText(R.string.desserts);
-            label.setLayoutParams(rowlayoutParams);
-            tr.addView(label);
-            tl.addView(tr, tableLayoutParams);
-
-            for (final String key : this.getCommande().getListDesserts().keySet()) {
-                tr = new TableRow(this);
-                tr.setLayoutParams(rowlayoutParams);
-
-                label = new TextView(this);
-                label.setText(key);
-                label.setLayoutParams(rowlayoutParams);
-                tr.addView(label);
-
-                label = new TextView(this);
-                label.setText("x" + Integer.toString(this.getCommande().getListDesserts().get(key)));
-                label.setLayoutParams(rowlayoutParams);
-                tr.addView(label);
-
-                ImageButton btn = new ImageButton(this);
-                btn.setBackground(getResources().getDrawable(R.mipmap.minus));
-                btn.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        getCommande().removeDessert(key);
-                        refreshRecap();
-                    }
-                });
-                btn.setLayoutParams(rowlayoutParams);
-                tr.addView(btn);
-
-                tl.addView(tr, tableLayoutParams);
-            }
-        }
-
     }
 }
