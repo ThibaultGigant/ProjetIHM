@@ -27,7 +27,7 @@ public class CartePlatsActivity extends AbstractCustomActivity {
         Button btn8 = (Button) findViewById(R.id.button_pates2);
         Button btn9 = (Button) findViewById(R.id.button_pates3);
 
-        ArrayList<Button> buttons = new ArrayList<>();
+        ArrayList<Button> buttons = new ArrayList<Button>();
         buttons.add(btn1);
         buttons.add(btn2);
         buttons.add(btn3);
@@ -42,7 +42,7 @@ public class CartePlatsActivity extends AbstractCustomActivity {
             btn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    getCommande().addPlat(btn.getContentDescription().toString());
+                    getCommande().addPlat(v.getContentDescription().toString());
                     refreshRecap();
                 }
             });

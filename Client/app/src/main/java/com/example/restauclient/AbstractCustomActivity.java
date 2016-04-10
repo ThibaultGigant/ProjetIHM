@@ -1,7 +1,9 @@
 package com.example.restauclient;
 
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Build;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
@@ -85,6 +87,7 @@ public class AbstractCustomActivity extends Activity {
         this.drawOrder();
     }
 
+    @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
     public void drawOrder() {
         /* Récupération du table layout */
         TableLayout tl = (TableLayout) findViewById(R.id.recapitulatif);
@@ -107,7 +110,7 @@ public class AbstractCustomActivity extends Activity {
             tr.addView(label);
             tl.addView(tr, tableLayoutParams);
 
-            for (String key : this.getCommande().getListEntrees().keySet()) {
+            for (final String key : this.getCommande().getListEntrees().keySet()) {
                 tr = new TableRow(this);
                 tr.setLayoutParams(rowlayoutParams);
 
@@ -150,7 +153,7 @@ public class AbstractCustomActivity extends Activity {
             tr.addView(label);
             tl.addView(tr, tableLayoutParams);
 
-            for (String key : this.getCommande().getListBoissons().keySet()) {
+            for (final String key : this.getCommande().getListBoissons().keySet()) {
                 tr = new TableRow(this);
                 tr.setLayoutParams(rowlayoutParams);
 
@@ -193,7 +196,7 @@ public class AbstractCustomActivity extends Activity {
             tr.addView(label);
             tl.addView(tr, tableLayoutParams);
 
-            for (String key : this.getCommande().getListPlats().keySet()) {
+            for (final String key : this.getCommande().getListPlats().keySet()) {
                 tr = new TableRow(this);
                 tr.setLayoutParams(rowlayoutParams);
 
@@ -236,7 +239,7 @@ public class AbstractCustomActivity extends Activity {
             tr.addView(label);
             tl.addView(tr, tableLayoutParams);
 
-            for (String key : this.getCommande().getListDesserts().keySet()) {
+            for (final String key : this.getCommande().getListDesserts().keySet()) {
                 tr = new TableRow(this);
                 tr.setLayoutParams(rowlayoutParams);
 

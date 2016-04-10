@@ -24,7 +24,7 @@ public class CarteEntreesActivity extends AbstractCustomActivity{
         Button btn_entree5 = (Button) findViewById(R.id.button_salade2);
         Button btn_entree6 = (Button) findViewById(R.id.button_salade3);
 
-        ArrayList<Button> buttons = new ArrayList<>();
+        ArrayList<Button> buttons = new ArrayList<Button>();
         buttons.add(btn_entree1);
         buttons.add(btn_entree2);
         buttons.add(btn_entree3);
@@ -36,7 +36,7 @@ public class CarteEntreesActivity extends AbstractCustomActivity{
             btn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    getCommande().addEntree(btn.getContentDescription().toString());
+                    getCommande().addEntree(v.getContentDescription().toString());
                     refreshRecap();
                 }
             });

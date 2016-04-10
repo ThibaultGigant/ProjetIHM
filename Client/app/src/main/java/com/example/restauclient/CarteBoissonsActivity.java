@@ -24,7 +24,7 @@ public class CarteBoissonsActivity extends AbstractCustomActivity {
         Button btn_boisson5 = (Button) findViewById(R.id.button_vin2);
         Button btn_boisson6 = (Button) findViewById(R.id.button_vin3);
 
-        ArrayList<Button> buttons = new ArrayList<>();
+        ArrayList<Button> buttons = new ArrayList<Button>();
         buttons.add(btn_boisson1);
         buttons.add(btn_boisson2);
         buttons.add(btn_boisson3);
@@ -36,7 +36,7 @@ public class CarteBoissonsActivity extends AbstractCustomActivity {
             btn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    getCommande().addBoisson(btn.getContentDescription().toString());
+                    getCommande().addBoisson(v.getContentDescription().toString());
                     refreshRecap();
                 }
             });

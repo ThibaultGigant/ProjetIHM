@@ -21,7 +21,7 @@ public class CarteDessertsActivity extends AbstractCustomActivity {
         Button btn2 = (Button) findViewById(R.id.button_glace2);
         Button btn3 = (Button) findViewById(R.id.button_glace3);
 
-        ArrayList<Button> buttons = new ArrayList<>();
+        ArrayList<Button> buttons = new ArrayList<Button>();
         buttons.add(btn1);
         buttons.add(btn2);
         buttons.add(btn3);
@@ -30,7 +30,7 @@ public class CarteDessertsActivity extends AbstractCustomActivity {
             btn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    getCommande().addDessert(btn.getContentDescription().toString());
+                    getCommande().addDessert(v.getContentDescription().toString());
                     refreshRecap();
                 }
             });
