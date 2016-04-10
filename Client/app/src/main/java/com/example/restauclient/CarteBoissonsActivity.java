@@ -7,42 +7,12 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class CarteBoissonsActivity extends Activity {
-    Commande commande;
+public class CarteBoissonsActivity extends AbstractCustomActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_carte_boissons);
-        final ImageButton mFrame = (ImageButton) findViewById(R.id.popServeur);
-
-        mFrame.post(new Runnable() {
-
-            @Override
-            public void run() {
-                mFrame.setMinimumHeight(mFrame.getWidth());
-            }
-        });
-
-        Intent intent = getIntent();
-        if (intent == null)
-            this.commande = new Commande();
-        else
-            this.commande = (Commande) intent.getSerializableExtra("commande");
-    }
-
-    public void goToMain(View view) {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-    }
-
-    public void goToMenus(View view) {
-        Intent intent = new Intent(this, MenusActivity.class);
-        startActivity(intent);
-    }
-
-    public void goToCarte(View view) {
-        Intent intent = new Intent(this, CarteActivity.class);
-        startActivity(intent);
+        this.initialize();
     }
 }
