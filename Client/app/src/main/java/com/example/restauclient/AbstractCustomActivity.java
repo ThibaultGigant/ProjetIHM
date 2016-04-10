@@ -31,12 +31,10 @@ public class AbstractCustomActivity extends Activity {
         });
 
         Intent intent = getIntent();
-        System.out.println(intent);
         if (intent == null)
             this.commande = new Commande();
         else
             this.commande = (Commande) intent.getSerializableExtra("commande");
-        System.out.println(this.commande);
 
         this.drawOrder();
     }
@@ -93,9 +91,9 @@ public class AbstractCustomActivity extends Activity {
         TableLayout tl = (TableLayout) findViewById(R.id.recapitulatif);
         TableRow tr;
         TextView label;
-        TableRow.LayoutParams rowlayoutParams = new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT, TableRow.LayoutParams.WRAP_CONTENT);
-        //rowlayoutParams.setMargins(2, 2, 2, 2);
-        TableLayout.LayoutParams tableLayoutParams = new TableLayout.LayoutParams(TableLayout.LayoutParams.MATCH_PARENT, TableLayout.LayoutParams.WRAP_CONTENT);
+        TableRow.LayoutParams rowlayoutParams = new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT);
+        rowlayoutParams.setMargins(5, 0, 5, 0);
+        TableLayout.LayoutParams tableLayoutParams = new TableLayout.LayoutParams(TableLayout.LayoutParams.MATCH_PARENT, TableLayout.LayoutParams.MATCH_PARENT);
 
         /*
         Ajout des entrées
