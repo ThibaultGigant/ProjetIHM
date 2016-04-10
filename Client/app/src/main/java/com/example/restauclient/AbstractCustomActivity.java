@@ -27,9 +27,7 @@ public class AbstractCustomActivity extends Activity {
             public void run() {
                 LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
                 int width = mFrame.getWidth();
-                mFrame.setMinimumHeight(width);
-                params.topMargin = -width/4;
-                params.bottomMargin = -width/4;
+                mFrame.setMinimumHeight(width/2);
                 mFrame.setLayoutParams(params);
             }
         });
