@@ -53,6 +53,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/button_poisson1"
+                        android:contentDescription="@string/plat_poisson1"
                         android:layout_alignParentRight="true"
                         android:background="@android:drawable/ic_input_add"
                         android:layout_centerVertical="true" />
@@ -84,6 +85,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/button_poisson2"
+                        android:contentDescription="@string/plat_poisson2"
                         android:layout_alignParentRight="true"
                         android:background="@android:drawable/ic_input_add"
                         android:layout_centerVertical="true" />
@@ -115,6 +117,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/button_poisson3"
+                        android:contentDescription="@string/plat_poisson3"
                         android:layout_alignParentRight="true"
                         android:background="@android:drawable/ic_input_add"
                         android:layout_centerVertical="true" />
@@ -154,6 +157,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/button_viande1"
+                        android:contentDescription="@string/plat_viande1"
                         android:layout_alignParentRight="true"
                         android:background="@android:drawable/ic_input_add"
                         android:layout_centerVertical="true" />
@@ -185,6 +189,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/button_viande2"
+                        android:contentDescription="@string/plat_viande2"
                         android:layout_alignParentRight="true"
                         android:background="@android:drawable/ic_input_add"
                         android:layout_centerVertical="true" />
@@ -213,6 +218,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/button_viande3"
+                        android:contentDescription="@string/plat_viande3"
                         android:layout_alignParentRight="true"
                         android:background="@android:drawable/ic_input_add"
                         android:layout_centerVertical="true" />
@@ -252,6 +258,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/button_pates1"
+                        android:contentDescription="@string/plat_pates1"
                         android:layout_alignParentRight="true"
                         android:background="@android:drawable/ic_input_add"
                         android:layout_centerVertical="true" />
@@ -283,6 +290,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/button_pates2"
+                        android:contentDescription="@string/plat_pates2"
                         android:layout_alignParentRight="true"
                         android:background="@android:drawable/ic_input_add"
                         android:layout_centerVertical="true" />
@@ -311,6 +319,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/button_pates3"
+                        android:contentDescription="@string/plat_pates3"
                         android:layout_alignParentRight="true"
                         android:background="@android:drawable/ic_input_add"
                         android:layout_centerVertical="true" />

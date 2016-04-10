@@ -1,11 +1,10 @@
 package com.example.restauclient;
 
-import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
+
+import java.util.ArrayList;
 
 public class CarteEntreesActivity extends AbstractCustomActivity{
 
@@ -25,57 +24,22 @@ public class CarteEntreesActivity extends AbstractCustomActivity{
         Button btn_entree5 = (Button) findViewById(R.id.button_salade2);
         Button btn_entree6 = (Button) findViewById(R.id.button_salade3);
 
-        System.out.println(this.getCommande());
-        System.out.println(this.getCommande().getListEntrees().keySet());
-        System.out.println(this.getCommande().getListEntrees().values());
+        ArrayList<Button> buttons = new ArrayList<>();
+        buttons.add(btn_entree1);
+        buttons.add(btn_entree2);
+        buttons.add(btn_entree3);
+        buttons.add(btn_entree4);
+        buttons.add(btn_entree5);
+        buttons.add(btn_entree6);
 
-        btn_entree1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                getCommande().addEntree(getString(R.string.entree_charcuterie1));
-                refreshRecap();
-            }
-        });
-
-        btn_entree2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                getCommande().addEntree(getString(R.string.entree_charcuterie2));
-                refreshRecap();
-            }
-        });
-
-        btn_entree3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                getCommande().addEntree(getString(R.string.entree_charcuterie3));
-                refreshRecap();
-            }
-        });
-
-        btn_entree4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                getCommande().addEntree(getString(R.string.entree_salade1));
-                refreshRecap();
-            }
-        });
-
-        btn_entree5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                getCommande().addEntree(getString(R.string.entree_salade2));
-                refreshRecap();
-            }
-        });
-
-        btn_entree6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                getCommande().addEntree(getString(R.string.entree_salade3));
-                refreshRecap();
-            }
-        });
-
+        for (Button btn : buttons) {
+            btn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    getCommande().addEntree(btn.getContentDescription().toString());
+                    refreshRecap();
+                }
+            });
+        }
     }
 }

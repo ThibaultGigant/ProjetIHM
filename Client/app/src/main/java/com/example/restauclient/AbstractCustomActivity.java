@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.view.KeyEvent;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ScrollView;
 import android.widget.TableLayout;
@@ -117,6 +116,99 @@ public class AbstractCustomActivity extends Activity {
 
                 label = new TextView(this);
                 label.setText("x" + Integer.toString(this.getCommande().getListEntrees().get(key)));
+                label.setLayoutParams(rowlayoutParams);
+                tr.addView(label);
+
+                tl.addView(tr, tableLayoutParams);
+            }
+        }
+
+        /*
+        Ajout des Boissons
+         */
+        if (!this.commande.getListBoissons().isEmpty()) {
+            /* Création de la nouvelle ligne à rajouter */
+            tr = new TableRow(this);
+            tr.setLayoutParams(rowlayoutParams);
+            label = new TextView(this);
+            label.setText(R.string.boissons);
+            label.setLayoutParams(rowlayoutParams);
+            tr.addView(label);
+            tl.addView(tr, tableLayoutParams);
+
+            for (String key : this.getCommande().getListBoissons().keySet()) {
+                tr = new TableRow(this);
+                tr.setLayoutParams(rowlayoutParams);
+
+                label = new TextView(this);
+                label.setText(key);
+                label.setLayoutParams(rowlayoutParams);
+                tr.addView(label);
+
+                label = new TextView(this);
+                label.setText("x" + Integer.toString(this.getCommande().getListBoissons().get(key)));
+                label.setLayoutParams(rowlayoutParams);
+                tr.addView(label);
+
+                tl.addView(tr, tableLayoutParams);
+            }
+        }
+
+        /*
+        Ajout des Plats
+         */
+        if (!this.commande.getListPlats().isEmpty()) {
+            /* Création de la nouvelle ligne à rajouter */
+            tr = new TableRow(this);
+            tr.setLayoutParams(rowlayoutParams);
+            label = new TextView(this);
+            label.setText(R.string.plats);
+            label.setLayoutParams(rowlayoutParams);
+            tr.addView(label);
+            tl.addView(tr, tableLayoutParams);
+
+            for (String key : this.getCommande().getListPlats().keySet()) {
+                tr = new TableRow(this);
+                tr.setLayoutParams(rowlayoutParams);
+
+                label = new TextView(this);
+                label.setText(key);
+                label.setLayoutParams(rowlayoutParams);
+                tr.addView(label);
+
+                label = new TextView(this);
+                label.setText("x" + Integer.toString(this.getCommande().getListPlats().get(key)));
+                label.setLayoutParams(rowlayoutParams);
+                tr.addView(label);
+
+                tl.addView(tr, tableLayoutParams);
+            }
+        }
+
+        /*
+        Ajout des Desserts
+         */
+        if (!this.commande.getListDesserts().isEmpty()) {
+            /* Création de la nouvelle ligne à rajouter */
+            tr = new TableRow(this);
+            tr.setLayoutParams(rowlayoutParams);
+            label = new TextView(this);
+            label.setText(R.string.desserts);
+            label.setLayoutParams(rowlayoutParams);
+            tr.addView(label);
+            tl.addView(tr, tableLayoutParams);
+
+            for (String key : this.getCommande().getListDesserts().keySet()) {
+                tr = new TableRow(this);
+                tr.setLayoutParams(rowlayoutParams);
+
+                label = new TextView(this);
+                label.setText(key);
+                label.setLayoutParams(rowlayoutParams);
+                tr.addView(label);
+
+                label = new TextView(this);
+                label.setText("x" + Integer.toString(this.getCommande().getListDesserts().get(key)));
                 label.setLayoutParams(rowlayoutParams);
                 tr.addView(label);
 

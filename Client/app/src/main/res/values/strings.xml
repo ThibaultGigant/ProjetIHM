@@ -100,7 +100,10 @@
     <string name="dessert_glace2_prix">6.80$</string>
     <string name="dessert_glace3">Chocolat liègeois</string>
     <string name="dessert_glace3_prix">6.40$</string>
-    <string name="entree">Entrée :</string>
+    <string name="entree">Entrées :</string>
     <string name="askWaiter">Ask the waiter for Something</string>
+    <string name="boissons">Drinks</string>
+    <string name="plats">Main Courses :</string>
+    <string name="desserts">Desserts :</string>
 
 </resources>

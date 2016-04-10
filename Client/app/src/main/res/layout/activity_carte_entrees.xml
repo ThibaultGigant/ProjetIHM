@@ -53,6 +53,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/button_charcuterie1"
+                        android:contentDescription="@string/entree_charcuterie1"
                         android:layout_alignParentRight="true"
                         android:background="@android:drawable/ic_input_add"
                         android:layout_centerVertical="true" />
@@ -84,6 +85,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/button_charcuterie2"
+                        android:contentDescription="@string/entree_charcuterie2"
                         android:layout_alignParentRight="true"
                         android:background="@android:drawable/ic_input_add"
                         android:layout_centerVertical="true" />
@@ -115,6 +117,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/button_charcuterie3"
+                        android:contentDescription="@string/entree_charcuterie3"
                         android:layout_alignParentRight="true"
                         android:background="@android:drawable/ic_input_add"
                         android:layout_centerVertical="true" />
@@ -156,6 +159,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/button_salade1"
+                        android:contentDescription="@string/entree_salade1"
                         android:layout_alignParentRight="true"
                         android:background="@android:drawable/ic_input_add"
                         android:layout_centerVertical="true" />
@@ -187,6 +191,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/button_salade2"
+                        android:contentDescription="@string/entree_salade2"
                         android:layout_alignParentRight="true"
                         android:background="@android:drawable/ic_input_add"
                         android:layout_centerVertical="true" />
@@ -218,6 +223,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/button_salade3"
+                        android:contentDescription="@string/entree_salade3"
                         android:layout_alignParentRight="true"
                         android:background="@android:drawable/ic_input_add"
                         android:layout_centerVertical="true" />

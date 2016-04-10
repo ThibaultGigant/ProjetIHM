@@ -52,6 +52,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/button_glace1"
+                        android:contentDescription="@string/dessert_glace1"
                         android:layout_alignParentRight="true"
                         android:background="@android:drawable/ic_input_add"
                         android:layout_centerVertical="true" />
@@ -83,6 +84,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/button_glace2"
+                        android:contentDescription="@string/dessert_glace2"
                         android:layout_alignParentRight="true"
                         android:background="@android:drawable/ic_input_add"
                         android:layout_centerVertical="true" />
@@ -114,6 +116,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/button_glace3"
+                        android:contentDescription="@string/dessert_glace3"
                         android:layout_alignParentRight="true"
                         android:background="@android:drawable/ic_input_add"
                         android:layout_centerVertical="true" />

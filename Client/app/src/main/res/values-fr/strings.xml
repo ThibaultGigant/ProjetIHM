@@ -16,7 +16,7 @@
     <string name="menuD">Menu Printanier \n Flattez votre palais\n avec des mets de qualité\n 35$</string>
     <string name="popServeur">Appeler le Serveur</string>
     <string name="askWaiter">Demander quelque chose au Serveur</string>
-    <string name="entree">Entrée :</string>
+    <string name="entree">Entrées :</string>
     <string name="boisson_alcool1">Martini</string>
     <string name="boisson_alcool1_prix">6$</string>
     <string name="boisson_alcool3_prix">6$</string>
@@ -86,4 +86,7 @@
     <string name="plat_viande2_prix">11.35$</string>
     <string name="plat_viande3">Entrcôte sauce Roquefort</string>
     <string name="plat_viande3_prix">15$</string>
+    <string name="boissons">Boissons</string>
+    <string name="plats">Plats :</string>
+    <string name="desserts">Desserts :</string>
 </resources>
