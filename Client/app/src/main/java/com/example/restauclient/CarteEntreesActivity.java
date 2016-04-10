@@ -1,9 +1,13 @@
 package com.example.restauclient;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.EventLogTags;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
+import java.io.PrintStream;
 import java.util.ArrayList;
 
 public class CarteEntreesActivity extends AbstractCustomActivity{
@@ -41,5 +45,16 @@ public class CarteEntreesActivity extends AbstractCustomActivity{
                 }
             });
         }
+    }
+
+    public void afficherDescription(View v){
+        String desc = (String) v.getTag();
+        String name = (String) ((TextView)v).getText();
+        Intent intent = new Intent(this, DescriptionActivity.class);
+        Bundle b = new Bundle();
+        b.putString("desc", desc);
+        b.putString("name", name);
+        intent.putExtras(b);
+        startActivity(intent);
     }
 }

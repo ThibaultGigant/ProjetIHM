@@ -21,30 +21,42 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            android:theme="@style/CustomTheme" >
         </activity>
         <activity
             android:name="com.example.restauclient.CarteActivity"
             android:label="@string/app_name" >
+            android:theme="@style/CustomTheme" >
         </activity>
         <activity
             android:name="com.example.restauclient.MenusActivity"
             android:label="@string/app_name" >
+            android:theme="@style/CustomTheme" >
         </activity>
         <activity
             android:name="com.example.restauclient.CarteBoissonsActivity"
             android:label="@string/app_name" >
+            android:theme="@style/CustomTheme" >
         </activity>
         <activity
             android:name="com.example.restauclient.CarteDessertsActivity"
             android:label="@string/app_name" >
+            android:theme="@style/CustomTheme" >
         </activity>
         <activity
             android:name="com.example.restauclient.CarteEntreesActivity"
             android:label="@string/app_name" >
+            android:theme="@style/CustomTheme" >
         </activity>
         <activity
             android:name="com.example.restauclient.CartePlatsActivity"
             android:label="@string/app_name" >
+            android:theme="@style/CustomTheme" >
+        </activity>
+        <activity
+            android:name="com.example.restauclient.DescriptionActivity"
+            android:label="@string/app_name" >
+            android:theme="@style/DescTheme" >
         </activity>
     </application>
 

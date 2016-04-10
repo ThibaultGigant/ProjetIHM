@@ -45,7 +45,9 @@
                         android:layout_height="wrap_content"
                         android:textSize="20sp"
                         android:layout_alignParentLeft="true"
-
+                        android:clickable="true"
+                        android:tag="@string/entree_charcuterie1_desc"
+                        android:onClick="afficherDescription"
                         android:text="@string/entree_charcuterie1"
                         android:layout_centerVertical="true" />
                     <Button
