@@ -6,10 +6,8 @@ import android.content.Intent;
 import android.os.Build;
 import android.view.KeyEvent;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
-import android.widget.ScrollView;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -56,14 +54,18 @@ public class AbstractCustomActivity extends Activity {
     }
 
     public void goToMenus(View view) {
-        Intent intent = new Intent(this, MenusActivity.class);
-        intent.putExtra("commande", this.commande);
-        startActivity(intent);
+        if (!this.getClass().equals(MenusActivity.class)) {
+            Intent intent = new Intent(this, MenusActivity.class);
+            intent.putExtra("commande", this.commande);
+            startActivity(intent);
+        }
     }
     public void goToCarte(View view) {
-        Intent intent = new Intent(this, CarteActivity.class);
-        intent.putExtra("commande", this.commande);
-        startActivity(intent);
+        if (!this.getClass().equals(CarteActivity.class)) {
+            Intent intent = new Intent(this, CarteActivity.class);
+            intent.putExtra("commande", this.commande);
+            startActivity(intent);
+        }
     }
 
     public void goToBilan(View view) {
@@ -85,7 +87,6 @@ public class AbstractCustomActivity extends Activity {
     }
 
     public void refreshRecap() {
-        ScrollView scrollView = (ScrollView) findViewById(R.id.scroll_recap);
         TableLayout tl = (TableLayout) findViewById(R.id.recapitulatif);
         tl.removeAllViews();
         this.drawOrder();
