@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.view.KeyEvent;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ScrollView;
 import android.widget.TableLayout;
@@ -90,6 +91,7 @@ public class AbstractCustomActivity extends Activity {
         TableRow tr;
         TextView label;
         TableRow.LayoutParams rowlayoutParams = new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT, TableRow.LayoutParams.WRAP_CONTENT);
+        //rowlayoutParams.setMargins(2, 2, 2, 2);
         TableLayout.LayoutParams tableLayoutParams = new TableLayout.LayoutParams(TableLayout.LayoutParams.MATCH_PARENT, TableLayout.LayoutParams.WRAP_CONTENT);
 
         /*
@@ -118,6 +120,18 @@ public class AbstractCustomActivity extends Activity {
                 label.setText("x" + Integer.toString(this.getCommande().getListEntrees().get(key)));
                 label.setLayoutParams(rowlayoutParams);
                 tr.addView(label);
+
+                ImageButton btn = new ImageButton(this);
+                btn.setBackground(getResources().getDrawable(R.mipmap.minus));
+                btn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        getCommande().removeEntree(key);
+                        refreshRecap();
+                    }
+                });
+                btn.setLayoutParams(rowlayoutParams);
+                tr.addView(btn);
 
                 tl.addView(tr, tableLayoutParams);
             }
@@ -150,6 +164,18 @@ public class AbstractCustomActivity extends Activity {
                 label.setLayoutParams(rowlayoutParams);
                 tr.addView(label);
 
+                ImageButton btn = new ImageButton(this);
+                btn.setBackground(getResources().getDrawable(R.mipmap.minus));
+                btn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        getCommande().removeBoisson(key);
+                        refreshRecap();
+                    }
+                });
+                btn.setLayoutParams(rowlayoutParams);
+                tr.addView(btn);
+
                 tl.addView(tr, tableLayoutParams);
             }
         }
@@ -181,6 +207,18 @@ public class AbstractCustomActivity extends Activity {
                 label.setLayoutParams(rowlayoutParams);
                 tr.addView(label);
 
+                ImageButton btn = new ImageButton(this);
+                btn.setBackground(getResources().getDrawable(R.mipmap.minus));
+                btn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        getCommande().removePlat(key);
+                        refreshRecap();
+                    }
+                });
+                btn.setLayoutParams(rowlayoutParams);
+                tr.addView(btn);
+
                 tl.addView(tr, tableLayoutParams);
             }
         }
@@ -211,6 +249,18 @@ public class AbstractCustomActivity extends Activity {
                 label.setText("x" + Integer.toString(this.getCommande().getListDesserts().get(key)));
                 label.setLayoutParams(rowlayoutParams);
                 tr.addView(label);
+
+                ImageButton btn = new ImageButton(this);
+                btn.setBackground(getResources().getDrawable(R.mipmap.minus));
+                btn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        getCommande().removeDessert(key);
+                        refreshRecap();
+                    }
+                });
+                btn.setLayoutParams(rowlayoutParams);
+                tr.addView(btn);
 
                 tl.addView(tr, tableLayoutParams);
             }
