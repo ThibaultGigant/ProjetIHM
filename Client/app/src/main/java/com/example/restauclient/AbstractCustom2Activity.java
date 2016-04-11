@@ -60,8 +60,8 @@ public class AbstractCustom2Activity extends Activity {
 
     public void goToBilan(View view) {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-        alertDialogBuilder.setMessage("Are you sure?");
-        alertDialogBuilder.setPositiveButton("Yes",new DialogInterface.OnClickListener() {
+        alertDialogBuilder.setMessage(getString(R.string.sure));
+        alertDialogBuilder.setPositiveButton(getString(R.string.yes),new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog,int id) {
                 Intent intent = new Intent(getApplicationContext(), RecapitulatifActivity.class);
                 intent.putExtra("commande", getCommande());
@@ -69,7 +69,7 @@ public class AbstractCustom2Activity extends Activity {
             }
 
         });
-        alertDialogBuilder.setNegativeButton("No",new DialogInterface.OnClickListener() {
+        alertDialogBuilder.setNegativeButton(getString(R.string.no),new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog,int id) {
                 dialog.cancel();
             }
