@@ -10,6 +10,7 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TableLayout;
 import android.widget.TableRow;
@@ -100,8 +101,9 @@ public class AbstractCustomActivity extends Activity {
     }
 
     public void popServeur(View view) {
-        //Intent intent = new Intent(this, PopUpPap.class);
-        //startActivity(intent);
+        setTickPain();
+        setTickEau();
+        setTickServeur();
 
         FrameLayout popUpPap = (FrameLayout) findViewById(R.id.popUpPap);
         popUpPap.setVisibility(View.VISIBLE);
@@ -110,6 +112,48 @@ public class AbstractCustomActivity extends Activity {
     public void unPopServeur(View view) {
         FrameLayout popUpPap = (FrameLayout) findViewById(R.id.popUpPap);
         popUpPap.setVisibility(View.INVISIBLE);
+    }
+
+    public void tickEau(View view) {
+        this.commande.setCallWater(true);
+        setTickEau();
+    }
+
+    private void setTickEau() {
+        if (this.commande.isCallWater()) {
+            ImageView tick = new ImageView(this);
+            tick.setBackground(getResources().getDrawable(R.mipmap.ic_tick));
+            FrameLayout frame = (FrameLayout) findViewById(R.id.pin_eau);
+            frame.addView(tick);
+        }
+    }
+
+    public void tickPain(View view) {
+        this.commande.setCallBread(true);
+        setTickPain();
+    }
+
+    private void setTickPain() {
+        if (this.commande.isCallBread()) {
+            ImageView tick = new ImageView(this);
+            tick.setBackground(getResources().getDrawable(R.mipmap.ic_tick));
+            FrameLayout frame = (FrameLayout) findViewById(R.id.pin_pain);
+            frame.addView(tick);
+        }
+    }
+
+    public void tickServeur(View view) {
+        this.commande.setCallWaiter(true);
+        setTickServeur();
+    }
+
+    private void setTickServeur() {
+        if (this.commande.isCallWaiter()) {
+            ImageView tick = new ImageView(this);
+            tick.setBackground(getResources().getDrawable(R.mipmap.ic_tick));
+            FrameLayout frame = (FrameLayout) findViewById(R.id.pin_serveur);
+            frame.addView(tick);
+        }
     }
 
     /**

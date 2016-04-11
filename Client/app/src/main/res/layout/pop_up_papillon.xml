@@ -39,10 +39,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <ImageButton
+                    <FrameLayout
+                        android:id="@+id/pin_eau"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@mipmap/ic_eau" />
+                        android:layout_height="wrap_content">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/ic_eau"
+                            android:onClick="tickEau" />
+                    </FrameLayout>
 
                     <Button
                         android:background="@null"
@@ -53,7 +60,8 @@
                         android:id="@+id/textView"
                         android:layout_gravity="center"
                         android:autoText="false"
-                        android:textSize="17dp" />
+                        android:textSize="17dp"
+                        android:onClick="tickEau" />
                 </LinearLayout>
 
                 <ImageButton
@@ -69,10 +77,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <ImageButton
+                    <FrameLayout
+                        android:id="@+id/pin_pain"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@mipmap/ic_pain" />
+                        android:layout_height="wrap_content">
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/ic_pain"
+                            android:onClick="tickPain" />
+                    </FrameLayout>
 
                     <Button
                         android:background="@null"
@@ -82,7 +96,8 @@
                         android:text="Demander du pain"
                         android:id="@+id/textView2"
                         android:layout_gravity="center"
-                        android:textSize="17dp" />
+                        android:textSize="17dp"
+                        android:onClick="tickPain" />
                 </LinearLayout>
 
                 <ImageButton
@@ -91,17 +106,23 @@
                     android:id="@+id/separator2"
                     android:background="#490606"
                     android:layout_marginLeft="25dp"
-                    android:layout_marginRight="25dp" />
+                    android:layout_marginRight="25dp"/>
 
                 <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <ImageButton
+                    <FrameLayout
+                        android:id="@+id/pin_serveur"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@mipmap/ic_appel_serveur" />
+                        android:layout_height="wrap_content">
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/ic_appel_serveur"
+                            android:onClick="tickServeur" />
+                    </FrameLayout>
 
                     <Button
                         android:background="@null"
@@ -111,7 +132,8 @@
                         android:text="Appeler le serveur"
                         android:id="@+id/textView3"
                         android:layout_gravity="center"
-                        android:textSize="17dp" />
+                        android:textSize="17dp"
+                        android:onClick="tickServeur" />
                 </LinearLayout>
 
             </LinearLayout>

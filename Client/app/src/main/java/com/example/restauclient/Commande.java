@@ -12,6 +12,10 @@ public class Commande implements Serializable {
     private HashMap<String, Integer> listDesserts = new HashMap<String,Integer>();
     private HashMap<String, Integer> listBoissons = new HashMap<String,Integer>();
 
+    private boolean call_for_water = false;
+    private boolean call_for_bread = false;
+    private boolean call_for_waiter = false;
+
     private HashMap<String, Integer> listMenus = new HashMap<String,Integer>();
 
     public HashMap<String, Integer> getListEntrees() {
@@ -138,6 +142,30 @@ public class Commande implements Serializable {
             else
                 this.listMenus.remove(menu);
         }
+    }
+
+    public boolean isCallWater() {
+        return this.call_for_water;
+    }
+
+    public void setCallWater(boolean bool) {
+        this.call_for_water = bool;
+    }
+
+    public boolean isCallWaiter() {
+        return this.call_for_waiter;
+    }
+
+    public void setCallWaiter(boolean bool) {
+        this.call_for_waiter = bool;
+    }
+
+    public boolean isCallBread() {
+        return this.call_for_bread;
+    }
+
+    public void setCallBread(boolean bool) {
+        this.call_for_bread = bool;
     }
 
 }
