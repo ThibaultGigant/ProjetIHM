@@ -19,18 +19,26 @@ public class AbstractCustomActivity extends Activity {
     protected Commande commande;
 
     public void initialize() {
-        final ImageButton mFrame = (ImageButton) findViewById(R.id.popServeur);
+        /*final ImageButton mFrame = (ImageButton) findViewById(R.id.popServeur);
 
         mFrame.post(new Runnable() {
 
             @Override
             public void run() {
+
                 LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
                 int width = mFrame.getWidth();
                 mFrame.setMinimumHeight(width/2);
                 mFrame.setLayoutParams(params);
             }
         });
+
+                LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+                int width = mFrame.getWidth();
+                //mFrame.setMinimumHeight(width/2);
+                mFrame.setLayoutParams(params);
+            }
+        });*/
 
         Intent intent = getIntent();
         if (intent == null)
@@ -70,8 +78,12 @@ public class AbstractCustomActivity extends Activity {
     }
 
     public void popServeur(View view) {
+        LinearLayout popUpPap = (LinearLayout) findViewById(R.id.popUpPap);
+        if (popUpPap.getVisibility() == View.VISIBLE)
+            popUpPap.setVisibility(View.GONE);
+        else
+            popUpPap.setVisibility(View.VISIBLE);
     }
-
     /**
      * Pour éviter que l'utilisateur n'efface tout ou partie de sa commande en appuyant sur le "back button"
      * @param keyCode

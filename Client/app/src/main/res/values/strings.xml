@@ -7,7 +7,9 @@
     <string name="bienvenue">Welcome to Chez Gusteau</string>
     <string name="description">This restaurant has been created in 1579 by my nephew\'s great-uncle\'s grand-grand-son. Up until today, our main goal has been to offer best quality products to our customer... bla bla bla bla bla bla</string>
     <string name="accueil">Home</string>
+
     <string name="menus">Menus</string>
+
     <string name="menuA">Menu Printanier \n Laissez-vous tenter\n par ses saveurs\n 15€</string>
     <string name="menuAshort">Menu Printanier     15€</string>
     <string name="menuB">Menu Campagnard \n Sa simplicité saura\n vous combler\n 22€</string>
@@ -28,9 +30,10 @@
 
     <!--Boissons-->
     <string name="boisson_cat_alcool">Spirits</string>
-    <string name="boisson_alcool1">Martini</string>
+
+    <string name="boisson_alcool1">Red Martini</string>
     <string name="boisson_alcool1_prix">6€</string>
-    <string name="boisson_alcool2">Pastis</string>
+    <string name="boisson_alcool2" translatable="false">Pastis</string>
     <string name="boisson_alcool2_prix">6€</string>
     <string name="boisson_alcool3">Whisky</string>
     <string name="boisson_alcool3_prix">6€</string>
@@ -111,7 +114,6 @@
     <string name="plats">Main Courses :</string>
     <string name="desserts">Desserts :</string>
     <string name="text_menus">Menus :</string>
-
     <string-array name="cuissons">
         <item>Bleue</item>
         <item>Saignante</item>

@@ -1,90 +1,96 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:tools="http://schemas.android.com/tools"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="match_parent"
-	android:layout_height="match_parent"
-	android:layout_marginBottom="10dp"
-	android:layout_marginLeft="10dp"
-	android:layout_marginRight="10dp"
-	android:layout_marginTop="10dp"
-	android:orientation="horizontal"
-	android:baselineAligned="false"
-	android:background="@drawable/papyrus"
-	tools:context=".CarteActivity" >
-
-	<LinearLayout
+	android:layout_height="match_parent">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
 		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
+		android:layout_height="match_parent"
 		android:layout_marginBottom="10dp"
-		android:layout_weight="1"
-		android:orientation="vertical" >
-
-		<include layout="@layout/top_menu_bar"/>
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:layout_marginTop="10dp"
+		android:orientation="horizontal"
+		android:baselineAligned="false"
+		android:background="@drawable/papyruss"
+		tools:context=".CarteActivity" >
 
 		<LinearLayout
-			android:layout_width="wrap_content"
+			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:layout_marginBottom="10dp"
-			android:orientation="horizontal" >
+			android:layout_weight="1"
+			android:orientation="vertical" >
+
+			<include layout="@layout/top_menu_bar"/>
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="10dp"
+				android:orientation="horizontal" >
+
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="10dp"
+				android:layout_weight="1"
+				android:orientation="vertical"
+				android:background="@android:color/holo_orange_light">
+				<LinearLayout
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="10dp"
+					android:orientation="horizontal" >
+
+					<Button
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:onClick="goToCarteEntrees"
+						android:background="@mipmap/parchemin"
+						android:text="@string/carteEntrees" />
+					<Button
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:onClick="goToCartePlats"
+						android:background="@mipmap/parchemin"
+						android:text="@string/cartePlats" />
+
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="10dp"
+					android:orientation="horizontal" >
+
+
+					<Button
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:onClick="goToCarteDesserts"
+						android:background="@mipmap/parchemin"
+						android:text="@string/carteDesserts" />
+
+					<Button
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:onClick="goToCarteBoissons"
+						android:background="@mipmap/parchemin"
+						android:text="@string/carteBoissons" />
+
+				</LinearLayout>
+
+			</LinearLayout>
 
 		</LinearLayout>
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:layout_weight="1"
-            android:orientation="vertical">
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:orientation="horizontal" >
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:onClick="goToCarteEntrees"
-                    android:background="@mipmap/parchemin"
-                    android:text="@string/carteEntrees" />
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:onClick="goToCartePlats"
-                    android:background="@mipmap/parchemin"
-                    android:text="@string/cartePlats" />
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:orientation="horizontal" >
-
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:onClick="goToCarteDesserts"
-                    android:background="@mipmap/parchemin"
-                    android:text="@string/carteDesserts" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:onClick="goToCarteBoissons"
-                    android:background="@mipmap/parchemin"
-                    android:text="@string/carteBoissons" />
-
-            </LinearLayout>
-
-        </LinearLayout>
+		<include layout="@layout/right_side_bar" />
 
 	</LinearLayout>
 
-
-	<include layout="@layout/right_side_bar" />
-
-</LinearLayout>
+	<include layout="@layout/pop_up_papillon"/>
+</FrameLayout>

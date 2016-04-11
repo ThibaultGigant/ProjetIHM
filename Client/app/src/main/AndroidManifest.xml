@@ -84,6 +84,7 @@
             android:name="com.example.restauclient.MenuDActivity"
             android:label="@string/app_name"
             android:theme="@style/CustomTheme.DescTheme" >
+
         </activity>
     </application>
 
