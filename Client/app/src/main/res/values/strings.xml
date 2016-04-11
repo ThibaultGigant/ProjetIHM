@@ -131,5 +131,6 @@
     <string name="pickDessert">Pick a desert</string>
     <string name="ou">or</string>
     <string name="addMenu">Add this formula</string>
+    <string name="total">Total :</string>
 
 </resources>

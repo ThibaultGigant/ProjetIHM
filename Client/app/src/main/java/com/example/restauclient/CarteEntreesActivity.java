@@ -41,6 +41,7 @@ public class CarteEntreesActivity extends AbstractCustomActivity{
                 @Override
                 public void onClick(View v) {
                     getCommande().addEntree(v.getContentDescription().toString());
+                    getCommande().addToPrice(getPricesTable().get(v.getContentDescription().toString()));
                     refreshRecap();
                 }
             });

@@ -40,7 +40,7 @@
 
         <ScrollView
             android:id="@+id/scroll_recap"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="4">
             <TableLayout
@@ -49,6 +49,31 @@
                 android:layout_height="wrap_content">
             </TableLayout>
         </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/position_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/label_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/total"
+                android:layout_marginLeft="10dp"
+                android:layout_alignLeft="@+id/position_layout"/>
+            <TextView
+                android:id="@+id/total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_alignRight="@+id/position_layout"
+                android:textSize="20sp" />
+        </RelativeLayout>
 
     </LinearLayout>
 

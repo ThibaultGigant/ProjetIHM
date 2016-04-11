@@ -114,6 +114,7 @@ public class MenuBActivity extends AbstractCustomActivity {
         if (allChecked) {
             String menu = getString(R.string.menuBshort);
             getCommande().addMenu(menu + "\n" + entree + "\n" + plat + "\n" + dessert);
+            getCommande().ajoutMenuB(menu + "\n" + entree + "\n" + plat + "\n" + dessert);
             Intent intent = new Intent(this, CarteActivity.class);
             intent.putExtra("commande", this.commande);
             startActivity(intent);

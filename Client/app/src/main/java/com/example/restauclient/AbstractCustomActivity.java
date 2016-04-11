@@ -16,11 +16,15 @@ import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 
+import java.text.DecimalFormat;
+import java.util.HashMap;
+
 /**
  * Created by Tigig on 10/04/2016.
  */
 public class AbstractCustomActivity extends Activity {
     protected Commande commande;
+    private HashMap<String, Double> pricesTable = new HashMap<String, Double>();
 
     public void initialize() {
         /*final ImageButton mFrame = (ImageButton) findViewById(R.id.popServeur);
@@ -50,11 +54,93 @@ public class AbstractCustomActivity extends Activity {
         else
             this.commande = (Commande) intent.getSerializableExtra("commande");
 
-        this.drawOrder();
+        this.initialize_price();
+        this.refreshRecap();
+    }
+    
+    public void initialize_price() {
+        String prix;
+        
+        /*
+        Ajout boissons
+         */
+        prix = getString(R.string.boisson_alcool1_prix);
+        pricesTable.put(getString(R.string.boisson_alcool1), Double.parseDouble(prix.substring(0, prix.length() - 1)));
+        prix = getString(R.string.boisson_alcool2_prix);
+        pricesTable.put(getString(R.string.boisson_alcool2), Double.parseDouble(prix.substring(0, prix.length() - 1)));
+        prix = getString(R.string.boisson_alcool3_prix);
+        pricesTable.put(getString(R.string.boisson_alcool3), Double.parseDouble(prix.substring(0, prix.length() - 1)));
+        prix = getString(R.string.boisson_vin1_prix);
+        pricesTable.put(getString(R.string.boisson_vin1), Double.parseDouble(prix.substring(0, prix.length() - 1)));
+        prix = getString(R.string.boisson_vin2_prix);
+        pricesTable.put(getString(R.string.boisson_vin2), Double.parseDouble(prix.substring(0, prix.length() - 1)));
+        prix = getString(R.string.boisson_vin3_prix);
+        pricesTable.put(getString(R.string.boisson_vin3), Double.parseDouble(prix.substring(0, prix.length() - 1)));
+        prix = getString(R.string.boisson_soft1_prix);
+        pricesTable.put(getString(R.string.boisson_soft1), Double.parseDouble(prix.substring(0, prix.length() - 1)));
+        prix = getString(R.string.boisson_soft2_prix);
+        pricesTable.put(getString(R.string.boisson_soft2), Double.parseDouble(prix.substring(0, prix.length() - 1)));
+        prix = getString(R.string.boisson_soft3_prix);
+        pricesTable.put(getString(R.string.boisson_soft3), Double.parseDouble(prix.substring(0, prix.length() - 1)));
+        prix = getString(R.string.boisson_soft4_prix);
+        pricesTable.put(getString(R.string.boisson_soft4), Double.parseDouble(prix.substring(0, prix.length() - 1)));
+
+        /*
+        Ajout Entrees
+         */
+        prix = getString(R.string.entree_charcuterie1_prix);
+        pricesTable.put(getString(R.string.entree_charcuterie1), Double.parseDouble(prix.substring(0, prix.length() - 1)));
+        prix = getString(R.string.entree_charcuterie2_prix);
+        pricesTable.put(getString(R.string.entree_charcuterie2), Double.parseDouble(prix.substring(0, prix.length() - 1)));
+        prix = getString(R.string.entree_charcuterie3_prix);
+        pricesTable.put(getString(R.string.entree_charcuterie3), Double.parseDouble(prix.substring(0, prix.length() - 1)));
+        prix = getString(R.string.entree_salade1_prix);
+        pricesTable.put(getString(R.string.entree_salade1), Double.parseDouble(prix.substring(0, prix.length() - 1)));
+        prix = getString(R.string.entree_salade2_prix);
+        pricesTable.put(getString(R.string.entree_salade2), Double.parseDouble(prix.substring(0, prix.length() - 1)));
+        prix = getString(R.string.entree_salade3_prix);
+        pricesTable.put(getString(R.string.entree_salade3), Double.parseDouble(prix.substring(0, prix.length() - 1)));
+
+        /*
+        Ajout Plats
+         */
+        prix = getString(R.string.plat_poisson1_prix);
+        pricesTable.put(getString(R.string.plat_poisson1), Double.parseDouble(prix.substring(0, prix.length() - 1)));
+        prix = getString(R.string.plat_poisson2_prix);
+        pricesTable.put(getString(R.string.plat_poisson2), Double.parseDouble(prix.substring(0, prix.length() - 1)));
+        prix = getString(R.string.plat_poisson3_prix);
+        pricesTable.put(getString(R.string.plat_poisson3), Double.parseDouble(prix.substring(0, prix.length() - 1)));
+        prix = getString(R.string.plat_viande1_prix);
+        pricesTable.put(getString(R.string.plat_viande1), Double.parseDouble(prix.substring(0, prix.length() - 1)));
+        prix = getString(R.string.plat_viande2_prix);
+        pricesTable.put(getString(R.string.plat_viande2), Double.parseDouble(prix.substring(0, prix.length() - 1)));
+        prix = getString(R.string.plat_viande3_prix);
+        pricesTable.put(getString(R.string.plat_viande3), Double.parseDouble(prix.substring(0, prix.length() - 1)));
+        prix = getString(R.string.plat_pates1_prix);
+        pricesTable.put(getString(R.string.plat_pates1), Double.parseDouble(prix.substring(0, prix.length() - 1)));
+        prix = getString(R.string.plat_pates2_prix);
+        pricesTable.put(getString(R.string.plat_pates2), Double.parseDouble(prix.substring(0, prix.length() - 1)));
+        prix = getString(R.string.plat_pates3_prix);
+        pricesTable.put(getString(R.string.plat_pates3), Double.parseDouble(prix.substring(0, prix.length() - 1)));
+
+        /*
+        Ajout Desserts
+         */
+        prix = getString(R.string.dessert_glace1_prix);
+        pricesTable.put(getString(R.string.dessert_glace1), Double.parseDouble(prix.substring(0, prix.length() - 1)));
+        prix = getString(R.string.dessert_glace2_prix);
+        pricesTable.put(getString(R.string.dessert_glace2), Double.parseDouble(prix.substring(0, prix.length() - 1)));
+        prix = getString(R.string.dessert_glace3_prix);
+        pricesTable.put(getString(R.string.dessert_glace3), Double.parseDouble(prix.substring(0, prix.length() - 1)));
+
     }
 
     public Commande getCommande() {
         return this.commande;
+    }
+
+    public HashMap<String, Double> getPricesTable() {
+        return pricesTable;
     }
 
     public void goToMain(View view) {
@@ -172,6 +258,9 @@ public class AbstractCustomActivity extends Activity {
         TableLayout tl = (TableLayout) findViewById(R.id.recapitulatif);
         tl.removeAllViews();
         this.drawOrder();
+
+        TextView totalPrice = (TextView) findViewById(R.id.total_price);
+        totalPrice.setText(String.format("%.2f", getCommande().getPrice()) + "€");
     }
 
     @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
@@ -223,6 +312,7 @@ public class AbstractCustomActivity extends Activity {
                     @Override
                     public void onClick(View v) {
                         getCommande().removeEntree(key);
+                        getCommande().substractToPrice(getPricesTable().get(key));
                         refreshRecap();
                     }
                 });
@@ -267,6 +357,7 @@ public class AbstractCustomActivity extends Activity {
                     @Override
                     public void onClick(View v) {
                         getCommande().removePlat(key);
+                        getCommande().substractToPrice(getPricesTable().get(key));
                         refreshRecap();
                     }
                 });
@@ -311,6 +402,7 @@ public class AbstractCustomActivity extends Activity {
                     @Override
                     public void onClick(View v) {
                         getCommande().removeDessert(key);
+                        getCommande().substractToPrice(getPricesTable().get(key));
                         refreshRecap();
                     }
                 });
@@ -355,6 +447,7 @@ public class AbstractCustomActivity extends Activity {
                     @Override
                     public void onClick(View v) {
                         getCommande().removeBoisson(key);
+                        getCommande().substractToPrice(getPricesTable().get(key));
                         refreshRecap();
                     }
                 });
@@ -399,6 +492,7 @@ public class AbstractCustomActivity extends Activity {
                     @Override
                     public void onClick(View v) {
                         getCommande().removeMenu(key);
+                        getCommande().substractMenu(key);
                         refreshRecap();
                     }
                 });

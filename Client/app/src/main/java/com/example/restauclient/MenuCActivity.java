@@ -115,6 +115,7 @@ public class MenuCActivity extends AbstractCustomActivity {
             String menu=getString(R.string.menuCshort);
             getCommande().addMenu(menu+"\n"+entree+"\n"+plat+"\n"+dessert);
             Intent intent = new Intent(this, CarteActivity.class);
+            getCommande().ajoutMenuC(menu+"\n"+entree+"\n"+plat+"\n"+dessert);
             intent.putExtra("commande", this.commande);
             startActivity(intent);
         }

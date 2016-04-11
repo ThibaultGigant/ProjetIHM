@@ -43,6 +43,7 @@ public class CartePlatsActivity extends AbstractCustomActivity {
                 @Override
                 public void onClick(View v) {
                     getCommande().addPlat(v.getContentDescription().toString());
+                    getCommande().addToPrice(getPricesTable().get(v.getContentDescription().toString()));
                     refreshRecap();
                 }
             });

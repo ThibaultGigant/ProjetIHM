@@ -80,4 +80,5 @@
     <string name="pickDessert">Choisissez un dessert</string>
     <string name="pickEntree">Choisissez une entrée</string>
     <string name="pickPlat">Choisissez un plat</string>
+    <string name="total">Total :</string>
 </resources>

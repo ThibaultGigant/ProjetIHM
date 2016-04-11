@@ -31,6 +31,7 @@ public class CarteDessertsActivity extends AbstractCustomActivity {
                 @Override
                 public void onClick(View v) {
                     getCommande().addDessert(v.getContentDescription().toString());
+                    getCommande().addToPrice(getPricesTable().get(v.getContentDescription().toString()));
                     refreshRecap();
                 }
             });

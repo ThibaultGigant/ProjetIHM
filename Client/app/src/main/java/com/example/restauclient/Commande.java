@@ -11,10 +11,15 @@ public class Commande implements Serializable {
     private HashMap<String, Integer> listPlats = new HashMap<String,Integer>();
     private HashMap<String, Integer> listDesserts = new HashMap<String,Integer>();
     private HashMap<String, Integer> listBoissons = new HashMap<String,Integer>();
+    private Double price = new Double(0);
+    private HashMap<String, Double> pricesTable = new HashMap<String, Double>();
 
     private boolean call_for_water = false;
     private boolean call_for_bread = false;
     private boolean call_for_waiter = false;
+
+    public Commande() {
+    }
 
     private HashMap<String, Integer> listMenus = new HashMap<String,Integer>();
 
@@ -48,6 +53,10 @@ public class Commande implements Serializable {
 
     public HashMap<String, Integer> getListMenus() {
         return listMenus;
+    }
+
+    public Double getPrice() {
+        return this.price;
     }
 
     public void setListBoissons(HashMap<String, Integer> listBoissons) {
@@ -142,6 +151,38 @@ public class Commande implements Serializable {
             else
                 this.listMenus.remove(menu);
         }
+    }
+
+    public void addToPrice(Double d) {
+        this.price += d;
+    }
+
+    public void substractToPrice(Double d) {
+        this.price -= d;
+    }
+
+    public void ajoutMenuA(String s) {
+        this.pricesTable.put(s, 15d);
+        this.price += 15;
+    }
+
+    public void ajoutMenuB(String s) {
+        this.pricesTable.put(s, 22d);
+        this.price += 22;
+    }
+
+    public void ajoutMenuC(String s) {
+        this.pricesTable.put(s, 25d);
+        this.price += 25;
+    }
+
+    public void ajoutMenuD(String s) {
+        this.pricesTable.put(s, 35d);
+        this.price += 35;
+    }
+
+    public void substractMenu(String s) {
+        this.price -= this.pricesTable.get(s);
     }
 
     public boolean isCallWater() {
