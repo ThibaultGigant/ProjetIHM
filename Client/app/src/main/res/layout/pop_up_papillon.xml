@@ -1,89 +1,107 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/popUpPap"
-    android:orientation="vertical"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="50dp"
-    android:layout_marginLeft="5dp"
-    android:layout_marginRight="5dp"
-    android:background="#ffffff"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@null"
     android:visibility="gone">
 
-    <LinearLayout
-        android:orientation="horizontal"
+    <ImageButton android:background="@null"
+        android:layout_height="match_parent"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:onClick="popServeur"/>
 
-        <ImageButton
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_margin="30dp"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@mipmap/ic_pin1" />
+            android:visibility="visible"
+            android:layout_margin="10dp"
+            android:layout_gravity="center">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Demander de l&apos;eau"
-            android:id="@+id/textView"
-            android:layout_gravity="center"
-            android:autoText="false"
-            android:textSize="17dp" />
-    </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:id="@+id/separator"
-        android:background="#490606"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp" />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/ic_pin1" />
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Demander de l&apos;eau"
+                    android:id="@+id/textView"
+                    android:layout_gravity="center"
+                    android:autoText="false"
+                    android:textSize="17dp" />
+            </LinearLayout>
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@mipmap/ic_pin3" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/separator"
+                android:background="#490606"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Demander du pain"
-            android:id="@+id/textView2"
-            android:layout_gravity="center"
-            android:textSize="17dp" />
-    </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:id="@+id/separator2"
-        android:background="#490606"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp" />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/ic_pin3" />
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Demander du pain"
+                    android:id="@+id/textView2"
+                    android:layout_gravity="center"
+                    android:textSize="17dp" />
+            </LinearLayout>
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@mipmap/ic_pin2" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/separator2"
+                android:background="#490606"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Appeler le serveur"
-            android:id="@+id/textView3"
-            android:layout_gravity="center"
-            android:textSize="17dp" />
-    </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-</LinearLayout>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/ic_pin2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Appeler le serveur"
+                    android:id="@+id/textView3"
+                    android:layout_gravity="center"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

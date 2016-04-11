@@ -15,6 +15,7 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="restau.serveur.PlanActivity"
+            android:screenOrientation="landscape"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/app_name"
             android:theme="@style/FullscreenTheme" >
@@ -27,6 +28,7 @@
 
         <activity
             android:name="restau.serveur.MenuActivity"
+            android:screenOrientation="landscape"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/app_name"
             android:theme="@style/FullscreenTheme" >

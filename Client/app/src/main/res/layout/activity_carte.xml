@@ -88,6 +88,7 @@
 
 		</LinearLayout>
 
+
 		<include layout="@layout/right_side_bar" />
 
 	</LinearLayout>
