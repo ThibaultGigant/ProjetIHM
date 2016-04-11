@@ -8,9 +8,10 @@ import java.util.HashMap;
  */
 public class Commande implements Serializable {
     private HashMap<String, Integer> listEntrees = new HashMap<String,Integer>();
-    private HashMap<String,Integer> listPlats = new HashMap<String,Integer>();
-    private HashMap<String,Integer> listDesserts = new HashMap<String,Integer>();
-    private HashMap<String,Integer> listBoissons = new HashMap<String,Integer>();
+    private HashMap<String, Integer> listPlats = new HashMap<String,Integer>();
+    private HashMap<String, Integer> listDesserts = new HashMap<String,Integer>();
+    private HashMap<String, Integer> listBoissons = new HashMap<String,Integer>();
+    private HashMap<String, Integer> listMenus = new HashMap<>();
 
     public HashMap<String, Integer> getListEntrees() {
         return listEntrees;
@@ -38,6 +39,10 @@ public class Commande implements Serializable {
 
     public HashMap<String, Integer> getListBoissons() {
         return listBoissons;
+    }
+
+    public HashMap<String, Integer> getListMenus() {
+        return listMenus;
     }
 
     public void setListBoissons(HashMap<String, Integer> listBoissons) {
@@ -80,6 +85,15 @@ public class Commande implements Serializable {
         }
     }
 
+    public void addMenu(String menu) {
+        if (this.listMenus.containsKey(menu)) {
+            this.listMenus.put(menu, this.listMenus.get(menu) + 1);
+        }
+        else {
+            this.listMenus.put(menu, 1);
+        }
+    }
+
     public void removeEntree(String entree) {
         if (this.listEntrees.containsKey(entree)) {
             if (this.listEntrees.get(entree) > 1)
@@ -113,6 +127,15 @@ public class Commande implements Serializable {
                 this.listBoissons.put(boisson, this.listBoissons.get(boisson) - 1);
             else
                 this.listBoissons.remove(boisson);
+        }
+    }
+
+    public void removeMenu(String menu) {
+        if (this.listMenus.containsKey(menu)) {
+            if (this.listMenus.get(menu) > 1)
+                this.listMenus.put(menu, this.listMenus.get(menu) - 1);
+            else
+                this.listMenus.remove(menu);
         }
     }
 
