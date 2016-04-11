@@ -1,361 +1,372 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/papyruss"
-    android:orientation="horizontal"
-    android:baselineAligned="false"
-    tools:context=".CartePlatsActivity" >
-
+    android:layout_height="match_parent">
     <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_weight="1"
-        android:orientation="vertical">
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/papyruss"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        tools:context=".CartePlatsActivity" >
 
-        <include layout="@layout/top_menu_bar"/>
-
-        <ScrollView
+        <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="match_parent">
-            <LinearLayout
-                android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <include layout="@layout/top_menu_bar"/>
+
+            <ScrollView
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:textSize="30sp"
-                    android:textStyle="italic"
-                    android:text="@string/plat_cat_poisson" />
-
-                <RelativeLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:layout_alignParentLeft="true"
+                        android:layout_gravity="center"
+                        android:textSize="30sp"
+                        android:textStyle="italic"
+                        android:text="@string/plat_cat_poisson" />
 
-                        android:text="@string/plat_poisson1"
-                        android:layout_centerVertical="true" />
-                    <Button
-                        style="?android:attr/buttonStyleSmall"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/button_poisson1"
-                        android:contentDescription="@string/plat_poisson1"
-                        android:layout_alignParentRight="true"
-                        android:background="@android:drawable/ic_input_add"
-                        android:layout_centerVertical="true" />
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:layout_alignParentLeft="true"
+
+                            android:text="@string/plat_poisson1"
+                            android:layout_centerVertical="true" />
+                        <Button
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button_poisson1"
+                            android:contentDescription="@string/plat_poisson1"
+                            android:layout_alignParentRight="true"
+                            android:background="@android:drawable/ic_input_add"
+                            android:layout_centerVertical="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:layout_toLeftOf="@id/button_poisson1"
+                            android:text="@string/plat_poisson1_prix"
+                            android:layout_centerVertical="true" />
+
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:layout_alignParentLeft="true"
+
+                            android:text="@string/plat_poisson2"
+                            android:layout_centerVertical="true" />
+                        <Button
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button_poisson2"
+                            android:contentDescription="@string/plat_poisson2"
+                            android:layout_alignParentRight="true"
+                            android:background="@android:drawable/ic_input_add"
+                            android:layout_centerVertical="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:layout_toLeftOf="@id/button_poisson2"
+                            android:text="@string/plat_poisson2_prix"
+                            android:layout_centerVertical="true" />
+
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:layout_alignParentLeft="true"
+
+                            android:text="@string/plat_poisson3"
+                            android:layout_centerVertical="true" />
+                        <Button
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button_poisson3"
+                            android:contentDescription="@string/plat_poisson3"
+                            android:layout_alignParentRight="true"
+                            android:background="@android:drawable/ic_input_add"
+                            android:layout_centerVertical="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:layout_toLeftOf="@id/button_poisson3"
+                            android:text="@string/plat_poisson3_prix"
+                            android:layout_centerVertical="true" />
+
+
+
+                    </RelativeLayout>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:layout_toLeftOf="@id/button_poisson1"
-                        android:text="@string/plat_poisson1_prix"
-                        android:layout_centerVertical="true" />
+                        android:layout_gravity="center"
+                        android:textSize="30sp"
+                        android:textStyle="italic"
+                        android:text="@string/plat_cat_viande" />
 
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:layout_alignParentLeft="true"
+                            android:text="@string/plat_viande1"
+                            android:layout_centerVertical="true" />
+                        <Button
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button_viande1"
+                            android:contentDescription="@string/plat_viande1"
+                            android:layout_alignParentRight="true"
+                            android:background="@android:drawable/ic_input_add"
+                            android:layout_centerVertical="true" />
+                        <Spinner
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@id/button_viande1"
+                            android:layout_centerVertical="true"
+                            android:entries="@array/cuissons"
+                            android:prompt="@string/cuisson_prompt"
+                            android:id="@+id/spinner_cuisson1" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:layout_toLeftOf="@id/spinner_cuisson1"
+                            android:text="@string/plat_viande1_prix"
+                            android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:layout_alignParentLeft="true"
 
+                            android:text="@string/plat_viande2"
+                            android:layout_centerVertical="true" />
+                        <Button
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button_viande2"
+                            android:contentDescription="@string/plat_viande2"
+                            android:layout_alignParentRight="true"
+                            android:background="@android:drawable/ic_input_add"
+                            android:layout_centerVertical="true" />
+                        <Spinner
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@id/button_viande2"
+                            android:layout_centerVertical="true"
+                            android:entries="@array/cuissons"
+                            android:prompt="@string/cuisson_prompt"
+                            android:id="@+id/spinner_cuisson2" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:layout_toLeftOf="@id/spinner_cuisson2"
+                            android:text="@string/plat_viande2_prix"
+                            android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:layout_alignParentLeft="true"
 
-                </RelativeLayout>
-                <RelativeLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                            android:text="@string/plat_viande3"
+                            android:layout_centerVertical="true" />
+                        <Button
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button_viande3"
+                            android:contentDescription="@string/plat_viande3"
+                            android:layout_alignParentRight="true"
+                            android:background="@android:drawable/ic_input_add"
+                            android:layout_centerVertical="true" />
+                        <Spinner
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@id/button_viande3"
+                            android:layout_centerVertical="true"
+                            android:entries="@array/cuissons"
+                            android:prompt="@string/cuisson_prompt"
+                            android:id="@+id/spinner_cuisson3" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:layout_toLeftOf="@id/spinner_cuisson3"
+                            android:text="@string/plat_viande3_prix"
+                            android:layout_centerVertical="true" />
+
+                    </RelativeLayout>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:layout_alignParentLeft="true"
+                        android:layout_gravity="center"
+                        android:textSize="30sp"
+                        android:textStyle="italic"
+                        android:text="@string/plat_cat_pates" />
 
-                        android:text="@string/plat_poisson2"
-                        android:layout_centerVertical="true" />
-                    <Button
-                        style="?android:attr/buttonStyleSmall"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/button_poisson2"
-                        android:contentDescription="@string/plat_poisson2"
-                        android:layout_alignParentRight="true"
-                        android:background="@android:drawable/ic_input_add"
-                        android:layout_centerVertical="true" />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:layout_toLeftOf="@id/button_poisson2"
-                        android:text="@string/plat_poisson2_prix"
-                        android:layout_centerVertical="true" />
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:layout_alignParentLeft="true"
 
-
-
-                </RelativeLayout>
-                <RelativeLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:layout_alignParentLeft="true"
-
-                        android:text="@string/plat_poisson3"
-                        android:layout_centerVertical="true" />
-                    <Button
-                        style="?android:attr/buttonStyleSmall"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/button_poisson3"
-                        android:contentDescription="@string/plat_poisson3"
-                        android:layout_alignParentRight="true"
-                        android:background="@android:drawable/ic_input_add"
-                        android:layout_centerVertical="true" />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:layout_toLeftOf="@id/button_poisson3"
-                        android:text="@string/plat_poisson3_prix"
-                        android:layout_centerVertical="true" />
+                            android:text="@string/plat_pates1"
+                            android:layout_centerVertical="true" />
+                        <Button
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button_pates1"
+                            android:contentDescription="@string/plat_pates1"
+                            android:layout_alignParentRight="true"
+                            android:background="@android:drawable/ic_input_add"
+                            android:layout_centerVertical="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:layout_toLeftOf="@id/button_pates1"
+                            android:text="@string/plat_pates1_prix"
+                            android:layout_centerVertical="true" />
 
 
 
-                </RelativeLayout>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:textSize="30sp"
-                    android:textStyle="italic"
-                    android:text="@string/plat_cat_viande" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:layout_alignParentLeft="true"
 
-                <RelativeLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:layout_alignParentLeft="true"
-                        android:text="@string/plat_viande1"
-                        android:layout_centerVertical="true" />
-                    <Button
-                        style="?android:attr/buttonStyleSmall"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/button_viande1"
-                        android:contentDescription="@string/plat_viande1"
-                        android:layout_alignParentRight="true"
-                        android:background="@android:drawable/ic_input_add"
-                        android:layout_centerVertical="true" />
-                    <Spinner
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_toLeftOf="@id/button_viande1"
-                        android:layout_centerVertical="true"
-                        android:entries="@array/cuissons"
-                        android:prompt="@string/cuisson_prompt"
-                        android:id="@+id/spinner_cuisson1" />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:layout_toLeftOf="@id/spinner_cuisson1"
-                        android:text="@string/plat_viande1_prix"
-                        android:layout_centerVertical="true" />
-                </RelativeLayout>
-                <RelativeLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:layout_alignParentLeft="true"
+                            android:text="@string/plat_pates2"
+                            android:layout_centerVertical="true" />
+                        <Button
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button_pates2"
+                            android:contentDescription="@string/plat_pates2"
+                            android:layout_alignParentRight="true"
+                            android:background="@android:drawable/ic_input_add"
+                            android:layout_centerVertical="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:layout_toLeftOf="@id/button_pates2"
+                            android:text="@string/plat_pates2_prix"
+                            android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:layout_alignParentLeft="true"
 
-                        android:text="@string/plat_viande2"
-                        android:layout_centerVertical="true" />
-                    <Button
-                        style="?android:attr/buttonStyleSmall"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/button_viande2"
-                        android:contentDescription="@string/plat_viande2"
-                        android:layout_alignParentRight="true"
-                        android:background="@android:drawable/ic_input_add"
-                        android:layout_centerVertical="true" />
-                    <Spinner
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_toLeftOf="@id/button_viande2"
-                        android:layout_centerVertical="true"
-                        android:entries="@array/cuissons"
-                        android:prompt="@string/cuisson_prompt"
-                        android:id="@+id/spinner_cuisson2" />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:layout_toLeftOf="@id/spinner_cuisson2"
-                        android:text="@string/plat_viande2_prix"
-                        android:layout_centerVertical="true" />
-                </RelativeLayout>
-                <RelativeLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:layout_alignParentLeft="true"
-
-                        android:text="@string/plat_viande3"
-                        android:layout_centerVertical="true" />
-                    <Button
-                        style="?android:attr/buttonStyleSmall"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/button_viande3"
-                        android:contentDescription="@string/plat_viande3"
-                        android:layout_alignParentRight="true"
-                        android:background="@android:drawable/ic_input_add"
-                        android:layout_centerVertical="true" />
-                    <Spinner
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_toLeftOf="@id/button_viande3"
-                        android:layout_centerVertical="true"
-                        android:entries="@array/cuissons"
-                        android:prompt="@string/cuisson_prompt"
-                        android:id="@+id/spinner_cuisson3" />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:layout_toLeftOf="@id/spinner_cuisson3"
-                        android:text="@string/plat_viande3_prix"
-                        android:layout_centerVertical="true" />
-
-                </RelativeLayout>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:textSize="30sp"
-                    android:textStyle="italic"
-                    android:text="@string/plat_cat_pates" />
-
-                <RelativeLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:layout_alignParentLeft="true"
-
-                        android:text="@string/plat_pates1"
-                        android:layout_centerVertical="true" />
-                    <Button
-                        style="?android:attr/buttonStyleSmall"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/button_pates1"
-                        android:contentDescription="@string/plat_pates1"
-                        android:layout_alignParentRight="true"
-                        android:background="@android:drawable/ic_input_add"
-                        android:layout_centerVertical="true" />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:layout_toLeftOf="@id/button_pates1"
-                        android:text="@string/plat_pates1_prix"
-                        android:layout_centerVertical="true" />
+                            android:text="@string/plat_pates3"
+                            android:layout_centerVertical="true" />
+                        <Button
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button_pates3"
+                            android:contentDescription="@string/plat_pates3"
+                            android:layout_alignParentRight="true"
+                            android:background="@android:drawable/ic_input_add"
+                            android:layout_centerVertical="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:layout_toLeftOf="@id/button_pates3"
+                            android:text="@string/plat_pates3_prix"
+                            android:layout_centerVertical="true" />
 
 
 
-                </RelativeLayout>
-                <RelativeLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:layout_alignParentLeft="true"
+                    </RelativeLayout>
+                </LinearLayout>
+            </ScrollView>
 
-                        android:text="@string/plat_pates2"
-                        android:layout_centerVertical="true" />
-                    <Button
-                        style="?android:attr/buttonStyleSmall"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/button_pates2"
-                        android:contentDescription="@string/plat_pates2"
-                        android:layout_alignParentRight="true"
-                        android:background="@android:drawable/ic_input_add"
-                        android:layout_centerVertical="true" />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:layout_toLeftOf="@id/button_pates2"
-                        android:text="@string/plat_pates2_prix"
-                        android:layout_centerVertical="true" />
-                </RelativeLayout>
-                <RelativeLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:layout_alignParentLeft="true"
+        </LinearLayout>
 
-                        android:text="@string/plat_pates3"
-                        android:layout_centerVertical="true" />
-                    <Button
-                        style="?android:attr/buttonStyleSmall"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/button_pates3"
-                        android:contentDescription="@string/plat_pates3"
-                        android:layout_alignParentRight="true"
-                        android:background="@android:drawable/ic_input_add"
-                        android:layout_centerVertical="true" />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:layout_toLeftOf="@id/button_pates3"
-                        android:text="@string/plat_pates3_prix"
-                        android:layout_centerVertical="true" />
-
-
-
-                </RelativeLayout>
-            </LinearLayout>
-        </ScrollView>
+        <include layout="@layout/right_side_bar"/>
 
     </LinearLayout>
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/pop_up_papillon"
+        android:layout_gravity="center" />
 
-    <include layout="@layout/right_side_bar"/>
 
-</LinearLayout>
+</FrameLayout>
