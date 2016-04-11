@@ -17,7 +17,7 @@ import android.widget.TextView;
 /**
  * Created by Tigig on 10/04/2016.
  */
-public class AbstractCustomActivity extends Activity {
+public class AbstractCustom2Activity extends Activity {
     protected Commande commande;
 
     public void initialize() {
@@ -166,18 +166,6 @@ public class AbstractCustomActivity extends Activity {
                 label.setLayoutParams(rowlayoutParams);
                 tr.addView(label);
 
-                ImageButton btn = new ImageButton(this);
-                btn.setBackground(getResources().getDrawable(R.mipmap.minus));
-                btn.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        getCommande().removeEntree(key);
-                        refreshRecap();
-                    }
-                });
-                btn.setLayoutParams(imageLayoutParams);
-                tr.addView(btn);
-
                 tl.addView(tr, tableLayoutParams);
             }
         }
@@ -209,18 +197,6 @@ public class AbstractCustomActivity extends Activity {
                 label.setText("x" + Integer.toString(this.getCommande().getListPlats().get(key)));
                 label.setLayoutParams(rowlayoutParams);
                 tr.addView(label);
-
-                ImageButton btn = new ImageButton(this);
-                btn.setBackground(getResources().getDrawable(R.mipmap.minus));
-                btn.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        getCommande().removePlat(key);
-                        refreshRecap();
-                    }
-                });
-                btn.setLayoutParams(imageLayoutParams);
-                tr.addView(btn);
 
                 tl.addView(tr, tableLayoutParams);
             }
@@ -254,18 +230,6 @@ public class AbstractCustomActivity extends Activity {
                 label.setLayoutParams(rowlayoutParams);
                 tr.addView(label);
 
-                ImageButton btn = new ImageButton(this);
-                btn.setBackground(getResources().getDrawable(R.mipmap.minus));
-                btn.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        getCommande().removeDessert(key);
-                        refreshRecap();
-                    }
-                });
-                btn.setLayoutParams(imageLayoutParams);
-                tr.addView(btn);
-
                 tl.addView(tr, tableLayoutParams);
             }
         }
@@ -297,19 +261,6 @@ public class AbstractCustomActivity extends Activity {
                 label.setText("x" + Integer.toString(this.getCommande().getListBoissons().get(key)));
                 label.setLayoutParams(rowlayoutParams);
                 tr.addView(label);
-
-                ImageButton btn = new ImageButton(this);
-                btn.setBackground(getResources().getDrawable(R.mipmap.minus));
-                btn.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        getCommande().removeBoisson(key);
-                        refreshRecap();
-                    }
-                });
-                btn.setLayoutParams(imageLayoutParams);
-                tr.addView(btn);
-
                 tl.addView(tr, tableLayoutParams);
             }
         }
@@ -341,18 +292,6 @@ public class AbstractCustomActivity extends Activity {
                 label.setText("x" + Integer.toString(this.getCommande().getListMenus().get(key)));
                 label.setLayoutParams(rowlayoutParams);
                 tr.addView(label);
-
-                ImageButton btn = new ImageButton(this);
-                btn.setBackground(getResources().getDrawable(R.mipmap.minus));
-                btn.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        getCommande().removeMenu(key);
-                        refreshRecap();
-                    }
-                });
-                btn.setLayoutParams(imageLayoutParams);
-                tr.addView(btn);
 
                 tl.addView(tr, tableLayoutParams);
             }
