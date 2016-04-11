@@ -95,11 +95,10 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/beignets_de_crevette"
-                            android:id="@+id/entrees1_1"
-                            android:editable="false"
+                            android:id="@+id/entree1_1"
                             android:textColor="@android:color/black"
-                            android:layout_marginLeft="20dp"
-                            android:clickable="true" />
+                            android:clickable="true"
+                            android:layout_toRightOf="@id/warningEntrees1_1"/>
                     </RelativeLayout>
 
                     <RelativeLayout
@@ -118,11 +117,10 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/salade_c_sar"
-                            android:id="@+id/entrees1_2"
-                            android:editable="false"
+                            android:id="@+id/entree1_2"
                             android:textColor="@android:color/black"
-                            android:layout_marginLeft="20dp"
-                            android:clickable="true" />
+                            android:clickable="true"
+                            android:layout_toRightOf="@id/warningEntrees1_2"/>
                     </RelativeLayout>
 
                     <TextView
@@ -149,11 +147,10 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/entrec_te_de_boeuf"
-                            android:id="@+id/plats1_1"
-                            android:editable="false"
+                            android:id="@+id/plat1_1"
                             android:textColor="@android:color/black"
-                            android:layout_marginLeft="20dp"
-                            android:clickable="true" />
+                            android:clickable="true"
+                            android:layout_toRightOf="@id/warningPlats1_1"/>
                     </RelativeLayout>
 
                     <RelativeLayout
@@ -172,11 +169,10 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/aileron_de_requin"
-                            android:id="@+id/plats1_2"
-                            android:editable="false"
+                            android:id="@+id/plat1_2"
                             android:textColor="@android:color/black"
-                            android:layout_marginLeft="20dp"
-                            android:clickable="true" />
+                            android:clickable="true"
+                            android:layout_toRightOf="@id/warningPlats1_2"/>
                     </RelativeLayout>
 
                     <TextView
@@ -203,11 +199,10 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/chocolat_li_geois"
-                            android:id="@+id/desserts1_1"
-                            android:editable="false"
+                            android:id="@+id/dessert1_1"
                             android:textColor="@android:color/black"
-                            android:layout_marginLeft="20dp"
-                            android:clickable="true" />
+                            android:clickable="true"
+                            android:layout_toRightOf="@id/warningDesserts1_1"/>
                     </RelativeLayout>
 
                     <RelativeLayout
@@ -226,11 +221,10 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/p_che_melba"
-                            android:id="@+id/desserts1_2"
-                            android:editable="false"
+                            android:id="@+id/dessert1_2"
                             android:textColor="@android:color/black"
-                            android:layout_marginLeft="20dp"
-                            android:clickable="true" />
+                            android:clickable="true"
+                            android:layout_toRightOf="@id/warningDesserts1_2"/>
                     </RelativeLayout>
 
                 </LinearLayout>

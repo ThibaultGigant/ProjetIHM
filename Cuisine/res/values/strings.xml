@@ -23,5 +23,10 @@
     <string name="aileron_de_requin">Aileron de requin</string>
     <string name="chocolat_li_geois">Chocolat liègeois</string>
     <string name="p_che_melba">Pêche melba</string>
+    <string name="terminer">Terminer</string>
+    <string name="action1">Fait</string>
+    <string name="popupClear">Service terminé</string>
+
+
 
 </resources>
