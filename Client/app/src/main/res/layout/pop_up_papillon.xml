@@ -33,6 +33,7 @@
                 android:layout_gravity="center">
 
                 <LinearLayout
+                    android:id="@+id/layout_eau"
                     android:focusable="true"
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
@@ -41,7 +42,7 @@
                     <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@mipmap/ic_pin1" />
+                        android:background="@mipmap/ic_eau" />
 
                     <Button
                         android:background="@null"
@@ -71,7 +72,7 @@
                     <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@mipmap/ic_pin3" />
+                        android:background="@mipmap/ic_pain" />
 
                     <Button
                         android:background="@null"
@@ -100,7 +101,7 @@
                     <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@mipmap/ic_pin2" />
+                        android:background="@mipmap/ic_appel_serveur" />
 
                     <Button
                         android:background="@null"
