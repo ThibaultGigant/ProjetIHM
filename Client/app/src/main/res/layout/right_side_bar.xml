@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:layout_width="match_parent"
+    android:layout_width="fill_parent"
     android:layout_height="match_parent"
     android:layout_marginBottom="10dp"
     android:layout_marginTop="10dp"
@@ -10,23 +10,25 @@
     android:layout_weight="2"
     android:measureWithLargestChild="true">
 
+    <ImageButton
+        android:id="@+id/popServeur"
+        android:layout_width="150dp"
+        android:layout_height="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bow_tie"
+        android:onClick="popServeur"
+        android:adjustViewBounds="true"
+        android:baselineAlignBottom="false"
+        android:layout_marginBottom="-20dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/popServeur"
+        android:layout_weight="0.83" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_weight="5">
-        <ImageButton
-            android:id="@+id/popServeur"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="top|end"
-            android:background="@drawable/bow_tie"
-            android:onClick="popServeur"
-            android:adjustViewBounds="true"
-            android:baselineAlignBottom="false"
-            android:layout_marginBottom="-20dp"
-            android:layout_marginTop="-20dp"
-            android:contentDescription="@string/popServeur" />
 
         <ScrollView
             android:id="@+id/scroll_recap"

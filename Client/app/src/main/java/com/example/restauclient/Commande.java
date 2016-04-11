@@ -11,7 +11,7 @@ public class Commande implements Serializable {
     private HashMap<String, Integer> listPlats = new HashMap<String,Integer>();
     private HashMap<String, Integer> listDesserts = new HashMap<String,Integer>();
     private HashMap<String, Integer> listBoissons = new HashMap<String,Integer>();
-    private HashMap<String, Integer> listMenus = new HashMap<>();
+    private HashMap<String, Integer> listMenus = new HashMap<String,Integer>();
 
     public HashMap<String, Integer> getListEntrees() {
         return listEntrees;

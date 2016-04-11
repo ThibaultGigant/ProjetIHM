@@ -19,18 +19,18 @@ public class AbstractCustomActivity extends Activity {
     protected Commande commande;
 
     public void initialize() {
-        final ImageButton mFrame = (ImageButton) findViewById(R.id.popServeur);
+        /*final ImageButton mFrame = (ImageButton) findViewById(R.id.popServeur);
 
         mFrame.post(new Runnable() {
 
             @Override
             public void run() {
-                LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+                LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
                 int width = mFrame.getWidth();
-                mFrame.setMinimumHeight(width/2);
+                //mFrame.setMinimumHeight(width/2);
                 mFrame.setLayoutParams(params);
             }
-        });
+        });*/
 
         Intent intent = getIntent();
         if (intent == null)
