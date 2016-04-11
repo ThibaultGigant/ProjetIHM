@@ -24,9 +24,9 @@
 
     <!--Boissons-->
     <string name="boisson_cat_alcool">Spirits</string>
-    <string name="boisson_alcool1">Martini</string>
+    <string name="boisson_alcool1">Red Martini</string>
     <string name="boisson_alcool1_prix">6€</string>
-    <string name="boisson_alcool2">Pastis</string>
+    <string name="boisson_alcool2" translatable="false">Pastis</string>
     <string name="boisson_alcool2_prix">6€</string>
     <string name="boisson_alcool3">Whisky</string>
     <string name="boisson_alcool3_prix">6€</string>
