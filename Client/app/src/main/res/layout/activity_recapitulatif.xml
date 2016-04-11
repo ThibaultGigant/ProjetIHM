@@ -4,7 +4,6 @@
     android:layout_height="match_parent"
     android:orientation="horizontal"
     android:baselineAligned="false"
-    android:background="@drawable/papyruss"
     tools:context=".RecapitulatifActivity" >
 
 
