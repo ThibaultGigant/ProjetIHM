@@ -70,6 +70,11 @@ public class AbstractCustomActivity extends Activity {
     }
 
     public void popServeur(View view) {
+        LinearLayout popUpPap = (LinearLayout) findViewById(R.id.popUpPap);
+        if (popUpPap.getVisibility() == View.VISIBLE)
+            popUpPap.setVisibility(View.GONE);
+        else
+            popUpPap.setVisibility(View.VISIBLE);
     }
 
     /**
