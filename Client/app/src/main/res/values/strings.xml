@@ -5,7 +5,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
     <string name="bienvenue">Welcome to Chez Gusteau</string>
-    <string name="description" translatable="false">Chez Gusteau n\'a pas toujours été un restaurant, ce qui explique son décor atypique et exceptionnel. Le pavillon était à l\'origine un lieu de halte pour Napoléon III, qui venait au Bois de Boulogne pour chasser. Au fil des années, Chez Gusteau a évolué, tout en entretenant son style "rétro-moderne". A l\'intérieur, dorures, chandeliers et miroirs offrent un charme certain à cette résidence qui a conservé toute sa splendeur d\'époque. La salle, lumineuse et spacieuse, la formidable hauteur sous plafond ainsi que l\'espacement des tables, font de Chez Gusteau un lieu propice à la détente et aux confidences. Voici donc un lieu parfait pour un déjeuner d\'affaires ou un dîner romantique aux chandelles. Quant aux différents salons situés à l\'étage, ils sont privatisables dans le cadre d\'un séminaire d\'entreprise ou d\'un évènement privé.</string>
+    <string name="description" translatable="false">Chez Gusteau n\'a pas toujours été un restaurant, ce qui explique son décor atypique et exceptionnel. Le pavillon était à l\'origine un lieu de halte pour Napoléon III, qui venait au Bois de Boulogne pour chasser. Au fil des années, Chez Gusteau a évolué, tout en entretenant son style "rétro-moderne". A l\'intérieur, dorures, chandeliers et miroirs offrent un charme certain à cette résidence qui a conservé toute sa splendeur d\'époque. La salle, lumineuse et spacieuse, la formidable hauteur sous plafond ainsi que l\'espacement des tables, font de Chez Gusteau un lieu propice à la détente et aux confidences. Voici donc un lieu parfait pour un déjeuner d\'affaires ou un dîner romantique aux chandelles. Quant aux différents salons situés à l\'étage, ils sont privatisables dans le cadre d\'un séminaire d\'entreprise ou d\'un évènement privé. Chez Gusteau dispose maintenant aussi d\'une nouvelle application interactive au service de ses clients.</string>
     <string name="accueil">Home</string>
 
     <string name="menus">Menus</string>
@@ -23,10 +23,10 @@
     <string name="enter">Enter</string>
     <string name="popServeur">Call waiter</string>
 
-    <string name="carteEntrees">Starters</string>
-    <string name="cartePlats">Main Courses</string>
-    <string name="carteDesserts">Deserts</string>
-    <string name="carteBoissons">Drinks</string>
+    <string name="carteEntrees">\nStarters\n</string>
+    <string name="cartePlats">\nMain Courses\n</string>
+    <string name="carteDesserts">\nDeserts\n</string>
+    <string name="carteBoissons">\nDrinks\n</string>
 
     <!--Boissons-->
     <string name="boisson_cat_alcool">Spirits</string>
