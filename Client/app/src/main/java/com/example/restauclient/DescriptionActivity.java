@@ -23,6 +23,6 @@ public class DescriptionActivity extends Activity{
         getWindowManager().getDefaultDisplay().getMetrics(dm);
         int width = dm.widthPixels;
         int height = dm.heightPixels;
-        getWindow().setLayout((int) (width*.7),(int) (height*.7));
+        getWindow().setLayout((int) (width*.7),(int) (height*.5));
     }
 }

@@ -32,37 +32,40 @@
     <string name="boisson_cat_alcool">Spirits</string>
 
     <string name="boisson_alcool1">Red Martini</string>
-    <string name="boisson_alcool1_prix" translatable="false">6€</string>
-    <string name="boisson_alcool2" translatable="false">Pastis</string>
-    <string name="boisson_alcool2_prix" translatable="false">6€</string>
-    <string name="boisson_alcool3">Whisky</string>
-    <string name="boisson_alcool3_prix" translatable="false">6€</string>
+    <string name="boisson_alcool1_prix" translatable="false">5€</string>
+    <string name="boisson_alcool2" translatable="false">Pastis 51</string>
+    <string name="boisson_alcool2_prix" translatable="false">5.5€</string>
+    <string name="boisson_alcool3">Johonnie Walker - Blue Label (Blended)</string>
+    <string name="boisson_alcool3_prix" translatable="false">12.5€</string>
 
     <string name="boisson_cat_vins">Wine</string>
-    <string name="boisson_vin1">St-Chignan</string>
+    <string name="boisson_vin1">St-Chignan 75cl </string>
     <string name="boisson_vin1_prix" translatable="false">10.50€</string>
-    <string name="boisson_vin2">Gris de gris</string>
+    <string name="boisson_vin2">Gris de gris 75cl</string>
     <string name="boisson_vin2_prix" translatable="false">6.50€</string>
-    <string name="boisson_vin3">St-Emilion</string>
+    <string name="boisson_vin3">St-Emilion 75cl </string>
     <string name="boisson_vin3_prix" translatable="false">18€</string>
 
     <string name="boisson_cat_soft">Softs</string>
-    <string name="boisson_soft1">Coca-cola</string>
+    <string name="boisson_soft1">Coca-cola 33cl</string>
     <string name="boisson_soft1_prix" translatable="false">4€</string>
-    <string name="boisson_soft2">Grenadine</string>
+    <string name="boisson_soft2">Grenadine 50cl</string>
     <string name="boisson_soft2_prix" translatable="false">3.50€</string>
-    <string name="boisson_soft3">Fanta</string>
+    <string name="boisson_soft3">Fanta 33cl </string>
     <string name="boisson_soft3_prix" translatable="false">4€</string>
-    <string name="boisson_soft4">Mineral Water</string>
-    <string name="boisson_soft4_prix" translatable="false">2.50€</string>
+    <string name="boisson_soft4">Mineral Water 1L</string>
+    <string name="boisson_soft4_prix" translatable="false">6.50€</string>
 
     <!--Entrees-->
     <string name="entree_cat_salade">Salad</string>
     <string name="entree_salade1">Salade de chèvre chaud</string>
+    <string name="entree_salade1_desc">Salade au fromage de chèvre chaud, croutons persil et ail et un filet d\'huile d\'olive.</string>
     <string name="entree_salade1_prix" translatable="false">7€</string>
     <string name="entree_salade2">Salade César</string>
+    <string name="entree_salade2_desc">Coeurs de laitue, coupeaux de parmesan, tranches de pain écroutées et sa sauce dont on garde le secret.</string>
     <string name="entree_salade2_prix" translatable="false">6.80€</string>
     <string name="entree_salade3">Salade niçoise</string>
+    <string name="entree_salade3_desc">Oeufs, poivrons verts, tomates cerise, échalottes, filets d\'anchois au sel et olives noires de Nice.</string>
     <string name="entree_salade3_prix" translatable="false">6.40€</string>
 
 
@@ -70,18 +73,20 @@
     <string name="entree_charcuterie1">Jambon de Bayonne</string>
     <string name="entree_charcuterie1_desc">Goutez à notre jambon de Bayonne 100% made in France</string>
     <string name="entree_charcuterie1_prix" translatable="false">8.20€</string>
-    <string name="entree_charcuterie2">Rillette de thon</string>
+    <string name="entree_charcuterie2">Rillettes de thon</string>
+    <string name="entree_charcuterie2_desc">Nos rillettes de thon sont assaisonnées à l\'ail et aux fines herbes et acompagnées d\'une tuile au romarin. Idéal pour accompagner votre apéro.</string>
     <string name="entree_charcuterie2_prix" translatable="false">6€</string>
     <string name="entree_charcuterie3">Fois gras et coulis de framboise</string>
+    <string name="entree_charcuterie3_desc">Le fois gras est fait maison et accompagné de biscuits au raisins et son coulis de framboise</string>
     <string name="entree_charcuterie3_prix" translatable="false">9.40€</string>
 
     <!--Plats-->
     <string name="plat_cat_viande">Meat</string>
     <string name="plat_viande1">Rôti de veau</string>
     <string name="plat_viande1_prix" translatable="false">14€</string>
-    <string name="plat_viande2">Steak</string>
-    <string name="plat_viande2_prix" translatable="false">11.35€</string>
-    <string name="plat_viande3">Entrcôte sauce Roquefort</string>
+    <string name="plat_viande2" translatable="false">Filet de Boeuf Rossini</string>
+    <string name="plat_viande2_prix" translatable="false">21.35€</string>
+    <string name="plat_viande3" translatable="false">Entrcôte sauce Roquefort</string>
     <string name="plat_viande3_prix" translatable="false">15€</string>
 
     <string name="plat_cat_poisson">Fish</string>
@@ -93,11 +98,11 @@
     <string name="plat_poisson3_prix" translatable="false">9.40€</string>
 
     <string name="plat_cat_pates">Pasta</string>
-    <string name="plat_pates1">Pâtes au Pesto</string>
+    <string name="plat_pates1" translatable="false">Tagliatelles au Pesto</string>
     <string name="plat_pates1_prix" translatable="false">11.20€</string>
-    <string name="plat_pates2">Pâtes Carbonara</string>
+    <string name="plat_pates2" translatable="false">Spaghettis Carbonara</string>
     <string name="plat_pates2_prix" translatable="false">12€</string>
-    <string name="plat_pates3">Pâtes au saumon</string>
+    <string name="plat_pates3" translatable="false">Pennes au saumon</string>
     <string name="plat_pates3_prix" translatable="false">10.50€</string>
 
     <!--Dessert-->
