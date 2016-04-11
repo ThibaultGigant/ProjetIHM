@@ -10,7 +10,6 @@
     android:layout_weight="2"
     android:measureWithLargestChild="true">
 
-<<<<<<< HEAD
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,28 +28,6 @@
             android:layout_marginTop="-20dp"
             android:contentDescription="@string/popServeur" />
 
-=======
-    <ImageButton
-        android:id="@+id/popServeur"
-        android:layout_width="150dp"
-        android:layout_height="10dp"
-        android:layout_gravity="center_horizontal"
-        android:background="@drawable/bow_tie"
-        android:onClick="popServeur"
-        android:adjustViewBounds="true"
-        android:baselineAlignBottom="false"
-        android:layout_marginBottom="-20dp"
-        android:layout_marginTop="10dp"
-        android:contentDescription="@string/popServeur"
-        android:layout_weight="0.83" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_weight="5">
-
->>>>>>> c6f14abec000eb59f75374f30d6f5c4d1219ec30
         <ScrollView
             android:id="@+id/scroll_recap"
             android:layout_width="match_parent"
