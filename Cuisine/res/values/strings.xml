@@ -13,6 +13,15 @@
     <string name="table_7">Table 7</string>
     <string name="table_8">Table 8</string>
     <string name="minutes">Minutes</string>
-    <string name="desc">Chronometre</string>
+    <string name="desc">This is an image</string>
+    <string name="desserts">Desserts</string>
+    <string name="plats">Plats</string>
+    <string name="entr_es">Entrées</string>
+    <string name="beignets_de_crevette">Beignets de crevette</string>
+    <string name="salade_c_sar">Salade César</string>
+    <string name="entrec_te_de_boeuf">Entrecôte sauce Roquefort</string>
+    <string name="aileron_de_requin">Aileron de requin</string>
+    <string name="chocolat_li_geois">Chocolat liègeois</string>
+    <string name="p_che_melba">Pêche melba</string>
 
 </resources>

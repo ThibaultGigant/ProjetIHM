@@ -20,27 +20,20 @@
         <include layout="@layout/top_menu_bar"/>
 
         <ScrollView
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="match_parent">
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="fill_parent"
                 android:layout_height="match_parent">
 
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:textSize="30sp"
-                        android:textStyle="italic"
-                        android:text="@string/boisson_cat_alcool" />
-
-                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="30sp"
+                    android:textStyle="italic"
+                    android:text="@string/boisson_cat_alcool" />
 
                 <RelativeLayout
                     android:orientation="horizontal"
@@ -59,6 +52,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/button_alcool1"
+                        android:contentDescription="@string/boisson_alcool1"
                         android:layout_alignParentRight="true"
                         android:background="@android:drawable/ic_input_add"
                         android:layout_centerVertical="true" />
@@ -90,6 +84,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/button_alcool2"
+                        android:contentDescription="@string/boisson_alcool2"
                         android:layout_alignParentRight="true"
                         android:background="@android:drawable/ic_input_add"
                         android:layout_centerVertical="true" />
@@ -121,6 +116,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/button_alcool3"
+                        android:contentDescription="@string/boisson_alcool3"
                         android:layout_alignParentRight="true"
                         android:background="@android:drawable/ic_input_add"
                         android:layout_centerVertical="true" />
@@ -135,20 +131,15 @@
 
 
                 </RelativeLayout>
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:textSize="30sp"
-                        android:textStyle="italic"
-                        android:text="@string/boisson_cat_vins" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="30sp"
+                    android:textStyle="italic"
+                    android:text="@string/boisson_cat_vins" />
 
-                </LinearLayout>
 
                 <RelativeLayout
                     android:orientation="horizontal"
@@ -167,6 +158,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/button_vin1"
+                        android:contentDescription="@string/boisson_vin1"
                         android:layout_alignParentRight="true"
                         android:background="@android:drawable/ic_input_add"
                         android:layout_centerVertical="true" />
@@ -198,6 +190,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/button_vin2"
+                        android:contentDescription="@string/boisson_vin2"
                         android:layout_alignParentRight="true"
                         android:background="@android:drawable/ic_input_add"
                         android:layout_centerVertical="true" />
@@ -226,6 +219,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/button_vin3"
+                        android:contentDescription="@string/boisson_vin3"
                         android:layout_alignParentRight="true"
                         android:background="@android:drawable/ic_input_add"
                         android:layout_centerVertical="true" />
@@ -236,9 +230,6 @@
                         android:layout_toLeftOf="@id/button_vin3"
                         android:text="@string/boisson_vin1_prix"
                         android:layout_centerVertical="true" />
-
-
-
                 </RelativeLayout>
             </LinearLayout>
         </ScrollView>

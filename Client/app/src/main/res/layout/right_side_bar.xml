@@ -7,30 +7,41 @@
     android:layout_marginTop="10dp"
     android:layout_marginLeft="15dp"
     android:layout_marginRight="15dp"
-    android:layout_weight="3"
+    android:layout_weight="2"
     android:measureWithLargestChild="true">
 
-    <ImageButton
-        android:id="@+id/popServeur"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="top|end"
-        android:background="@mipmap/bow_tie"
-        android:onClick="popServeur"
-        android:adjustViewBounds="true"
-        android:baselineAlignBottom="false"
-        android:contentDescription="@string/popServeur" />
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TableLayout
-            android:id="@+id/recapitulatif"
+        android:orientation="vertical"
+        android:layout_weight="5">
+        <ImageButton
+            android:id="@+id/popServeur"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:background="@drawable/bow_tie"
+            android:onClick="popServeur"
+            android:adjustViewBounds="true"
+            android:baselineAlignBottom="false"
+            android:layout_marginBottom="-20dp"
+            android:layout_marginTop="-20dp"
+            android:contentDescription="@string/popServeur" />
 
-        </TableLayout>
-    </ScrollView>
+        <ScrollView
+            android:id="@+id/scroll_recap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4">
+            <TableLayout
+                android:id="@+id/recapitulatif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TableLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
 
     <Button
         android:layout_width="wrap_content"

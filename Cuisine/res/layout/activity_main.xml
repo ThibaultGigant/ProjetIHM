@@ -46,26 +46,14 @@
                 <Chronometer
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/chronometer"
+                    android:id="@+id/chronometer1"
                     android:gravity="center_horizontal"
                     android:layout_alignParentLeft="true"
                     android:layout_marginLeft="40dp"
                     android:layout_alignParentTop="true"
                     android:layout_marginTop="6dp"
                     android:enabled="true"
-                    android:textColor="@android:color/black" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/minutes"
-                    android:id="@+id/chronoText1"
-                    android:layout_alignParentLeft="true"
-                    android:layout_marginLeft="85dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginTop="8dp"
-                    android:textSize="14sp"
-                    android:textColor="@android:color/black" />
+                    android:textColor="@android:color/black"/>
 
             </RelativeLayout>
 
@@ -74,7 +62,179 @@
                 android:layout_height="match_parent"
                 android:background="@android:color/background_light"
                 android:layout_margin="1dp"
-                android:id="@+id/scrollView" />
+                android:fadeScrollbars="false"
+                android:id="@+id/scrollView1" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/container1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/entr_es"
+                        android:id="@+id/entreesText1"
+                        android:background="@color/background_lightblue"
+                        android:textColor="@android:color/black" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/entrees1_1"
+                        android:layout_marginRight="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/warningEntrees1_1"
+                            android:contentDescription="@string/desc" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/beignets_de_crevette"
+                            android:id="@+id/entrees1_1"
+                            android:editable="false"
+                            android:textColor="@android:color/black"
+                            android:layout_marginLeft="20dp"
+                            android:clickable="true" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/entrees1_2"
+                        android:layout_marginRight="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/warningEntrees1_2"
+                            android:contentDescription="@string/desc" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/salade_c_sar"
+                            android:id="@+id/entrees1_2"
+                            android:editable="false"
+                            android:textColor="@android:color/black"
+                            android:layout_marginLeft="20dp"
+                            android:clickable="true" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/plats"
+                        android:id="@+id/platsText1"
+                        android:background="@color/background_lightblue"
+                        android:textColor="@android:color/black" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/plats1_1"
+                        android:layout_marginRight="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/warningPlats1_1"
+                            android:contentDescription="@string/desc" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/entrec_te_de_boeuf"
+                            android:id="@+id/plats1_1"
+                            android:editable="false"
+                            android:textColor="@android:color/black"
+                            android:layout_marginLeft="20dp"
+                            android:clickable="true" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/plats1_2"
+                        android:layout_marginRight="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/warningPlats1_2"
+                            android:contentDescription="@string/desc" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/aileron_de_requin"
+                            android:id="@+id/plats1_2"
+                            android:editable="false"
+                            android:textColor="@android:color/black"
+                            android:layout_marginLeft="20dp"
+                            android:clickable="true" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/desserts"
+                        android:id="@+id/dessertsText1"
+                        android:background="@color/background_lightblue"
+                        android:textColor="@android:color/black" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/desserts1_1"
+                        android:layout_marginRight="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/warningDesserts1_1"
+                            android:contentDescription="@string/desc" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/chocolat_li_geois"
+                            android:id="@+id/desserts1_1"
+                            android:editable="false"
+                            android:textColor="@android:color/black"
+                            android:layout_marginLeft="20dp"
+                            android:clickable="true" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/desserts1_2"
+                        android:layout_marginRight="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/warningDesserts1_2"
+                            android:contentDescription="@string/desc" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/p_che_melba"
+                            android:id="@+id/desserts1_2"
+                            android:editable="false"
+                            android:textColor="@android:color/black"
+                            android:layout_marginLeft="20dp"
+                            android:clickable="true" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </ScrollView>
 
         </LinearLayout>
 
@@ -124,17 +284,6 @@
                     android:layout_marginLeft="5dp"
                     android:contentDescription="@string/desc" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/minutes"
-                    android:id="@+id/chronoText2"
-                    android:layout_alignParentLeft="true"
-                    android:layout_marginLeft="85dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginTop="8dp"
-                    android:textSize="14sp"
-                    android:textColor="@android:color/black" />
             </RelativeLayout>
 
             <ScrollView
@@ -191,17 +340,6 @@
                     android:layout_marginLeft="5dp"
                     android:contentDescription="@string/desc" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/minutes"
-                    android:id="@+id/chronoText3"
-                    android:layout_alignParentLeft="true"
-                    android:layout_marginLeft="85dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginTop="8dp"
-                    android:textSize="14sp"
-                    android:textColor="@android:color/black" />
             </RelativeLayout>
 
             <ScrollView
@@ -258,17 +396,6 @@
                     android:layout_marginLeft="5dp"
                     android:contentDescription="@string/desc" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/minutes"
-                    android:id="@+id/chronoText4"
-                    android:layout_alignParentLeft="true"
-                    android:layout_marginLeft="85dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginTop="8dp"
-                    android:textSize="14sp"
-                    android:textColor="@android:color/black" />
             </RelativeLayout>
 
             <ScrollView
@@ -332,17 +459,6 @@
                     android:layout_marginLeft="5dp"
                     android:contentDescription="@string/desc" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/minutes"
-                    android:id="@+id/chronoText5"
-                    android:layout_alignParentLeft="true"
-                    android:layout_marginLeft="85dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginTop="8dp"
-                    android:textSize="14sp"
-                    android:textColor="@android:color/black" />
             </RelativeLayout>
 
             <ScrollView
@@ -399,17 +515,6 @@
                     android:layout_marginLeft="5dp"
                     android:contentDescription="@string/desc" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/minutes"
-                    android:id="@+id/chronoText6"
-                    android:layout_alignParentLeft="true"
-                    android:layout_marginLeft="85dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginTop="8dp"
-                    android:textSize="14sp"
-                    android:textColor="@android:color/black" />
             </RelativeLayout>
 
             <ScrollView
@@ -466,17 +571,6 @@
                     android:layout_marginLeft="5dp"
                     android:contentDescription="@string/desc" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/minutes"
-                    android:id="@+id/chronoText7"
-                    android:layout_alignParentLeft="true"
-                    android:layout_marginLeft="85dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginTop="8dp"
-                    android:textSize="14sp"
-                    android:textColor="@android:color/black" />
             </RelativeLayout>
 
             <ScrollView
@@ -533,17 +627,6 @@
                     android:layout_marginLeft="5dp"
                     android:contentDescription="@string/desc" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/minutes"
-                    android:id="@+id/chronoText8"
-                    android:layout_alignParentLeft="true"
-                    android:layout_marginLeft="85dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginTop="8dp"
-                    android:textSize="14sp"
-                    android:textColor="@android:color/black" />
             </RelativeLayout>
 
             <ScrollView

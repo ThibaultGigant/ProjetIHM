@@ -10,11 +10,18 @@ import android.view.View;
 import java.util.Locale;
 
 public class MainActivity extends Activity {
+    Commande commande;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Intent intent = getIntent();
+        if (!intent.hasExtra("commande"))
+            this.commande = new Commande();
+        else
+            this.commande = (Commande) intent.getSerializableExtra("commande");
     }
 
     @Override
@@ -29,8 +36,9 @@ public class MainActivity extends Activity {
         Locale.setDefault(locale);
         Configuration config = new Configuration();
         config.locale = locale;
-        getApplicationContext().getResources().updateConfiguration(config, null);
+        getApplicationContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
         this.setContentView(R.layout.activity_main);
+        Locale.setDefault(locale);
     }
 
     public void switchToEnglish(View v) {
@@ -38,8 +46,9 @@ public class MainActivity extends Activity {
         Locale.setDefault(locale);
         Configuration config = new Configuration();
         config.locale = locale;
-        getApplicationContext().getResources().updateConfiguration(config, null);
+        getApplicationContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
         this.setContentView(R.layout.activity_main);
+        Locale.setDefault(locale);
     }
 
     public void switchToItalian(View v) {
@@ -56,6 +65,7 @@ public class MainActivity extends Activity {
 
     public void goToCarte(View v) {
         Intent intent = new Intent(this, CarteActivity.class);
+        intent.putExtra("commande", this.commande);
         startActivity(intent);
     }
 

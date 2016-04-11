@@ -17,62 +17,23 @@
         android:layout_weight="1"
         android:orientation="vertical" >
 
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="10dp"
-            android:orientation="horizontal"
-            android:baselineAligned="false"
-            android:background="@android:color/holo_orange_dark">
+        <include layout="@layout/top_menu_bar"/>
 
-            <Button
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_weight="1"
-                android:background="@mipmap/parchemin"
-                android:onClick="goToMain"
-                android:text="@string/accueil" />
-
-            <Button
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_weight="1"
-                android:onClick="goToMenus"
-                android:background="@mipmap/parchemin"
-                android:text="@string/menus" />
-
-            <Button
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_weight="1"
-                android:onClick="goToCarte"
-                android:background="@mipmap/parchemin"
-                android:text="@string/carte" />
-
-        </LinearLayout>
         <ScrollView
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="match_parent">
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="fill_parent"
                 android:layout_height="match_parent">
 
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:textSize="30sp"
-                        android:textStyle="italic"
-                        android:text="@string/dessert_cat_glace" />
-
-                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="30sp"
+                    android:textStyle="italic"
+                    android:text="@string/dessert_cat_glace" />
 
                 <RelativeLayout
                     android:orientation="horizontal"
@@ -91,6 +52,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/button_glace1"
+                        android:contentDescription="@string/dessert_glace1"
                         android:layout_alignParentRight="true"
                         android:background="@android:drawable/ic_input_add"
                         android:layout_centerVertical="true" />
@@ -122,6 +84,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/button_glace2"
+                        android:contentDescription="@string/dessert_glace2"
                         android:layout_alignParentRight="true"
                         android:background="@android:drawable/ic_input_add"
                         android:layout_centerVertical="true" />
@@ -153,6 +116,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/button_glace3"
+                        android:contentDescription="@string/dessert_glace3"
                         android:layout_alignParentRight="true"
                         android:background="@android:drawable/ic_input_add"
                         android:layout_centerVertical="true" />
@@ -171,29 +135,6 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_weight="3"
-        android:orientation="vertical"
-        android:measureWithLargestChild="false">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="top|right"
-            android:onClick="popServeur"
-            android:text="" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|right"
-            android:onClick="goToBilan"
-            android:text="@string/validation" />
-
-    </LinearLayout>
+    <include layout="@layout/right_side_bar"/>
 
 </LinearLayout>

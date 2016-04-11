@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal"
+    android:baselineAligned="false"
+    android:background="@drawable/papyrus"
+    tools:context=".RecapitulatifActivity" >
+
+
+    <ScrollView
+        android:id="@+id/scroll_recap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4">
+        <TableLayout
+            android:id="@+id/recapitulatif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>
