@@ -149,7 +149,6 @@
                         android:layout_height="wrap_content"
                         android:textSize="20sp"
                         android:layout_alignParentLeft="true"
-
                         android:text="@string/plat_viande1"
                         android:layout_centerVertical="true" />
                     <Button
@@ -161,16 +160,21 @@
                         android:layout_alignParentRight="true"
                         android:background="@android:drawable/ic_input_add"
                         android:layout_centerVertical="true" />
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/button_viande1"
+                        android:layout_centerVertical="true"
+                        android:entries="@array/cuissons"
+                        android:prompt="@string/cuisson_prompt"
+                        android:id="@+id/spinner_cuisson1" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20sp"
-                        android:layout_toLeftOf="@id/button_viande1"
+                        android:layout_toLeftOf="@id/spinner_cuisson1"
                         android:text="@string/plat_viande1_prix"
                         android:layout_centerVertical="true" />
-
-
-
                 </RelativeLayout>
                 <RelativeLayout
                     android:orientation="horizontal"
@@ -193,11 +197,19 @@
                         android:layout_alignParentRight="true"
                         android:background="@android:drawable/ic_input_add"
                         android:layout_centerVertical="true" />
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/button_viande2"
+                        android:layout_centerVertical="true"
+                        android:entries="@array/cuissons"
+                        android:prompt="@string/cuisson_prompt"
+                        android:id="@+id/spinner_cuisson2" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20sp"
-                        android:layout_toLeftOf="@id/button_viande2"
+                        android:layout_toLeftOf="@id/spinner_cuisson2"
                         android:text="@string/plat_viande2_prix"
                         android:layout_centerVertical="true" />
                 </RelativeLayout>
@@ -222,15 +234,21 @@
                         android:layout_alignParentRight="true"
                         android:background="@android:drawable/ic_input_add"
                         android:layout_centerVertical="true" />
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/button_viande3"
+                        android:layout_centerVertical="true"
+                        android:entries="@array/cuissons"
+                        android:prompt="@string/cuisson_prompt"
+                        android:id="@+id/spinner_cuisson3" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20sp"
-                        android:layout_toLeftOf="@id/button_viande3"
+                        android:layout_toLeftOf="@id/spinner_cuisson3"
                         android:text="@string/plat_viande3_prix"
                         android:layout_centerVertical="true" />
-
-
 
                 </RelativeLayout>
                 <TextView

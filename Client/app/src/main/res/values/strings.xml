@@ -7,11 +7,17 @@
     <string name="bienvenue">Welcome to Chez Gusteau</string>
     <string name="description">This restaurant has been created in 1579 by my nephew\'s great-uncle\'s grand-grand-son. Up until today, our main goal has been to offer best quality products to our customer... bla bla bla bla bla bla</string>
     <string name="accueil">Home</string>
+
     <string name="menus">Menus</string>
+
     <string name="menuA">Menu Printanier \n Laissez-vous tenter\n par ses saveurs\n 15€</string>
+    <string name="menuAshort">Menu Printanier     15€</string>
     <string name="menuB">Menu Campagnard \n Sa simplicité saura\n vous combler\n 22€</string>
+    <string name="menuBshort">Menu Campagnard    22€</string>
     <string name="menuC">Menu Gourmand \n Si la faim \n vous tiraille\n 25€</string>
-    <string name="menuD">Menu Printanier \n Flattez votre palais\n avec des mets de qualité\n 35€</string>
+    <string name="menuCshort">Menu Gourmand    25€</string>
+    <string name="menuD">Menu Gourmet \n Flattez votre palais\n avec des mets de qualité\n 35€</string>
+    <string name="menuDshort">Menu Gourmet     35€</string>
     <string name="carte">Carte</string>
     <string name="validation">Send the order</string>
     <string name="enter">Enter</string>
@@ -24,6 +30,7 @@
 
     <!--Boissons-->
     <string name="boisson_cat_alcool">Spirits</string>
+
     <string name="boisson_alcool1">Red Martini</string>
     <string name="boisson_alcool1_prix" translatable="false">6€</string>
     <string name="boisson_alcool2" translatable="false">Pastis</string>
@@ -107,5 +114,17 @@
     <string name="plats">Main Courses :</string>
     <string name="desserts">Desserts :</string>
     <string name="text_menus">Menus :</string>
+    <string-array name="cuissons">
+        <item>Bleue</item>
+        <item>Saignante</item>
+        <item>A point</item>
+    </string-array>
+    <string name="cuisson_prompt">--cooking--</string>
+
+    <string name="pickEntree">Pick an entry</string>
+    <string name="pickPlat">Pick a dish</string>
+    <string name="pickDessert">Pick a dessert</string>
+    <string name="ou">or</string>
+    <string name="addMenu">Add this menu</string>
 
 </resources>

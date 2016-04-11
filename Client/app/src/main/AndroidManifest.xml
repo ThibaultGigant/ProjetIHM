@@ -65,6 +65,27 @@
             android:label="@string/app_name"
             android:theme="@style/CustomTheme.DescTheme" >
         </activity>
+        <activity
+            android:name="com.example.restauclient.MenuAActivity"
+            android:label="@string/app_name"
+            android:theme="@style/CustomTheme.DescTheme" >
+        </activity>
+        <activity
+            android:name="com.example.restauclient.MenuBActivity"
+            android:label="@string/app_name"
+            android:theme="@style/CustomTheme.DescTheme" >
+        </activity>
+        <activity
+            android:name="com.example.restauclient.MenuCActivity"
+            android:label="@string/app_name"
+            android:theme="@style/CustomTheme.DescTheme" >
+        </activity>
+        <activity
+            android:name="com.example.restauclient.MenuDActivity"
+            android:label="@string/app_name"
+            android:theme="@style/CustomTheme.DescTheme" >
+
+        </activity>
     </application>
 
 </manifest>

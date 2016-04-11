@@ -25,6 +25,14 @@ public class AbstractCustomActivity extends Activity {
 
             @Override
             public void run() {
+
+                LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+                int width = mFrame.getWidth();
+                mFrame.setMinimumHeight(width/2);
+                mFrame.setLayoutParams(params);
+            }
+        });
+
                 LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
                 int width = mFrame.getWidth();
                 //mFrame.setMinimumHeight(width/2);
@@ -76,7 +84,6 @@ public class AbstractCustomActivity extends Activity {
         else
             popUpPap.setVisibility(View.VISIBLE);
     }
-
     /**
      * Pour éviter que l'utilisateur n'efface tout ou partie de sa commande en appuyant sur le "back button"
      * @param keyCode

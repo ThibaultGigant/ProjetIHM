@@ -10,25 +10,30 @@
     android:layout_weight="2"
     android:measureWithLargestChild="true">
 
-    <ImageButton
-        android:id="@+id/popServeur"
-        android:layout_width="150dp"
-        android:layout_height="10dp"
-        android:layout_gravity="center_horizontal"
-        android:background="@drawable/bow_tie"
-        android:onClick="popServeur"
-        android:adjustViewBounds="true"
-        android:baselineAlignBottom="false"
-        android:layout_marginBottom="-20dp"
-        android:layout_marginTop="10dp"
-        android:contentDescription="@string/popServeur"
-        android:layout_weight="0.83" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_weight="5">
+
+        <ImageButton
+            android:id="@+id/popServeur"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bow_tie"
+            android:onClick="popServeur"
+            android:adjustViewBounds="true"
+            android:baselineAlignBottom="false"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/popServeur" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/popServeur"
+            android:textSize="20sp"/>
 
         <ScrollView
             android:id="@+id/scroll_recap"

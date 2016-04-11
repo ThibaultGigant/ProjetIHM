@@ -8,7 +8,7 @@
     android:layout_marginTop="10dp"
     android:orientation="horizontal"
     android:baselineAligned="false"
-    tools:context=".CarteBoissonsActivity" >
+    tools:context=".MenuAActivity" >
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -20,21 +20,27 @@
         <include layout="@layout/top_menu_bar"/>
 
         <ScrollView
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent">
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="fill_parent"
                 android:layout_height="match_parent">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:textSize="30sp"
-                    android:textStyle="italic"
-                    android:text="@string/boisson_cat_alcool" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="30sp"
+                        android:textStyle="italic"
+                        android:text="@string/pickEntree" />
+
+                </LinearLayout>
                 <RelativeLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
@@ -45,28 +51,28 @@
                         android:textSize="20sp"
                         android:layout_alignParentLeft="true"
 
-                        android:text="@string/boisson_alcool1"
+                        android:text="@string/entree_salade1"
                         android:layout_centerVertical="true" />
-                    <Button
-                        style="?android:attr/buttonStyleSmall"
+                    <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/button_alcool1"
-                        android:contentDescription="@string/boisson_alcool1"
+                        android:id="@+id/button_salade1"
                         android:layout_alignParentRight="true"
-                        android:background="@android:drawable/ic_input_add"
                         android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:textSize="20sp"
-                        android:layout_toLeftOf="@id/button_alcool1"
-                        android:text="@string/boisson_alcool1_prix"
-                        android:layout_centerVertical="true" />
-
-
-
-                </RelativeLayout>
+                        android:textStyle="italic"
+                        android:text="@string/ou" />
+                </LinearLayout>
                 <RelativeLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
@@ -77,28 +83,66 @@
                         android:textSize="20sp"
                         android:layout_alignParentLeft="true"
 
-                        android:text="@string/boisson_alcool2"
+                        android:text="@string/entree_charcuterie1"
                         android:layout_centerVertical="true" />
-                    <Button
-                        style="?android:attr/buttonStyleSmall"
+                    <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/button_alcool2"
-                        android:contentDescription="@string/boisson_alcool2"
+                        android:id="@+id/button_charcuterie1"
                         android:layout_alignParentRight="true"
-                        android:background="@android:drawable/ic_input_add"
                         android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="30sp"
+                        android:textStyle="italic"
+                        android:text="@string/pickPlat" />
+                </LinearLayout>
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="20sp"
-                        android:layout_toLeftOf="@id/button_alcool2"
-                        android:text="@string/boisson_alcool2_prix"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/plat_viande1"
                         android:layout_centerVertical="true" />
-
-
-
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/button_viande1"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/button_viande1"
+                        android:layout_centerVertical="true"
+                        android:entries="@array/cuissons"
+                        android:prompt="@string/cuisson_prompt"
+                        android:id="@+id/spinner_cuisson" />
                 </RelativeLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        android:textStyle="italic"
+                        android:text="@string/ou" />
+                </LinearLayout>
                 <RelativeLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
@@ -109,38 +153,27 @@
                         android:textSize="20sp"
                         android:layout_alignParentLeft="true"
 
-                        android:text="@string/boisson_alcool3"
+                        android:text="@string/plat_poisson1"
                         android:layout_centerVertical="true" />
-                    <Button
-                        style="?android:attr/buttonStyleSmall"
+                    <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/button_alcool3"
-                        android:contentDescription="@string/boisson_alcool3"
+                        android:id="@+id/button_poisson1"
                         android:layout_alignParentRight="true"
-                        android:background="@android:drawable/ic_input_add"
                         android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:layout_toLeftOf="@id/button_alcool3"
-                        android:text="@string/boisson_alcool1_prix"
-                        android:layout_centerVertical="true" />
-
-
-
-                </RelativeLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:textSize="30sp"
-                    android:textStyle="italic"
-                    android:text="@string/boisson_cat_vins" />
-
-
+                        android:layout_gravity="center"
+                        android:textSize="30sp"
+                        android:textStyle="italic"
+                        android:text="@string/pickDessert" />
+                </LinearLayout>
                 <RelativeLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
@@ -151,28 +184,27 @@
                         android:textSize="20sp"
                         android:layout_alignParentLeft="true"
 
-                        android:text="@string/boisson_vin1"
+                        android:text="@string/dessert_glace1"
                         android:layout_centerVertical="true" />
-                    <Button
-                        style="?android:attr/buttonStyleSmall"
+                    <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/button_vin1"
-                        android:contentDescription="@string/boisson_vin1"
+                        android:id="@+id/button_glace1"
                         android:layout_alignParentRight="true"
-                        android:background="@android:drawable/ic_input_add"
                         android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:textSize="20sp"
-                        android:layout_toLeftOf="@id/button_vin1"
-                        android:text="@string/boisson_vin1_prix"
-                        android:layout_centerVertical="true" />
-
-
-
-                </RelativeLayout>
+                        android:textStyle="italic"
+                        android:text="@string/ou" />
+                </LinearLayout>
                 <RelativeLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
@@ -183,54 +215,27 @@
                         android:textSize="20sp"
                         android:layout_alignParentLeft="true"
 
-                        android:text="@string/boisson_vin2"
+                        android:text="@string/dessert_glace2"
                         android:layout_centerVertical="true" />
-                    <Button
-                        style="?android:attr/buttonStyleSmall"
+                    <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/button_vin2"
-                        android:contentDescription="@string/boisson_vin2"
+                        android:id="@+id/button_glace2"
                         android:layout_alignParentRight="true"
-                        android:background="@android:drawable/ic_input_add"
-                        android:layout_centerVertical="true" />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:layout_toLeftOf="@id/button_vin2"
-                        android:text="@string/boisson_vin2_prix"
                         android:layout_centerVertical="true" />
                 </RelativeLayout>
-                <RelativeLayout
+                <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:layout_alignParentLeft="true"
-
-                        android:text="@string/boisson_vin3"
-                        android:layout_centerVertical="true" />
                     <Button
-                        style="?android:attr/buttonStyleSmall"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/button_vin3"
-                        android:contentDescription="@string/boisson_vin3"
-                        android:layout_alignParentRight="true"
-                        android:background="@android:drawable/ic_input_add"
-                        android:layout_centerVertical="true" />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:layout_toLeftOf="@id/button_vin3"
-                        android:text="@string/boisson_vin1_prix"
-                        android:layout_centerVertical="true" />
-                </RelativeLayout>
+                        android:id="@+id/button_validation_menu"
+                        android:layout_centerVertical="true"
+                        android:onClick="validationMenu"
+                        android:text="@string/addMenu" />
+                </LinearLayout>
             </LinearLayout>
         </ScrollView>
 
