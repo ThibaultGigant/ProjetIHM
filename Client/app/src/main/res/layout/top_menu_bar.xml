@@ -10,8 +10,13 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_weight="1"
-        android:background="@mipmap/parchemin"
+        android:background="@drawable/button"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:onClick="goToMain"
+        android:textSize="20sp"
+        android:textColor="#FFF"
+        android:textStyle="bold"
         android:text="@string/accueil" />
 
     <Button
@@ -19,7 +24,12 @@
         android:layout_height="fill_parent"
         android:layout_weight="1"
         android:onClick="goToMenus"
-        android:background="@mipmap/parchemin"
+        android:background="@drawable/button"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:textSize="20sp"
         android:text="@string/menus" />
 
     <Button
@@ -27,7 +37,12 @@
         android:layout_height="fill_parent"
         android:layout_weight="1"
         android:onClick="goToCarte"
-        android:background="@mipmap/parchemin"
+        android:background="@drawable/button"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:textSize="20sp"
         android:text="@string/carte" />
 
 </LinearLayout>

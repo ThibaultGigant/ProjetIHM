@@ -1,27 +1,53 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal"
-    android:baselineAligned="false"
-    android:background="@drawable/papyruss"
-    tools:context=".RecapitulatifActivity" >
-
-
-    <ScrollView
-        android:id="@+id/scroll_recap"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_weight="4">
-        <TableLayout
-            android:id="@+id/recapitulatif"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-        </TableLayout>
-    </ScrollView>
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        tools:context=".RecapitulatifActivity" >
 
-</LinearLayout>
+        <ScrollView
+            android:id="@+id/scroll_recap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="4">
+            <TableLayout
+                android:id="@+id/recapitulatif"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">">
+            </TableLayout>
+            </ScrollView>
+
+            <ImageButton
+                android:id="@+id/popServeur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|end"
+                android:background="@drawable/bow_tie"
+                android:onClick="popServeur"
+                android:adjustViewBounds="true"
+                android:baselineAlignBottom="false"
+                android:layout_marginBottom="-20dp"
+                android:layout_marginTop="-20dp"
+                android:contentDescription="@string/popServeur"
+                android:layout_alignRight="@+id/scroll_recap"
+                android:layout_alignParentRight="@+id/scroll_recap"
+                android:layout_weight="3" />
+    </LinearLayout>
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/pop_up_papillon"
+        android:layout_gravity="center" />
+
+
+</FrameLayout>
