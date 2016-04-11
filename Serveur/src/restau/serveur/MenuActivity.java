@@ -30,6 +30,12 @@ public class MenuActivity extends Activity {
 
     private int numberOfTable = 1;
 
+    private int entreesId = -1;
+    private int dessertsId = -1;
+    private int platsId = -1;
+
+    private boolean suppr_mode = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -127,17 +133,23 @@ public class MenuActivity extends Activity {
                     if (name.equals("entrees")) {
 
                         listeEntrees = new LinearLayout(this);
+                        this.entreesId = View.generateViewId();
+                        listeEntrees.setId(this.entreesId);
                         listeEntrees.setOrientation(LinearLayout.VERTICAL);
                         listeMenu.addView(listeEntrees);
 
                     }
                     else if (name.equals("plats")) {
                         listePlats = new LinearLayout(this);
+                        this.platsId = View.generateViewId();
+                        listeEntrees.setId(this.platsId);
                         listePlats.setOrientation(LinearLayout.VERTICAL);
                         listeMenu.addView(listePlats);
                     }
                     else if (name.equals("desserts")) {
                         listeDesserts = new LinearLayout(this);
+                        this.dessertsId = View.generateViewId();
+                        listeEntrees.setId(this.dessertsId);
                         listeDesserts.setOrientation(LinearLayout.VERTICAL);
                         listeMenu.addView(listeDesserts);
                     }
@@ -194,8 +206,45 @@ public class MenuActivity extends Activity {
         }
     }
 
-    public void suppression_mode() {
+    public void suppression_mode(View view) {
+
+        if(suppr_mode)
+            return;
+
+        suppr_mode = true;
+
         LinearLayout listeMenu = (LinearLayout) findViewById(R.id.listeMenu);
+
+        LinearLayout item;
+        if (this.entreesId != -1) {
+            LinearLayout entrees = (LinearLayout) findViewById(this.entreesId);
+            for(int i=0; i<entrees.getChildCount() ; i++) {
+                item = (LinearLayout) entrees.getChildAt(i);
+                ImageView minus = new ImageView(this);
+                minus.setBackground(getResources().getDrawable(R.mipmap.minus));
+                item.addView(minus);
+            }
+        }
+
+        if (this.dessertsId != -1) {
+            LinearLayout desserts = (LinearLayout) findViewById(this.dessertsId);
+            for(int i=0; i<desserts.getChildCount() ; i++) {
+                item = (LinearLayout) desserts.getChildAt(i);
+                ImageView minus = new ImageView(this);
+                minus.setBackground(getResources().getDrawable(R.mipmap.minus));
+                item.addView(minus);
+            }
+        }
+
+        if (this.platsId != -1) {
+            LinearLayout plats = (LinearLayout) findViewById(this.platsId);
+            for(int i=0; i<plats.getChildCount() ; i++) {
+                item = (LinearLayout) plats.getChildAt(i);
+                ImageView minus = new ImageView(this);
+                minus.setBackground(getResources().getDrawable(R.mipmap.minus));
+                item.addView(minus);
+            }
+        }
 
         //listeMenu.getChildAt();
     }
