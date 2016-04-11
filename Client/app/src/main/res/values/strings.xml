@@ -106,5 +106,6 @@
     <string name="boissons">Drinks</string>
     <string name="plats">Main Courses :</string>
     <string name="desserts">Desserts :</string>
+    <string name="text_menus">Menus :</string>
 
 </resources>

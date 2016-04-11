@@ -102,7 +102,8 @@ public class AbstractCustomActivity extends Activity {
         TableLayout.LayoutParams tableLayoutParams = new TableLayout.LayoutParams(TableLayout.LayoutParams.MATCH_PARENT, TableLayout.LayoutParams.MATCH_PARENT);
 
         TableRow.LayoutParams imageLayoutParams = new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT);
-        imageLayoutParams.setMargins(5,-10,5,-10);
+        int marginTopBottom = getResources().getDrawable(R.mipmap.minus).getMinimumHeight() / 5;
+        imageLayoutParams.setMargins(5,-marginTopBottom,5,-marginTopBottom);
 
         /*
         Ajout des entrées
@@ -270,6 +271,50 @@ public class AbstractCustomActivity extends Activity {
                     @Override
                     public void onClick(View v) {
                         getCommande().removeBoisson(key);
+                        refreshRecap();
+                    }
+                });
+                btn.setLayoutParams(imageLayoutParams);
+                tr.addView(btn);
+
+                tl.addView(tr, tableLayoutParams);
+            }
+        }
+
+        /*
+        Ajout des Menus
+         */
+        if (!this.commande.getListMenus().isEmpty()) {
+            /* Création de la nouvelle ligne à rajouter */
+            tr = new TableRow(this);
+            tr.setLayoutParams(rowlayoutParams);
+            label = new TextView(this);
+            label.setText(R.string.text_menus);
+            label.setTextSize(20);
+            label.setLayoutParams(rowlayoutParams);
+            tr.addView(label);
+            tl.addView(tr, tableLayoutParams);
+
+            for (final String key : this.getCommande().getListMenus().keySet()) {
+                tr = new TableRow(this);
+                tr.setLayoutParams(rowlayoutParams);
+
+                label = new TextView(this);
+                label.setText(key);
+                label.setLayoutParams(rowlayoutParams);
+                tr.addView(label);
+
+                label = new TextView(this);
+                label.setText("x" + Integer.toString(this.getCommande().getListMenus().get(key)));
+                label.setLayoutParams(rowlayoutParams);
+                tr.addView(label);
+
+                ImageButton btn = new ImageButton(this);
+                btn.setBackground(getResources().getDrawable(R.mipmap.minus));
+                btn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        getCommande().removeMenu(key);
                         refreshRecap();
                     }
                 });
