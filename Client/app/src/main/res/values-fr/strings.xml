@@ -30,10 +30,10 @@
     <string name="boisson_vin2_prix">6.50€</string>
     <string name="boisson_vin3">St-Emilion 75cl</string>
     <string name="boisson_vin3_prix">18€</string>
-    <string name="carteBoissons">Boissons</string>
-    <string name="carteDesserts">Desserts</string>
-    <string name="carteEntrees">Entrées</string>
-    <string name="cartePlats">Plats</string>
+    <string name="carteBoissons">\nBoissons\n</string>
+    <string name="carteDesserts">\nDesserts\n</string>
+    <string name="carteEntrees">\nEntrées\n</string>
+    <string name="cartePlats">\nPlats\n</string>
     <string name="dessert_cat_glace">Glaces</string>
     <string name="dessert_glace1">Sorbet aux fruits</string>
     <string name="dessert_glace1_prix">3€</string>
