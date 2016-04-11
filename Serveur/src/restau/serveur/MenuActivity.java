@@ -193,4 +193,10 @@ public class MenuActivity extends Activity {
             return -1;
         }
     }
+
+    public void suppression_mode() {
+        LinearLayout listeMenu = (LinearLayout) findViewById(R.id.listeMenu);
+
+        //listeMenu.getChildAt();
+    }
 }
