@@ -32,82 +32,82 @@
     <string name="boisson_cat_alcool">Spirits</string>
 
     <string name="boisson_alcool1">Red Martini</string>
-    <string name="boisson_alcool1_prix">6€</string>
+    <string name="boisson_alcool1_prix" translatable="false">6€</string>
     <string name="boisson_alcool2" translatable="false">Pastis</string>
-    <string name="boisson_alcool2_prix">6€</string>
+    <string name="boisson_alcool2_prix" translatable="false">6€</string>
     <string name="boisson_alcool3">Whisky</string>
-    <string name="boisson_alcool3_prix">6€</string>
+    <string name="boisson_alcool3_prix" translatable="false">6€</string>
 
     <string name="boisson_cat_vins">Wine</string>
     <string name="boisson_vin1">St-Chignan</string>
-    <string name="boisson_vin1_prix">10.50€</string>
+    <string name="boisson_vin1_prix" translatable="false">10.50€</string>
     <string name="boisson_vin2">Gris de gris</string>
-    <string name="boisson_vin2_prix">6.50€</string>
+    <string name="boisson_vin2_prix" translatable="false">6.50€</string>
     <string name="boisson_vin3">St-Emilion</string>
-    <string name="boisson_vin3_prix">18€</string>
+    <string name="boisson_vin3_prix" translatable="false">18€</string>
 
     <string name="boisson_cat_soft">Softs</string>
     <string name="boisson_soft1">Coca-cola</string>
-    <string name="boisson_soft1_prix">4€</string>
+    <string name="boisson_soft1_prix" translatable="false">4€</string>
     <string name="boisson_soft2">Grenadine</string>
-    <string name="boisson_soft2_prix">3.50€</string>
+    <string name="boisson_soft2_prix" translatable="false">3.50€</string>
     <string name="boisson_soft3">Fanta</string>
-    <string name="boisson_soft3_prix">4€</string>
+    <string name="boisson_soft3_prix" translatable="false">4€</string>
     <string name="boisson_soft4">Mineral Water</string>
-    <string name="boisson_soft4_prix">2.50€</string>
+    <string name="boisson_soft4_prix" translatable="false">2.50€</string>
 
     <!--Entrees-->
     <string name="entree_cat_salade">Salad</string>
     <string name="entree_salade1">Salade de chèvre chaud</string>
-    <string name="entree_salade1_prix">7€</string>
+    <string name="entree_salade1_prix" translatable="false">7€</string>
     <string name="entree_salade2">Salade César</string>
-    <string name="entree_salade2_prix">6.80€</string>
+    <string name="entree_salade2_prix" translatable="false">6.80€</string>
     <string name="entree_salade3">Salade niçoise</string>
-    <string name="entree_salade3_prix">6.40€</string>
+    <string name="entree_salade3_prix" translatable="false">6.40€</string>
 
 
     <string name="entree_cat_charcuterie">Charcuterie</string>
     <string name="entree_charcuterie1">Jambon de Bayonne</string>
     <string name="entree_charcuterie1_desc">Goutez à notre jambon de Bayonne 100% made in France</string>
-    <string name="entree_charcuterie1_prix">8.20€</string>
+    <string name="entree_charcuterie1_prix" translatable="false">8.20€</string>
     <string name="entree_charcuterie2">Rillette de thon</string>
-    <string name="entree_charcuterie2_prix">6€</string>
+    <string name="entree_charcuterie2_prix" translatable="false">6€</string>
     <string name="entree_charcuterie3">Fois gras et coulis de framboise</string>
-    <string name="entree_charcuterie3_prix">9.40€</string>
+    <string name="entree_charcuterie3_prix" translatable="false">9.40€</string>
 
     <!--Plats-->
     <string name="plat_cat_viande">Meat</string>
     <string name="plat_viande1">Rôti de veau</string>
-    <string name="plat_viande1_prix">14€</string>
+    <string name="plat_viande1_prix" translatable="false">14€</string>
     <string name="plat_viande2">Steak</string>
-    <string name="plat_viande2_prix">11.35€</string>
+    <string name="plat_viande2_prix" translatable="false">11.35€</string>
     <string name="plat_viande3">Entrcôte sauce Roquefort</string>
-    <string name="plat_viande3_prix">15€</string>
+    <string name="plat_viande3_prix" translatable="false">15€</string>
 
     <string name="plat_cat_poisson">Fish</string>
     <string name="plat_poisson1">Steak de thon</string>
-    <string name="plat_poisson1_prix">10.50€</string>
+    <string name="plat_poisson1_prix" translatable="false">10.50€</string>
     <string name="plat_poisson2">Aileron de requin</string>
-    <string name="plat_poisson2_prix">16€</string>
+    <string name="plat_poisson2_prix" translatable="false">16€</string>
     <string name="plat_poisson3">Sole meunière</string>
-    <string name="plat_poisson3_prix">9.40€</string>
+    <string name="plat_poisson3_prix" translatable="false">9.40€</string>
 
     <string name="plat_cat_pates">Pasta</string>
     <string name="plat_pates1">Pâtes au Pesto</string>
-    <string name="plat_pates1_prix">11.20€</string>
+    <string name="plat_pates1_prix" translatable="false">11.20€</string>
     <string name="plat_pates2">Pâtes Carbonara</string>
-    <string name="plat_pates2_prix">12€</string>
+    <string name="plat_pates2_prix" translatable="false">12€</string>
     <string name="plat_pates3">Pâtes au saumon</string>
-    <string name="plat_pates3_prix">10.50€</string>
+    <string name="plat_pates3_prix" translatable="false">10.50€</string>
 
     <!--Dessert-->
     <string name="dessert_cat_glace">Ice Cream</string>
     <string name="dessert_glace1">Sorbet aux fruits</string>
-    <string name="dessert_glace1_prix">3€</string>
+    <string name="dessert_glace1_prix" translatable="false">3€</string>
     <string name="dessert_glace2">Pêche melba</string>
-    <string name="dessert_glace2_prix">6.80€</string>
+    <string name="dessert_glace2_prix" translatable="false">6.80€</string>
     <string name="dessert_glace3">Chocolat liègeois</string>
-    <string name="dessert_glace3_prix">6.40€</string>
+    <string name="dessert_glace3_prix" translatable="false">6.40€</string>
     <string name="entree">Entrées :</string>
     <string name="askWaiter">Ask the waiter for Something</string>
     <string name="boissons">Drinks</string>

@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Build;
 import android.view.KeyEvent;
 import android.view.View;
+import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TableLayout;
@@ -99,12 +100,18 @@ public class AbstractCustomActivity extends Activity {
     }
 
     public void popServeur(View view) {
-        LinearLayout popUpPap = (LinearLayout) findViewById(R.id.popUpPap);
-        if (popUpPap.getVisibility() == View.VISIBLE)
-            popUpPap.setVisibility(View.GONE);
-        else
-            popUpPap.setVisibility(View.VISIBLE);
+        //Intent intent = new Intent(this, PopUpPap.class);
+        //startActivity(intent);
+
+        FrameLayout popUpPap = (FrameLayout) findViewById(R.id.popUpPap);
+        popUpPap.setVisibility(View.VISIBLE);
     }
+
+    public void unPopServeur(View view) {
+        FrameLayout popUpPap = (FrameLayout) findViewById(R.id.popUpPap);
+        popUpPap.setVisibility(View.INVISIBLE);
+    }
+
     /**
      * Pour éviter que l'utilisateur n'efface tout ou partie de sa commande en appuyant sur le "back button"
      * @param keyCode
