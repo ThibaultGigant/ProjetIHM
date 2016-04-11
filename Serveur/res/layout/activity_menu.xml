@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0099cc"
+    android:background="@drawable/wallpaper"
     tools:context=".PlanActivity">
 
     <LinearLayout
@@ -13,7 +13,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1" >
+            android:layout_weight="3" >
 
             <LinearLayout
                 android:orientation="vertical"
@@ -49,11 +49,55 @@
                 </ScrollView>
             </LinearLayout>
 
-            <LinearLayout
-                android:orientation="horizontal"
+            <ImageView
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView2"
+                android:background="#ed5e5e5e"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="3"/>
+                android:layout_weight="3"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Supprimer"
+                        android:id="@+id/suppr_button"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ajouter"
+                        android:id="@+id/add_button"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp" />
+                </LinearLayout>
+
+                <Button
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Valider"
+                    android:id="@+id/valid_button"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp" />
+
+            </RelativeLayout>
         </LinearLayout>
 
         <HorizontalScrollView

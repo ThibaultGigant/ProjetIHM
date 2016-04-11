@@ -16,22 +16,21 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:layout_marginTop="5mm"
                 android:layout_centerHorizontal="true"
                 android:id="@+id/descname"
-                android:textSize="40sp" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:textSize="40sp" />
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="20px">
+            android:layout_marginTop="20px"
+            android:layout_marginRight="10mm"
+            android:layout_marginLeft="10mm">
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
                 android:id="@+id/desc"
                 android:textSize="25sp" />
         </RelativeLayout>

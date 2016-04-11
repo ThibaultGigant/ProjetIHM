@@ -128,7 +128,7 @@
                             android:layout_height="wrap_content"
                             android:textSize="20sp"
                             android:layout_toLeftOf="@id/button_alcool3"
-                            android:text="@string/boisson_alcool1_prix"
+                            android:text="@string/boisson_alcool3_prix"
                             android:layout_centerVertical="true" />
 
 
@@ -234,6 +234,137 @@
                             android:text="@string/boisson_vin1_prix"
                             android:layout_centerVertical="true" />
                     </RelativeLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="30sp"
+                        android:textStyle="italic"
+                        android:text="@string/boisson_cat_soft" />
+
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:layout_alignParentLeft="true"
+
+                            android:text="@string/boisson_soft1"
+                            android:layout_centerVertical="true" />
+                        <Button
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button_soft1"
+                            android:contentDescription="@string/boisson_soft1"
+                            android:layout_alignParentRight="true"
+                            android:background="@android:drawable/ic_input_add"
+                            android:layout_centerVertical="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:layout_toLeftOf="@id/button_soft1"
+                            android:text="@string/boisson_soft1_prix"
+                            android:layout_centerVertical="true" />
+
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:layout_alignParentLeft="true"
+
+                            android:text="@string/boisson_soft2"
+                            android:layout_centerVertical="true" />
+                        <Button
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button_soft2"
+                            android:contentDescription="@string/boisson_soft2"
+                            android:layout_alignParentRight="true"
+                            android:background="@android:drawable/ic_input_add"
+                            android:layout_centerVertical="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:layout_toLeftOf="@id/button_soft2"
+                            android:text="@string/boisson_soft2_prix"
+                            android:layout_centerVertical="true" />
+
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:layout_alignParentLeft="true"
+
+                            android:text="@string/boisson_soft3"
+                            android:layout_centerVertical="true" />
+                        <Button
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button_soft3"
+                            android:contentDescription="@string/boisson_soft3"
+                            android:layout_alignParentRight="true"
+                            android:background="@android:drawable/ic_input_add"
+                            android:layout_centerVertical="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:layout_toLeftOf="@id/button_soft3"
+                            android:text="@string/boisson_soft3_prix"
+                            android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:layout_alignParentLeft="true"
+
+                            android:text="@string/boisson_soft4"
+                            android:layout_centerVertical="true" />
+                        <Button
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button_soft4"
+                            android:contentDescription="@string/boisson_soft4"
+                            android:layout_alignParentRight="true"
+                            android:background="@android:drawable/ic_input_add"
+                            android:layout_centerVertical="true" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:layout_toLeftOf="@id/button_soft4"
+                            android:text="@string/boisson_soft4_prix"
+                            android:layout_centerVertical="true" />
+                    </RelativeLayout>
+
                 </LinearLayout>
             </ScrollView>
 
