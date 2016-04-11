@@ -181,11 +181,11 @@ public class AbstractCustomActivity extends Activity {
         TableRow tr;
         TextView label;
 
-        TableRow.LayoutParams rowlayoutParams = new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT);
+        TableRow.LayoutParams rowlayoutParams = new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT, TableRow.LayoutParams.WRAP_CONTENT);
         rowlayoutParams.setMargins(5, 5, 5, 5);
         TableLayout.LayoutParams tableLayoutParams = new TableLayout.LayoutParams(TableLayout.LayoutParams.MATCH_PARENT, TableLayout.LayoutParams.MATCH_PARENT);
 
-        TableRow.LayoutParams imageLayoutParams = new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT);
+        TableRow.LayoutParams imageLayoutParams = new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT, TableRow.LayoutParams.WRAP_CONTENT);
         int marginTopBottom = getResources().getDrawable(R.mipmap.minus).getMinimumHeight() / 5;
         imageLayoutParams.setMargins(5,-marginTopBottom,5,-marginTopBottom);
 
@@ -213,7 +213,7 @@ public class AbstractCustomActivity extends Activity {
                 tr.addView(label);
 
                 label = new TextView(this);
-                label.setText("x" + Integer.toString(this.getCommande().getListEntrees().get(key)));
+                label.setText(" (x" + Integer.toString(this.getCommande().getListEntrees().get(key)) + ") ");
                 label.setLayoutParams(rowlayoutParams);
                 tr.addView(label);
 
@@ -257,7 +257,7 @@ public class AbstractCustomActivity extends Activity {
                 tr.addView(label);
 
                 label = new TextView(this);
-                label.setText("x" + Integer.toString(this.getCommande().getListPlats().get(key)));
+                label.setText(" (x" + Integer.toString(this.getCommande().getListPlats().get(key))+ ")");
                 label.setLayoutParams(rowlayoutParams);
                 tr.addView(label);
 
@@ -301,7 +301,7 @@ public class AbstractCustomActivity extends Activity {
                 tr.addView(label);
 
                 label = new TextView(this);
-                label.setText("x" + Integer.toString(this.getCommande().getListDesserts().get(key)));
+                label.setText(" (x" + Integer.toString(this.getCommande().getListDesserts().get(key))+")");
                 label.setLayoutParams(rowlayoutParams);
                 tr.addView(label);
 
@@ -345,7 +345,7 @@ public class AbstractCustomActivity extends Activity {
                 tr.addView(label);
 
                 label = new TextView(this);
-                label.setText("x" + Integer.toString(this.getCommande().getListBoissons().get(key)));
+                label.setText(" (x" + Integer.toString(this.getCommande().getListBoissons().get(key))+")");
                 label.setLayoutParams(rowlayoutParams);
                 tr.addView(label);
 
@@ -389,7 +389,7 @@ public class AbstractCustomActivity extends Activity {
                 tr.addView(label);
 
                 label = new TextView(this);
-                label.setText("x" + Integer.toString(this.getCommande().getListMenus().get(key)));
+                label.setText(" (x" + Integer.toString(this.getCommande().getListMenus().get(key))+")");
                 label.setLayoutParams(rowlayoutParams);
                 tr.addView(label);
 

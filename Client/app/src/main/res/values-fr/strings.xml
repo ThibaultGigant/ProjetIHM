@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">restauClient</string>
     <string name="accueil">Accueil</string>
     <string name="bienvenue">Bienvenue Chez Gusteau</string>
     <string name="carte">Carte</string>
-    <string name="description">Ce restaurant a été fondé en 1579 par l arrière petit-fils du grand oncle de mon neveu. Jusqu à aujourd hui, son but a toujours été de faire déguster des mets de la meilleure qualité possible à ses clients.. bla bla bla bla bla bla</string>
     <string name="hello_world">Bonjour le monde</string>
     <string name="menu_settings">Paramètres</string>
     <string name="menus">Menus</string>
     <string name="validation">Validez la commande</string>
     <string name="enter">Entrez</string>
-    <string name="menuA">Menu Printanier \n Laissez-vous tenter\n par ses saveurs\n 15$</string>
-    <string name="menuB">Menu Campagnard \n Sa simplicité saura\n vous combler\n 22$</string>
-    <string name="menuC">Menu Gourmand \n Si la faim \n vous tiraille\n 25$</string>
-    <string name="menuD">Menu Printanier \n Flattez votre palais\n avec des mets de qualité\n 35$</string>
     <string name="popServeur">Appeler le Serveur</string>
     <string name="askWaiter">Demander quelque chose au Serveur</string>
     <string name="entree">Entrées :</string>
@@ -77,8 +71,13 @@
     <string name="plat_viande1_prix">14€</string>
     <string name="plat_viande2_prix">11.35€</string>
     <string name="plat_viande3_prix">15€</string>
-    <string name="boissons">Boissons</string>
+    <string name="boissons">Boissons :</string>
     <string name="plats">Plats :</string>
     <string name="desserts">Desserts :</string>
     <string name="text_menus">Menus :</string>
+    <string name="addMenu">Ajouter ce menu</string>
+    <string name="ou">ou</string>
+    <string name="pickDessert">Choisissez un dessert</string>
+    <string name="pickEntree">Choisissez une entrée</string>
+    <string name="pickPlat">Choisissez un plat</string>
 </resources>

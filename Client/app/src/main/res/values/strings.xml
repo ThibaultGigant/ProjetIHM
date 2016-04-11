@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">restauClient</string>
+    <string name="app_name" translatable="false">Chez Gusteau</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
     <string name="bienvenue">Welcome to Chez Gusteau</string>
-    <string name="description">This restaurant has been created in 1579 by my nephew\'s great-uncle\'s grand-grand-son. Up until today, our main goal has been to offer best quality products to our customer... bla bla bla bla bla bla</string>
+    <string name="description" translatable="false">Chez Gusteau n\'a pas toujours été un restaurant, ce qui explique son décor atypique et exceptionnel. Le pavillon était à l\'origine un lieu de halte pour Napoléon III, qui venait au Bois de Boulogne pour chasser. Au fil des années, Chez Gusteau a évolué, tout en entretenant son style "rétro-moderne". A l\'intérieur, dorures, chandeliers et miroirs offrent un charme certain à cette résidence qui a conservé toute sa splendeur d\'époque. La salle, lumineuse et spacieuse, la formidable hauteur sous plafond ainsi que l\'espacement des tables, font de Chez Gusteau un lieu propice à la détente et aux confidences. Voici donc un lieu parfait pour un déjeuner d\'affaires ou un dîner romantique aux chandelles. Quant aux différents salons situés à l\'étage, ils sont privatisables dans le cadre d\'un séminaire d\'entreprise ou d\'un évènement privé.</string>
     <string name="accueil">Home</string>
 
     <string name="menus">Menus</string>
 
-    <string name="menuA">Menu Printanier \n Laissez-vous tenter\n par ses saveurs\n 15€</string>
-    <string name="menuAshort">Menu Printanier     15€</string>
-    <string name="menuB">Menu Campagnard \n Sa simplicité saura\n vous combler\n 22€</string>
-    <string name="menuBshort">Menu Campagnard    22€</string>
-    <string name="menuC">Menu Gourmand \n Si la faim \n vous tiraille\n 25€</string>
-    <string name="menuCshort">Menu Gourmand    25€</string>
-    <string name="menuD">Menu Gourmet \n Flattez votre palais\n avec des mets de qualité\n 35€</string>
-    <string name="menuDshort">Menu Gourmet     35€</string>
+    <string name="menuA" translatable="false">\n Menu Printanier \n15€\n</string>
+    <string name="menuAshort" translatable="false">Menu Printanier     15€</string>
+    <string name="menuB" translatable="false">\nMenu Campagnard \n 22€\n</string>
+    <string name="menuBshort" translatable="false">Menu Campagnard    22€</string>
+    <string name="menuC" translatable="false">\nMenu Gourmand \n 25€\n</string>
+    <string name="menuCshort" translatable="false">Menu Gourmand    25€</string>
+    <string name="menuD" translatable="false">\nMenu Gourmet \n 35€\n</string>
+    <string name="menuDshort" translatable="false">Menu Gourmet     35€</string>
     <string name="carte">Carte</string>
     <string name="validation">Send the order</string>
     <string name="enter">Enter</string>
     <string name="popServeur">Call waiter</string>
 
-    <string name="carteEntrees">Entrées</string>
+    <string name="carteEntrees">Starters</string>
     <string name="cartePlats">Main Courses</string>
-    <string name="carteDesserts">Desserts</string>
+    <string name="carteDesserts">Deserts</string>
     <string name="carteBoissons">Drinks</string>
 
     <!--Boissons-->
@@ -35,7 +35,7 @@
     <string name="boisson_alcool1_prix" translatable="false">5€</string>
     <string name="boisson_alcool2" translatable="false">Pastis 51</string>
     <string name="boisson_alcool2_prix" translatable="false">5.5€</string>
-    <string name="boisson_alcool3">Johonnie Walker - Blue Label (Blended)</string>
+    <string name="boisson_alcool3">Johonnie Walker Blue Label (Blended)</string>
     <string name="boisson_alcool3_prix" translatable="false">12.5€</string>
 
     <string name="boisson_cat_vins">Wine</string>
@@ -113,11 +113,11 @@
     <string name="dessert_glace2_prix" translatable="false">6.80€</string>
     <string name="dessert_glace3">Chocolat liègeois</string>
     <string name="dessert_glace3_prix" translatable="false">6.40€</string>
-    <string name="entree">Entrées :</string>
-    <string name="askWaiter">Ask the waiter for Something</string>
-    <string name="boissons">Drinks</string>
+    <string name="entree">Starters :</string>
+    <string name="askWaiter">Ask the waiter for something</string>
+    <string name="boissons">Drinks :</string>
     <string name="plats">Main Courses :</string>
-    <string name="desserts">Desserts :</string>
+    <string name="desserts">Deserts :</string>
     <string name="text_menus">Menus :</string>
     <string-array name="cuissons">
         <item>Bleue</item>
@@ -126,10 +126,10 @@
     </string-array>
     <string name="cuisson_prompt">--cooking--</string>
 
-    <string name="pickEntree">Pick an entry</string>
-    <string name="pickPlat">Pick a dish</string>
-    <string name="pickDessert">Pick a dessert</string>
+    <string name="pickEntree">Pick a starter</string>
+    <string name="pickPlat">Pick a main course</string>
+    <string name="pickDessert">Pick a desert</string>
     <string name="ou">or</string>
-    <string name="addMenu">Add this menu</string>
+    <string name="addMenu">Add this formula</string>
 
 </resources>

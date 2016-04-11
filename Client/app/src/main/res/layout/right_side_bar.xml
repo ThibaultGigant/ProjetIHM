@@ -40,12 +40,12 @@
 
         <ScrollView
             android:id="@+id/scroll_recap"
-            android:layout_width="match_parent"
+            android:layout_width="fill_parent"
             android:layout_height="match_parent"
             android:layout_weight="4">
             <TableLayout
                 android:id="@+id/recapitulatif"
-                android:layout_width="match_parent"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content">
             </TableLayout>
         </ScrollView>
