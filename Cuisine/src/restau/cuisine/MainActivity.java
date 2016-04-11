@@ -1,7 +1,6 @@
 package restau.cuisine;
 
 import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.app.Activity;
 import android.os.SystemClock;
@@ -16,7 +15,7 @@ import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
+
 
 public class MainActivity extends Activity{
 
@@ -52,7 +51,7 @@ public class MainActivity extends Activity{
         multiTextClickable(textDishID);
 
         // Ajout des warnings
-        setWarning(R.id.warningEntrees1_1, "Avec supplément de sucre et de piment");
+        setWarning(R.id.entrees1_1, "Avec supplément de sucre et de piment");
 
         // Mise en place du reset pour la table
         setupClear(R.id.textView1, R.id.scrollView1);
@@ -134,22 +133,43 @@ public class MainActivity extends Activity{
     }
 
 
-    private void setWarning(int idWarningImage, String warning)
+    private void setWarning(int idWarningLayout, String warning)
     {
-        ImageView img = (ImageView) findViewById(idWarningImage);
-        img.setImageResource(R.drawable.warning);
-
-        img.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-                builder.setMessage(warning)
-                        .setTitle("Attention");
-
-                AlertDialog dialog = builder.create();
-                dialog.show();
+        RelativeLayout warningLay = (RelativeLayout) findViewById(idWarningLayout);
+        ImageView img = null;
+        int count = warningLay.getChildCount();
+        View v;
+        TextView text = null;
+        for(int i=0; i<count; i++) {
+            v = warningLay.getChildAt(i);
+            if(v instanceof TextView)
+            {
+                text = (TextView) v;
             }
-        });
+            else if(v instanceof ImageView)
+            {
+                img = (ImageView) v;
+            }
+        }
+
+
+        if (img != null) img.setImageResource(R.drawable.warning);
+        String title = (text != null)? text.getText().toString() : "Attention";
+
+        if (img != null) {
+            img.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+
+                    builder.setMessage(warning)
+                           .setTitle(title);
+
+                    AlertDialog dialog = builder.create();
+                    dialog.show();
+                }
+            });
+        }
 
     }
 

@@ -23,26 +23,6 @@ public class AbstractCustom2Activity extends Activity {
     protected Commande commande;
 
     public void initialize() {
-        /*final ImageButton mFrame = (ImageButton) findViewById(R.id.popServeur);
-
-        mFrame.post(new Runnable() {
-
-            @Override
-            public void run() {
-
-                LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
-                int width = mFrame.getWidth();
-                mFrame.setMinimumHeight(width/2);
-                mFrame.setLayoutParams(params);
-            }
-        });
-
-                LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
-                int width = mFrame.getWidth();
-                //mFrame.setMinimumHeight(width/2);
-                mFrame.setLayoutParams(params);
-            }
-        });*/
 
         Intent intent = getIntent();
         if (intent == null)
@@ -80,8 +60,8 @@ public class AbstractCustom2Activity extends Activity {
 
     public void goToBilan(View view) {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-        alertDialogBuilder.setMessage("Are you sure?");
-        alertDialogBuilder.setPositiveButton("Yes",new DialogInterface.OnClickListener() {
+        alertDialogBuilder.setMessage(getString(R.string.sure));
+        alertDialogBuilder.setPositiveButton(getString(R.string.yes),new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog,int id) {
                 Intent intent = new Intent(getApplicationContext(), RecapitulatifActivity.class);
                 intent.putExtra("commande", getCommande());
@@ -89,7 +69,7 @@ public class AbstractCustom2Activity extends Activity {
             }
 
         });
-        alertDialogBuilder.setNegativeButton("No",new DialogInterface.OnClickListener() {
+        alertDialogBuilder.setNegativeButton(getString(R.string.no),new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog,int id) {
                 dialog.cancel();
             }
@@ -197,7 +177,7 @@ public class AbstractCustom2Activity extends Activity {
             label = new TextView(this);
             label.setText(R.string.entree);
             label.setLayoutParams(rowlayoutParams);
-            label.setTextSize(20);
+            label.setTextSize(50);
             tr.addView(label);
             tl.addView(tr, tableLayoutParams);
 
@@ -207,11 +187,13 @@ public class AbstractCustom2Activity extends Activity {
 
                 label = new TextView(this);
                 label.setText(key);
+                label.setTextSize(25);
                 label.setLayoutParams(rowlayoutParams);
                 tr.addView(label);
 
                 label = new TextView(this);
-                label.setText("x" + Integer.toString(this.getCommande().getListEntrees().get(key)));
+                label.setText(" (x" + Integer.toString(this.getCommande().getListEntrees().get(key)) + ")");
+                label.setTextSize(25);
                 label.setLayoutParams(rowlayoutParams);
                 tr.addView(label);
 
@@ -229,7 +211,7 @@ public class AbstractCustom2Activity extends Activity {
             label = new TextView(this);
             label.setText(R.string.plats);
             label.setLayoutParams(rowlayoutParams);
-            label.setTextSize(20);
+            label.setTextSize(50);
             tr.addView(label);
             tl.addView(tr, tableLayoutParams);
 
@@ -239,11 +221,13 @@ public class AbstractCustom2Activity extends Activity {
 
                 label = new TextView(this);
                 label.setText(key);
+                label.setTextSize(25);
                 label.setLayoutParams(rowlayoutParams);
                 tr.addView(label);
 
                 label = new TextView(this);
-                label.setText("x" + Integer.toString(this.getCommande().getListPlats().get(key)));
+                label.setText(" (x" + Integer.toString(this.getCommande().getListPlats().get(key)) + ")");
+                label.setTextSize(25);
                 label.setLayoutParams(rowlayoutParams);
                 tr.addView(label);
 
@@ -261,7 +245,7 @@ public class AbstractCustom2Activity extends Activity {
             label = new TextView(this);
             label.setText(R.string.desserts);
             label.setLayoutParams(rowlayoutParams);
-            label.setTextSize(20);
+            label.setTextSize(50);
             tr.addView(label);
             tl.addView(tr, tableLayoutParams);
 
@@ -271,11 +255,13 @@ public class AbstractCustom2Activity extends Activity {
 
                 label = new TextView(this);
                 label.setText(key);
+                label.setTextSize(25);
                 label.setLayoutParams(rowlayoutParams);
                 tr.addView(label);
 
                 label = new TextView(this);
-                label.setText("x" + Integer.toString(this.getCommande().getListDesserts().get(key)));
+                label.setText(" (x" + Integer.toString(this.getCommande().getListDesserts().get(key)) + ")");
+                label.setTextSize(25);
                 label.setLayoutParams(rowlayoutParams);
                 tr.addView(label);
 
@@ -292,7 +278,7 @@ public class AbstractCustom2Activity extends Activity {
             tr.setLayoutParams(rowlayoutParams);
             label = new TextView(this);
             label.setText(R.string.boissons);
-            label.setTextSize(20);
+            label.setTextSize(50);
             label.setLayoutParams(rowlayoutParams);
             tr.addView(label);
             tl.addView(tr, tableLayoutParams);
@@ -303,11 +289,13 @@ public class AbstractCustom2Activity extends Activity {
 
                 label = new TextView(this);
                 label.setText(key);
+                label.setTextSize(25);
                 label.setLayoutParams(rowlayoutParams);
                 tr.addView(label);
 
                 label = new TextView(this);
-                label.setText("x" + Integer.toString(this.getCommande().getListBoissons().get(key)));
+                label.setText(" (x" + Integer.toString(this.getCommande().getListBoissons().get(key)) + ")");
+                label.setTextSize(25);
                 label.setLayoutParams(rowlayoutParams);
                 tr.addView(label);
                 tl.addView(tr, tableLayoutParams);
@@ -323,7 +311,7 @@ public class AbstractCustom2Activity extends Activity {
             tr.setLayoutParams(rowlayoutParams);
             label = new TextView(this);
             label.setText(R.string.text_menus);
-            label.setTextSize(20);
+            label.setTextSize(50);
             label.setLayoutParams(rowlayoutParams);
             tr.addView(label);
             tl.addView(tr, tableLayoutParams);
@@ -334,11 +322,13 @@ public class AbstractCustom2Activity extends Activity {
 
                 label = new TextView(this);
                 label.setText(key);
+                label.setTextSize(25);
                 label.setLayoutParams(rowlayoutParams);
                 tr.addView(label);
 
                 label = new TextView(this);
-                label.setText("x" + Integer.toString(this.getCommande().getListMenus().get(key)));
+                label.setText(" (x" + Integer.toString(this.getCommande().getListMenus().get(key)) + ")");
+                label.setTextSize(25);
                 label.setLayoutParams(rowlayoutParams);
                 tr.addView(label);
 

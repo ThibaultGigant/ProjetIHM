@@ -132,5 +132,8 @@
     <string name="ou">or</string>
     <string name="addMenu">Add this formula</string>
     <string name="total">Total :</string>
+    <string name="sure">Are you sure?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
 
 </resources>

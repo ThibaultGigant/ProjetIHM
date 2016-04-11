@@ -11,12 +11,9 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
-
-import java.text.DecimalFormat;
 import java.util.HashMap;
 
 /**
@@ -27,26 +24,6 @@ public class AbstractCustomActivity extends Activity {
     private HashMap<String, Double> pricesTable = new HashMap<String, Double>();
 
     public void initialize() {
-        /*final ImageButton mFrame = (ImageButton) findViewById(R.id.popServeur);
-
-        mFrame.post(new Runnable() {
-
-            @Override
-            public void run() {
-
-                LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
-                int width = mFrame.getWidth();
-                mFrame.setMinimumHeight(width/2);
-                mFrame.setLayoutParams(params);
-            }
-        });
-
-                LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
-                int width = mFrame.getWidth();
-                //mFrame.setMinimumHeight(width/2);
-                mFrame.setLayoutParams(params);
-            }
-        });*/
 
         Intent intent = getIntent();
         if (intent == null)
@@ -166,8 +143,8 @@ public class AbstractCustomActivity extends Activity {
 
     public void goToBilan(View view) {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-        alertDialogBuilder.setMessage("Are you sure?");
-        alertDialogBuilder.setPositiveButton("Yes",new DialogInterface.OnClickListener() {
+        alertDialogBuilder.setMessage(getString(R.string.sure));
+        alertDialogBuilder.setPositiveButton(getString(R.string.yes),new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog,int id) {
                 Intent intent = new Intent(getApplicationContext(), RecapitulatifActivity.class);
                 intent.putExtra("commande", getCommande());
@@ -175,7 +152,7 @@ public class AbstractCustomActivity extends Activity {
             }
 
         });
-        alertDialogBuilder.setNegativeButton("No",new DialogInterface.OnClickListener() {
+        alertDialogBuilder.setNegativeButton(getString(R.string.no),new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog,int id) {
                 dialog.cancel();
             }
