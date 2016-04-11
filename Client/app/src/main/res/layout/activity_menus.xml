@@ -25,70 +25,82 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="10dp"
-                android:orientation="horizontal" >
-
-                <Button
+                android:orientation="vertical">
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:onClick="goToMenuA"
-                    android:background="@drawable/button"
-                    android:textColor="#FFF"
-                    android:textStyle="bold"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginTop="10dp"
-                    android:text="@string/menuA" />
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:onClick="goToMenuB"
-                    android:background="@drawable/button"
-                    android:textColor="#FFF"
-                    android:textStyle="bold"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginTop="10dp"
-                    android:text="@string/menuB" />
+                    android:layout_marginTop="100dp"
+                    android:layout_marginBottom="100dp"
+                    android:orientation="horizontal" >
 
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="goToMenuA"
+                        android:background="@drawable/button"
+                        android:textColor="#FFF"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/menuA" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="goToMenuB"
+                        android:background="@drawable/button"
+                        android:textColor="#FFF"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/menuB" />
+
+                </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="10dp"
-                android:orientation="horizontal" >
-
-                <Button
+                android:orientation="vertical">
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:onClick="goToMenuC"
-                    android:background="@drawable/button"
-                    android:textColor="#FFF"
-                    android:textStyle="bold"
                     android:layout_marginBottom="10dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginTop="10dp"
-                    android:text="@string/menuC" />
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:onClick="goToMenuD"
-                    android:background="@drawable/button"
-                    android:textColor="#FFF"
-                    android:textStyle="bold"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginTop="10dp"
-                    android:text="@string/menuD" />
+                    android:orientation="horizontal" >
 
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="goToMenuC"
+                        android:background="@drawable/button"
+                        android:textColor="#FFF"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/menuC" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="goToMenuD"
+                        android:background="@drawable/button"
+                        android:textColor="#FFF"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/menuD" />
+
+                </LinearLayout>
             </LinearLayout>
 
         </LinearLayout>
