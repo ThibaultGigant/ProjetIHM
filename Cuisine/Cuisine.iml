@@ -2,15 +2,12 @@
 <module type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="android" name="Android">
-      <configuration>
-        <proGuardCfgFiles>
-          <file>file://C:/Program Files (x86)/Java/jdk1.8.0_77/tools/proguard/proguard-android.txt</file>
-        </proGuardCfgFiles>
-        <option name="UPDATE_PROPERTY_FILES" value="false" />
-      </configuration>
+      <configuration />
     </facet>
   </component>
-  <component name="NewModuleRootManager" inherit-compiler-output="true">
+  <component name="NewModuleRootManager" inherit-compiler-output="false">
+    <output url="file://$USER_HOME$/out" />
+    <output-test url="file://$USER_HOME$/out" />
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
