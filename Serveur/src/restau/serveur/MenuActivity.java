@@ -3,9 +3,11 @@ package restau.serveur;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Gravity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.PopupMenu;
 import android.widget.TextView;
 
 import org.xmlpull.v1.XmlPullParser;
@@ -23,16 +25,20 @@ public class MenuActivity extends Activity {
 
     private int numberOfTable = 1;
 
-    private int entreesId = -1;
-    private int dessertsId = -1;
-    private int platsId = -1;
+    protected int entreesId = -1;
+    protected int dessertsId = -1;
+    protected int platsId = -1;
 
     private boolean suppr_mode = false;
+
+    private int tmpId;
+
+    private int[] alertesId = {R.id.Alarme1, R.id.Alarme2, R.id.Alarme3, R.id.Alarme4, R.id.Alarme5, R.id.Alarme6};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // TODO get arguments
+
         Bundle extra = getIntent().getExtras();
         if (extra == null)
             finish();
@@ -40,6 +46,7 @@ public class MenuActivity extends Activity {
             numberOfTable = extra.getInt("numberOfTable");
         setContentView(R.layout.activity_menu);
         chargeMenu(numberOfTable);
+        multiTextClickable(alertesId);
     }
 
     protected void chargeMenu(int i) {
@@ -112,9 +119,9 @@ public class MenuActivity extends Activity {
         String name;
 
         LinearLayout listeMenu = (LinearLayout) findViewById(R.id.listeMenu);
-        LinearLayout listeEntrees = null;
-        LinearLayout listePlats = null;
-        LinearLayout listeDesserts = null;
+        LinearLayout listeEntrees = (LinearLayout) findViewById(R.id.entrees); // null;
+        LinearLayout listePlats = (LinearLayout) findViewById(R.id.plats); // null;
+        LinearLayout listeDesserts = (LinearLayout) findViewById(R.id.desserts); // null;
 
         try {
             while (eventType != tableParser.END_DOCUMENT) {
@@ -123,31 +130,32 @@ public class MenuActivity extends Activity {
 
                     name = tableParser.getName();
 
-                    if (name.equals("entrees")) {
+                    /*if (name.equals("entrees")) {
 
                         listeEntrees = new LinearLayout(this);
-                        this.entreesId = View.generateViewId();
+                        this.entreesId = 11123; //View.generateViewId();
                         listeEntrees.setId(this.entreesId);
+                        System.out.println(listeEntrees.getId());
                         listeEntrees.setOrientation(LinearLayout.VERTICAL);
                         listeMenu.addView(listeEntrees);
 
                     }
                     else if (name.equals("plats")) {
                         listePlats = new LinearLayout(this);
-                        this.platsId = View.generateViewId();
+                        this.platsId = 11124;//View.generateViewId();
                         listeEntrees.setId(this.platsId);
                         listePlats.setOrientation(LinearLayout.VERTICAL);
                         listeMenu.addView(listePlats);
                     }
                     else if (name.equals("desserts")) {
                         listeDesserts = new LinearLayout(this);
-                        this.dessertsId = View.generateViewId();
+                        this.dessertsId = 11125;//View.generateViewId();
                         listeEntrees.setId(this.dessertsId);
                         listeDesserts.setOrientation(LinearLayout.VERTICAL);
                         listeMenu.addView(listeDesserts);
                     }
 
-                    else if (name.equals("entree") && listeEntrees != null) {
+                    else*/ if (name.equals("entree") && listeEntrees != null) {
                         LinearLayout entree = new LinearLayout(this);
                         entree.setOrientation(LinearLayout.HORIZONTAL);
 
@@ -209,36 +217,174 @@ public class MenuActivity extends Activity {
         LinearLayout listeMenu = (LinearLayout) findViewById(R.id.listeMenu);
 
         LinearLayout item;
-        if (this.entreesId != -1) {
-            LinearLayout entrees = (LinearLayout) findViewById(this.entreesId);
-            for(int i=0; i<entrees.getChildCount() ; i++) {
-                item = (LinearLayout) entrees.getChildAt(i);
-                ImageView minus = new ImageView(this);
-                minus.setBackground(getResources().getDrawable(R.mipmap.minus));
-                item.addView(minus);
-            }
+        int nbChild;
+
+        LinearLayout entrees = (LinearLayout) findViewById(R.id.entrees);
+        nbChild = entrees.getChildCount();
+        for(int i=0; i< nbChild ; i++) {
+            item = (LinearLayout) entrees.getChildAt(i);
+            if (item.getChildCount() == 0)
+                continue;
+            ImageView minus = new ImageView(this);
+            minus.setBackground(getResources().getDrawable(R.mipmap.minus));
+            LinearLayout.LayoutParams param = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+            param.setMargins(10, 5, 0, 0);
+            minus.setLayoutParams(param);
+            item.addView(minus);
+            item.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    //v.setVisibility(View.GONE);
+
+                    PopupMenu popup = new PopupMenu(getBaseContext(), v);
+                    popup.getMenuInflater().inflate(R.menu.popup_delete, popup.getMenu());
+                    popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                        @Override
+                        public boolean onMenuItemClick(MenuItem item2) {
+                            ((LinearLayout) v).removeAllViews();// .setVisible(false);
+                            return true;
+                        }
+                    });
+
+                    popup.show();
+                }
+            });
         }
 
-        if (this.dessertsId != -1) {
-            LinearLayout desserts = (LinearLayout) findViewById(this.dessertsId);
-            for(int i=0; i<desserts.getChildCount() ; i++) {
-                item = (LinearLayout) desserts.getChildAt(i);
-                ImageView minus = new ImageView(this);
-                minus.setBackground(getResources().getDrawable(R.mipmap.minus));
-                item.addView(minus);
-            }
+        LinearLayout desserts = (LinearLayout) findViewById(R.id.desserts);
+        nbChild = desserts.getChildCount();
+        for(int i=0; i<nbChild ; i++) {
+            item = (LinearLayout) desserts.getChildAt(i);
+            if (item.getChildCount() == 0)
+                continue;
+            ImageView minus = new ImageView(this);
+            minus.setBackground(getResources().getDrawable(R.mipmap.minus));
+            LinearLayout.LayoutParams param = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+            param.setMargins(10, 5, 0, 0);
+            minus.setLayoutParams(param);
+            item.addView(minus);
+            item.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    //v.setVisibility(View.GONE);
+
+                    PopupMenu popup = new PopupMenu(getBaseContext(), v);
+                    popup.getMenuInflater().inflate(R.menu.popup_delete, popup.getMenu());
+                    popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                        @Override
+                        public boolean onMenuItemClick(MenuItem item2) {
+                            ((LinearLayout) v).removeAllViews();// .setVisible(false);
+                            return true;
+                        }
+                    });
+
+                    popup.show();
+                }
+            });
         }
 
-        if (this.platsId != -1) {
-            LinearLayout plats = (LinearLayout) findViewById(this.platsId);
-            for(int i=0; i<plats.getChildCount() ; i++) {
-                item = (LinearLayout) plats.getChildAt(i);
-                ImageView minus = new ImageView(this);
-                minus.setBackground(getResources().getDrawable(R.mipmap.minus));
-                item.addView(minus);
-            }
+        LinearLayout plats = (LinearLayout) findViewById(R.id.plats);
+        nbChild = plats.getChildCount();
+        for(int i=0; i<nbChild ; i++) {
+            item = (LinearLayout) plats.getChildAt(i);
+            if (item.getChildCount() == 0)
+                continue;
+
+            ImageView minus = new ImageView(this);
+            minus.setBackground(getResources().getDrawable(R.mipmap.minus));
+            LinearLayout.LayoutParams param = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+            param.setMargins(10, 5, 0, 0);
+            minus.setLayoutParams(param);
+
+            item.addView(minus);
+            item.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    //v.setVisibility(View.GONE);
+
+                    PopupMenu popup = new PopupMenu(getBaseContext(), v);
+                    popup.getMenuInflater().inflate(R.menu.popup_delete, popup.getMenu());
+                    popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                        @Override
+                        public boolean onMenuItemClick(MenuItem item2) {
+                            ((LinearLayout) v).removeAllViews();// .setVisible(false);
+                            return true;
+                        }
+                    });
+
+                    popup.show();
+                }
+            });
         }
 
         //listeMenu.getChildAt();
     }
+
+    public void valid(View view) {
+
+        if(!suppr_mode)
+            return;
+
+        suppr_mode = false;
+
+        LinearLayout item;
+        int nbChild;
+
+        LinearLayout entrees = (LinearLayout) findViewById(R.id.entrees);
+        nbChild = entrees.getChildCount();
+        for(int i=0; i< nbChild ; i++) {
+            item = (LinearLayout) entrees.getChildAt(i);
+            if (item.getChildAt(item.getChildCount() - 1) != null)
+                ((ImageView) item.getChildAt(item.getChildCount() - 1)).setVisibility(View.GONE);
+        }
+
+        LinearLayout desserts = (LinearLayout) findViewById(R.id.desserts);
+        nbChild = desserts.getChildCount();
+        for(int i=0; i<nbChild ; i++) {
+            item = (LinearLayout) desserts.getChildAt(i);
+            if (item.getChildAt(item.getChildCount() - 1) != null)
+                ((ImageView)item.getChildAt(item.getChildCount() - 1)).setVisibility(View.GONE);
+        }
+
+        LinearLayout plats = (LinearLayout) findViewById(R.id.plats);
+        nbChild = plats.getChildCount();
+        for(int i=0; i<nbChild ; i++) {
+            item = (LinearLayout) plats.getChildAt(i);
+            if (item.getChildAt(item.getChildCount() - 1) != null)
+                ((ImageView)item.getChildAt(item.getChildCount() - 1)).setVisibility(View.GONE);
+        }
+    }
+
+    private void textClickable(int id)
+    {
+        TextView alarme = (TextView) findViewById(id);
+
+        if(alarme != null) {
+            alarme.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    PopupMenu popup = new PopupMenu(getBaseContext(), v);
+                    popup.getMenuInflater().inflate(R.menu.popup_accept, popup.getMenu());
+                    popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                        @Override
+                        public boolean onMenuItemClick(MenuItem item) {
+                            alarme.setVisibility(View.GONE);
+                            return true;
+                        }
+                    });
+
+                    popup.show();
+                }
+            });
+        }
+    }
+
+    private void multiTextClickable(int[] id)
+    {
+        for(int i : id)
+        {
+            textClickable(i);
+        }
+    }
+
 }

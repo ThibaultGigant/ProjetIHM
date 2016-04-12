@@ -12,8 +12,11 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.PopupMenu;
+import android.widget.TextView;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -26,10 +29,13 @@ import java.io.InputStream;
  */
 public class PlanActivity extends Activity {
 
+    private int[] alertesId = {R.id.Alarme1, R.id.Alarme2, R.id.Alarme3, R.id.Alarme4, R.id.Alarme5, R.id.Alarme6};
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_plan);
+        multiTextClickable(alertesId);
     }
 
 
@@ -60,5 +66,37 @@ public class PlanActivity extends Activity {
         intent.putExtra("numberOfTable", i);
         startActivity(intent);
 
+    }
+
+    private void textClickable(int id)
+    {
+        TextView alarme = (TextView) findViewById(id);
+
+        if(alarme != null) {
+            alarme.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    PopupMenu popup = new PopupMenu(getBaseContext(), v);
+                    popup.getMenuInflater().inflate(R.menu.popup_accept, popup.getMenu());
+                    popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                        @Override
+                        public boolean onMenuItemClick(MenuItem item) {
+                            alarme.setVisibility(View.GONE);
+                            return true;
+                        }
+                    });
+
+                    popup.show();
+                }
+            });
+        }
+    }
+
+    private void multiTextClickable(int[] id)
+    {
+        for(int i : id)
+        {
+            textClickable(i);
+        }
     }
 }
